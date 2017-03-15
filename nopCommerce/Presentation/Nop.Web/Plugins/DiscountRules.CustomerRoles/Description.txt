@@ -1,0 +1,9 @@
+﻿Group: Discount requirements
+FriendlyName: 必须分配给客户角色
+SystemName: DiscountRequirement.MustBeAssignedToCustomerRole
+Version: 1.13
+SupportedVersions: 3.80
+Author: nopCommerce team
+DisplayOrder: 1
+FileName: Nop.Plugin.DiscountRules.CustomerRoles.dll
+Description: 此插件允许您为特定客户组（角色）配置折扣

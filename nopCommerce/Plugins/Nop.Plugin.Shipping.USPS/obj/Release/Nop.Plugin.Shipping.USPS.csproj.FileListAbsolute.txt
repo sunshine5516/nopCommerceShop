@@ -1,0 +1,12 @@
+F:\Demo\开源框架\nopCommerce\Plugins\Nop.Plugin.Shipping.USPS\obj\Release\Nop.Plugin.Shipping.USPS.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\Views\ShippingUSPS\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.USPS\obj\Release\Nop.Plugin.Shipping.USPS.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.USPS\obj\Release\Nop.Plugin.Shipping.USPS.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.USPS\obj\Release\Nop.Plugin.Shipping.USPS.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.USPS\obj\Release\Nop.Plugin.Shipping.USPS.pdb

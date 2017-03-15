@@ -1,0 +1,13 @@
+F:\Demo\开源框架\nopCommerce\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\Nop.Plugin.Payments.PayPalStandard.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\PaymentPayPalStandard\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\PaymentPayPalStandard\PaymentInfo.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\Nop.Plugin.Payments.PayPalStandard.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\Nop.Plugin.Payments.PayPalStandard.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\Nop.Plugin.Payments.PayPalStandard.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\Nop.Plugin.Payments.PayPalStandard.pdb

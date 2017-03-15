@@ -1,0 +1,13 @@
+F:\Demo\开源框架\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csproj.App.config
+F:\Demo\开源框架\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Views\ShippingAustraliaPost\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.pdb

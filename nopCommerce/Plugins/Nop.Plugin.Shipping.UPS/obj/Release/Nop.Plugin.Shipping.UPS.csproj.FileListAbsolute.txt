@@ -1,0 +1,14 @@
+F:\Demo\开源框架\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Views\ShippingUPS\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.XmlSerializers.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Shipping.UPS\obj\Release\Nop.Plugin.Shipping.UPS.XmlSerializers.dll
