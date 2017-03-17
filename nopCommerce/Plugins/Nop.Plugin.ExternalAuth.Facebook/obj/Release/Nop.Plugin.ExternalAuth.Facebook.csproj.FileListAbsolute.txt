@@ -14,3 +14,17 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugi
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csprojResolveAssemblyReference.cache
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\ExternalAuthFacebook\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\ExternalAuthFacebook\PublicInfo.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\facebookstyles.css
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\Images\facebook-signing.png
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\Nop.Plugin.ExternalAuth.Facebook.pdb

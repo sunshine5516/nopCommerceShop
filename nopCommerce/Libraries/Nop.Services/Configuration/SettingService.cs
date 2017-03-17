@@ -180,7 +180,7 @@ namespace Nop.Services.Configuration
         }
 
         /// <summary>
-        /// Deletes settings
+        /// …æ≥˝…Ë÷√
         /// </summary>
         /// <param name="settings">Settings</param>
         public virtual void DeleteSettings(IList<Setting> settings)

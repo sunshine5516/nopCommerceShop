@@ -330,10 +330,10 @@ namespace Nop.Services.Localization
 
 
         /// <summary>
-        /// Delete a locale resource
+        /// 删除本地资源Delete a locale resource
         /// </summary>
-        /// <param name="plugin">Plugin</param>
-        /// <param name="resourceName">Resource name</param>
+        /// <param name="plugin">插件</param>
+        /// <param name="resourceName">名称</param>
         public static void DeletePluginLocaleResource(this BasePlugin plugin,
             string resourceName)
         {

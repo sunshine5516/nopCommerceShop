@@ -94,7 +94,15 @@ namespace Nop.Plugin.Widgets.NivoSlider
                 Picture3Id = _pictureService.InsertPicture(File.ReadAllBytes(sampleImagesPath + "banner3.jpg"), MimeTypes.ImagePJpeg, "banner_3").Id,
                 Text3 = "Iphone",
                 //Link3 = _webHelper.GetStoreLocation(false),
-                Link3 ="www.baidu.com",
+                Link3 ="http://www.baidu.com",
+                Picture4Id = _pictureService.InsertPicture(File.ReadAllBytes(sampleImagesPath + "banner4.jpg"), MimeTypes.ImagePJpeg, "banner_4").Id,
+                Text4 = "Iphone",
+                //Link3 = _webHelper.GetStoreLocation(false),
+                Link4 = "http://www.facebook.com",
+                Picture5Id = _pictureService.InsertPicture(File.ReadAllBytes(sampleImagesPath + "banner5.jpg"), MimeTypes.ImagePJpeg, "banner_5").Id,
+                Text5 = "Iphone",
+                //Link3 = _webHelper.GetStoreLocation(false),
+                Link5 = "http://www.google.com",
             };
             _settingService.SaveSetting(settings);
 

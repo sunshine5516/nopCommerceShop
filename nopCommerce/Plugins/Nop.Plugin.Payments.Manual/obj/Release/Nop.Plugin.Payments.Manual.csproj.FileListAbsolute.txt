@@ -12,3 +12,15 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugi
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.csprojResolveAssemblyReference.cache
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Views\PaymentManual\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Views\PaymentManual\PaymentInfo.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\logo.jpg
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.csproj.App.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Manual\obj\Release\Nop.Plugin.Payments.Manual.pdb

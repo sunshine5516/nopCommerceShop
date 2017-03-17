@@ -23,4 +23,3 @@ Tax.CountryStateZip
 Widgets.GoogleAnalytics
 Widgets.HelloWorld2
 Widgets.NivoSlider
-

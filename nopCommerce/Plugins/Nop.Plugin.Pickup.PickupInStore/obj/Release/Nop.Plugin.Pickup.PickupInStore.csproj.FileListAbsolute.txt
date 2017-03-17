@@ -12,3 +12,16 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Prese
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.csprojResolveAssemblyReference.cache
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce实体添加\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Description.txt
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Configure.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Create.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\Edit.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Views\PickupInStore\_CreateOrUpdate.cshtml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\web.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\logo.png
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Pickup.PickupInStore\obj\Release\Nop.Plugin.Pickup.PickupInStore.pdb

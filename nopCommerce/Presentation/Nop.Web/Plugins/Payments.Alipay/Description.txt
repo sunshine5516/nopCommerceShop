@@ -1,0 +1,9 @@
+﻿Group: Payment methods
+FriendlyName: Alipay
+SystemName: Payments.Alipay
+Version: 1.22
+SupportedVersions: 3.80
+Author: Jayson
+DisplayOrder: 1
+FileName: Nop.Plugin.Payments.Alipay.dll
+Description: Alipay
