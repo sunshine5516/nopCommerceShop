@@ -17,11 +17,12 @@ namespace Nop.Plugin.Payments.Alipay.Controllers
 
         public ActionResult Configure()
         {
-            return View("~/Plugins/Nop.Plugin.Payments.Alipay/Views/PaymentsAlipay/Configure.cshtml");
+            return View("~/Plugins/Payments.Alipay/Views/PaymentsAlipay/Configure.cshtml");
         }
-        public ActionResult PublicInfo(string widgetZone, object additionalData = null)
+        [ChildActionOnly]
+        public ActionResult PaymentInfo(string widgetZone, object additionalData = null)
         {
-            return View("~/Plugins/Nop.Plugin.Payments.Alipay/Views/PaymentsAlipay/PublicInfo.cshtml", null);
+            return View("~/Plugins/Payments.Alipay/Views/PaymentAlipay/PaymentInfo.cshtml", null);
         }
         public override ProcessPaymentRequest GetPaymentInfo(FormCollection form)
         {

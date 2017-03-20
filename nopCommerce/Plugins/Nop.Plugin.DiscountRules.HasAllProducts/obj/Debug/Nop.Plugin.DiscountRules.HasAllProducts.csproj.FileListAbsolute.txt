@@ -46,3 +46,15 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugi
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.csprojResolveAssemblyReference.cache
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Views\DiscountRulesHasAllProducts\Configure.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Description.txt
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\web.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Views\DiscountRulesHasAllProducts\ProductAddPopup.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\logo.jpg
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Nop.Plugin.DiscountRules.HasAllProducts.dll.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Nop.Plugin.DiscountRules.HasAllProducts.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\DiscountRules.HasAllProducts\Nop.Plugin.DiscountRules.HasAllProducts.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.csproj.App.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.DiscountRules.HasAllProducts\obj\Debug\Nop.Plugin.DiscountRules.HasAllProducts.pdb

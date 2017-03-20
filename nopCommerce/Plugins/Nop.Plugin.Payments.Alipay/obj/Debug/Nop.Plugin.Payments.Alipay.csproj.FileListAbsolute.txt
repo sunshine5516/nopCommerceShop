@@ -9,3 +9,12 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Prese
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Nop.Plugin.Payments.Alipay.pdb
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Alipay\obj\Debug\Nop.Plugin.Payments.Alipay.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Alipay\obj\Debug\Nop.Plugin.Payments.Alipay.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Description.txt
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\web.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Views\PaymentAlipay\PaymentInfo.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Views\PaymentAlipay\Configure.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Nop.Plugin.Payments.Alipay.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.Alipay\Nop.Plugin.Payments.Alipay.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Alipay\obj\Debug\Nop.Plugin.Payments.Alipay.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Alipay\obj\Debug\Nop.Plugin.Payments.Alipay.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.Alipay\obj\Debug\Nop.Plugin.Payments.Alipay.pdb
