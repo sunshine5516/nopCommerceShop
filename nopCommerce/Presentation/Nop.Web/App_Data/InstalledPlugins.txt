@@ -4,7 +4,6 @@ DiscountRequirement.HasOneProduct
 DiscountRequirement.MustBeAssignedToCustomerRole
 CurrencyExchange.ECB
 ExternalAuth.Facebook
-Payments.CheckMoneyOrder
 Payments.Manual
 Payments.PayPalDirect
 Payments.PayPalStandard
@@ -23,3 +22,4 @@ Tax.CountryStateZip
 Widgets.GoogleAnalytics
 Widgets.HelloWorld2
 Widgets.NivoSlider
+Payments.CheckMoneyOrder

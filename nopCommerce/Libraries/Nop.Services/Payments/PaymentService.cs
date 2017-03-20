@@ -48,11 +48,11 @@ namespace Nop.Services.Payments
         #region Methods
 
         /// <summary>
-        /// Load active payment methods
+        /// 载入有效的付款方式
         /// </summary>
-        /// <param name="filterByCustomerId">Filter payment methods by customer; null to load all records</param>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
-        /// <param name="filterByCountryId">Load records allowed only in a specified country; pass 0 to load all records</param>
+        /// <param name="filterByCustomerId">按客户筛选付款方式; null加载所有</param>
+        /// <param name="storeId">仅在指定的商店中允许加载记录; 0代表所有记录</param>
+        /// <param name="filterByCountryId">仅在指定国家/地区中允许加载记录; 0代表所有记录</param>
         /// <returns>Payment methods</returns>
         public virtual IList<IPaymentMethod> LoadActivePaymentMethods(int? filterByCustomerId = null, int storeId = 0, int filterByCountryId = 0)
         {
@@ -62,7 +62,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Load payment provider by system name
+        /// 按系统加载付款方式
         /// </summary>
         /// <param name="systemName">System name</param>
         /// <returns>Found payment provider</returns>
@@ -76,10 +76,10 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Load all payment providers
+        /// 加载所有付款提供商
         /// </summary>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
-        /// <param name="filterByCountryId">Load records allowed only in a specified country; pass 0 to load all records</param>
+        /// <param name="storeId">仅在指定的商店中允许加载记录; 0代表所有记录</param>
+        /// <param name="filterByCountryId">仅在指定国家/地区中允许加载记录; 0代表所有记录</param>
         /// <returns>Payment providers</returns>
         public virtual IList<IPaymentMethod> LoadAllPaymentMethods(int storeId = 0, int filterByCountryId = 0)
         {
@@ -101,9 +101,9 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a list of coutnry identifiers in which a certain payment method is now allowed
+        /// 获取现在允许使用特定付款方式的国家/地区标识符列表
         /// </summary>
-        /// <param name="paymentMethod">Payment method</param>
+        /// <param name="paymentMethod">支付方法</param>
         /// <returns>A list of country identifiers</returns>
         public virtual IList<int> GetRestictedCountryIds(IPaymentMethod paymentMethod)
         {
@@ -118,9 +118,9 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Saves a list of coutnry identifiers in which a certain payment method is now allowed
+        /// 保存允许使用特定付款方式的国家/地区
         /// </summary>
-        /// <param name="paymentMethod">Payment method</param>
+        /// <param name="paymentMethod">支付方法</param>
         /// <param name="countryIds">A list of country identifiers</param>
         public virtual void SaveRestictedCountryIds(IPaymentMethod paymentMethod, List<int> countryIds)
         {
@@ -134,9 +134,9 @@ namespace Nop.Services.Payments
 
 
         /// <summary>
-        /// Process a payment
+        ///处理付款
         /// </summary>
-        /// <param name="processPaymentRequest">Payment info required for an order processing</param>
+        /// <param name="processPaymentRequest">订单处理所需的付款信息</param>
         /// <returns>Process payment result</returns>
         public virtual ProcessPaymentResult ProcessPayment(ProcessPaymentRequest processPaymentRequest)
         {
@@ -162,9 +162,9 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Post process payment (used by payment gateways that require redirecting to a third-party URL)
+        ///Post提交付款请求（由需要重定向到第三方网址的付款网关使用）
         /// </summary>
-        /// <param name="postProcessPaymentRequest">Payment info required for an order processing</param>
+        /// <param name="postProcessPaymentRequest">订单处理所需的付款信息</param>
         public virtual void PostProcessPayment(PostProcessPaymentRequest postProcessPaymentRequest)
         {
             //already paid or order.OrderTotal == decimal.Zero
@@ -178,7 +178,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a value indicating whether customers can complete a payment after order is placed but not completed (for redirection payment methods)
+        /// 客户在下订单但未完成后是否可以完成付款（用于重定向付款方式）
         /// </summary>
         /// <param name="order">Order</param>
         /// <returns>Result</returns>
@@ -212,7 +212,7 @@ namespace Nop.Services.Payments
 
 
         /// <summary>
-        /// Gets an additional handling fee of a payment method
+        ///手续费
         /// </summary>
         /// <param name="cart">Shoping cart</param>
         /// <param name="paymentMethodSystemName">Payment method system name</param>
@@ -252,7 +252,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Captures payment
+        /// 获取付款结果
         /// </summary>
         /// <param name="capturePaymentRequest">Capture payment request</param>
         /// <returns>Capture payment result</returns>
@@ -267,7 +267,7 @@ namespace Nop.Services.Payments
 
 
         /// <summary>
-        /// Gets a value indicating whether partial refund is supported by payment method
+        /// 是否支持部分退款
         /// </summary>
         /// <param name="paymentMethodSystemName">Payment method system name</param>
         /// <returns>A value indicating whether partial refund is supported</returns>
@@ -280,7 +280,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a value indicating whether refund is supported by payment method
+        /// 是否支持退款
         /// </summary>
         /// <param name="paymentMethodSystemName">Payment method system name</param>
         /// <returns>A value indicating whether refund is supported</returns>
@@ -293,7 +293,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Refunds a payment
+        /// 退款
         /// </summary>
         /// <param name="refundPaymentRequest">Request</param>
         /// <returns>Result</returns>
@@ -349,7 +349,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Process recurring payment
+        /// 处理定期付款
         /// </summary>
         /// <param name="processPaymentRequest">Payment info required for an order processing</param>
         /// <returns>Process payment result</returns>
@@ -371,7 +371,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Cancels a recurring payment
+        /// 取消定期付款
         /// </summary>
         /// <param name="cancelPaymentRequest">Request</param>
         /// <returns>Result</returns>

@@ -4,7 +4,7 @@ using System.Linq;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Cancel recurring payment result
+    /// 取消定期付款结果
     /// </summary>
     public partial class CancelRecurringPaymentResult
     {
@@ -17,7 +17,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a value indicating whether request has been completed successfully
+        /// 是否成功
         /// </summary>
         public bool Success
         {
@@ -25,7 +25,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Add error
+        /// 添加错误信息
         /// </summary>
         /// <param name="error">Error</param>
         public void AddError(string error) 

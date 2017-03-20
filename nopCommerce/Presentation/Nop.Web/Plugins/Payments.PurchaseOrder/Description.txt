@@ -1,4 +1,4 @@
-Group: Payment methods
+﻿Group: Payment methods
 FriendlyName: Purchase Order
 SystemName: Payments.PurchaseOrder
 Version: 1.17

@@ -16,70 +16,70 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets or sets a store identifier
+        /// StoreId
         /// </summary>
         public int StoreId { get; set; }
 
         /// <summary>
-        /// Gets or sets a customer identifier
+        /// CustomerId
         /// </summary>
         public int CustomerId { get; set; }
 
         /// <summary>
-        /// Gets or sets an order unique identifier. Used when order is not saved yet (payment gateways that do not redirect a customer to a third-party URL)
+        /// 获取或设置订单唯一标识符。 在订单尚未保存时使用（付款网关不将客户重定向到第三方网址）
         /// </summary>
         public Guid OrderGuid { get; set; }
 
         /// <summary>
-        /// Gets or sets an order total
+        /// 获取或设置订单总计
         /// </summary>
         public decimal OrderTotal { get; set; }
 
         /// <summary>
         /// /// <summary>
-        /// Gets or sets a payment method identifier
+        /// 获取或设置付款方式Id
         /// </summary>
         /// </summary>
         public string PaymentMethodSystemName { get; set; }
 
-        #region Payment method specific properties 
+        #region 付款方式具体属性 
 
         /// <summary>
-        /// Gets or sets a credit card type (Visa, Master Card, etc...). We leave it empty if not used by a payment gateway
+        /// 获取或设置信用卡类型（Visa，Master Card等...）。 如果没有被支付网关使用，我们将其留空
         /// </summary>
         public string CreditCardType { get; set; }
 
         /// <summary>
-        /// Gets or sets a credit card owner name
+        /// 获取或设置信用卡所有者名称
         /// </summary>
         public string CreditCardName { get; set; }
 
         /// <summary>
-        /// Gets or sets a credit card number
+        /// 获取或设置信用卡号码
         /// </summary>
         public string CreditCardNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets a credit card expire year
+        /// 获取或设置信用卡到期年份
         /// </summary>
         public int CreditCardExpireYear { get; set; }
 
         /// <summary>
-        /// Gets or sets a credit card expire month
+        /// 获取或设置信用卡到期月份
         /// </summary>
         public int CreditCardExpireMonth { get; set; }
 
         /// <summary>
-        /// Gets or sets a credit card CVV2 (Card Verification Value)
+        /// 获取或设置信用卡CVV2（卡验证值）
         /// </summary>
         public string CreditCardCvv2 { get; set; }
 
         #endregion
 
-        #region Recurring payments
+        #region 定期付款
 
         /// <summary>
-        /// Gets or sets an initial (parent) order identifier if order is recurring
+        /// 如果订单是重复的，则获取或设置初始（父）订单标识符
         /// </summary>
         public int InitialOrderId { get; set; }
         
@@ -101,7 +101,7 @@ namespace Nop.Services.Payments
         #endregion
 
         /// <summary>
-        /// You can store any custom value in this property
+        /// 客户字典，这个属性可以存储任意客户信息
         /// </summary>
         public Dictionary<string, object> CustomValues { get; set; }
     }

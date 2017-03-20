@@ -3,12 +3,12 @@ using Nop.Core.Domain.Orders;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Represents a PostProcessPaymentRequest
+    /// post处理付款请求
     /// </summary>
     public partial class PostProcessPaymentRequest
     {
         /// <summary>
-        /// Gets or sets an order. Used when order is already saved (payment gateways that redirect a customer to a third-party URL)
+        /// 获取或设置订单。 在订单已保存时使用（将客户重定向到第三方网址的付款网关）
         /// </summary>
         public Order Order { get; set; }
     }

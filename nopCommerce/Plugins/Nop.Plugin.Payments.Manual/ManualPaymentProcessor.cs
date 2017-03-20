@@ -279,7 +279,7 @@ namespace Nop.Plugin.Payments.Manual
         }
 
         /// <summary>
-        /// Gets a value indicating whether partial refund is supported
+        /// 是否支持部分退款
         /// </summary>
         public bool SupportPartiallyRefund
         {
@@ -290,7 +290,7 @@ namespace Nop.Plugin.Payments.Manual
         }
 
         /// <summary>
-        /// Gets a value indicating whether refund is supported
+        /// 是否支持退款
         /// </summary>
         public bool SupportRefund
         {
@@ -312,7 +312,7 @@ namespace Nop.Plugin.Payments.Manual
         }
 
         /// <summary>
-        /// Gets a recurring payment type of payment method
+        /// 获取定期付款方式的付款方式
         /// </summary>
         public RecurringPaymentType RecurringPaymentType
         {
@@ -323,7 +323,7 @@ namespace Nop.Plugin.Payments.Manual
         }
 
         /// <summary>
-        /// Gets a payment method type
+        ///获取付款方式类型
         /// </summary>
         public PaymentMethodType PaymentMethodType
         {
@@ -332,9 +332,9 @@ namespace Nop.Plugin.Payments.Manual
                 return PaymentMethodType.Standard;
             }
         }
-        
+
         /// <summary>
-        /// Gets a value indicating whether we should display a payment information page for this plugin
+        /// 指示是否要显示此插件的付款信息页面
         /// </summary>
         public bool SkipPaymentInfo
         {

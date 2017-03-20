@@ -3,7 +3,7 @@
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Represents a CancelRecurringPaymentResult
+    /// 取消定期付款请求
     /// </summary>
     public partial class CancelRecurringPaymentRequest
     {

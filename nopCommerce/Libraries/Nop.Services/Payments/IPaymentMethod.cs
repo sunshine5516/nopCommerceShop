@@ -7,50 +7,50 @@ using Nop.Core.Plugins;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Provides an interface for creating payment gateways & methods
+    /// 提供创建付款网关和方法的接口
     /// </summary>
     public partial interface IPaymentMethod : IPlugin
     {
         #region Methods
 
         /// <summary>
-        /// Process a payment
+        /// 处理付款
         /// </summary>
         /// <param name="processPaymentRequest">Payment info required for an order processing</param>
         /// <returns>Process payment result</returns>
         ProcessPaymentResult ProcessPayment(ProcessPaymentRequest processPaymentRequest);
-        
+
         /// <summary>
-        /// Post process payment (used by payment gateways that require redirecting to a third-party URL)
+        /// Post提交付款请求（由需要重定向到第三方网址的付款网关使用）
         /// </summary>
         /// <param name="postProcessPaymentRequest">Payment info required for an order processing</param>
         void PostProcessPayment(PostProcessPaymentRequest postProcessPaymentRequest);
 
         /// <summary>
-        /// Returns a value indicating whether payment method should be hidden during checkout
+        /// 在结帐期间是否应隐藏付款方式
         /// </summary>
         /// <param name="cart">Shoping cart</param>
         /// <returns>true - hide; false - display.</returns>
         bool HidePaymentMethod(IList<ShoppingCartItem> cart);
 
         /// <summary>
-        /// Gets additional handling fee
+        ///手续费
         /// </summary>
         /// <param name="cart">Shoping cart</param>
         /// <returns>Additional handling fee</returns>
         decimal GetAdditionalHandlingFee(IList<ShoppingCartItem> cart);
 
         /// <summary>
-        /// Captures payment
+        /// 获取付款结果
         /// </summary>
-        /// <param name="capturePaymentRequest">Capture payment request</param>
-        /// <returns>Capture payment result</returns>
+        /// <param name="capturePaymentRequest">付款请求</param>
+        /// <returns>付款结果</returns>
         CapturePaymentResult Capture(CapturePaymentRequest capturePaymentRequest);
 
         /// <summary>
-        /// Refunds a payment
+        /// 退款
         /// </summary>
-        /// <param name="refundPaymentRequest">Request</param>
+        /// <param name="refundPaymentRequest">退款请求</param>
         /// <returns>Result</returns>
         RefundPaymentResult Refund(RefundPaymentRequest refundPaymentRequest);
 
@@ -62,28 +62,28 @@ namespace Nop.Services.Payments
         VoidPaymentResult Void(VoidPaymentRequest voidPaymentRequest);
 
         /// <summary>
-        /// Process recurring payment
+        /// 处理定期付款
         /// </summary>
-        /// <param name="processPaymentRequest">Payment info required for an order processing</param>
-        /// <returns>Process payment result</returns>
+        /// <param name="processPaymentRequest">订单处理所需的付款信息</param>
+        /// <returns>处理结果</returns>
         ProcessPaymentResult ProcessRecurringPayment(ProcessPaymentRequest processPaymentRequest);
 
         /// <summary>
-        /// Cancels a recurring payment
+        /// 取消定期付款
         /// </summary>
         /// <param name="cancelPaymentRequest">Request</param>
         /// <returns>Result</returns>
         CancelRecurringPaymentResult CancelRecurringPayment(CancelRecurringPaymentRequest cancelPaymentRequest);
 
         /// <summary>
-        /// Gets a value indicating whether customers can complete a payment after order is placed but not completed (for redirection payment methods)
+        /// 客户在下订单但未完成后是否可以完成付款（用于重定向付款方式）
         /// </summary>
-        /// <param name="order">Order</param>
+        /// <param name="order">订单</param>
         /// <returns>Result</returns>
         bool CanRePostProcessPayment(Order order);
 
         /// <summary>
-        /// Gets a route for provider configuration
+        ///获取供应商配置的路由
         /// </summary>
         /// <param name="actionName">Action name</param>
         /// <param name="controllerName">Controller name</param>
@@ -91,7 +91,7 @@ namespace Nop.Services.Payments
         void GetConfigurationRoute(out string actionName, out string controllerName, out RouteValueDictionary routeValues);
 
         /// <summary>
-        /// Gets a route for payment info
+        /// 获取付款信息的路由
         /// </summary>
         /// <param name="actionName">Action name</param>
         /// <param name="controllerName">Controller name</param>
@@ -102,7 +102,7 @@ namespace Nop.Services.Payments
 
         #endregion
 
-        #region Properties
+        #region 属性
 
         /// <summary>
         /// Gets a value indicating whether capture is supported
@@ -110,12 +110,12 @@ namespace Nop.Services.Payments
         bool SupportCapture { get; }
 
         /// <summary>
-        /// Gets a value indicating whether partial refund is supported
+        /// 是否支持部分退款
         /// </summary>
         bool SupportPartiallyRefund { get; }
 
         /// <summary>
-        /// Gets a value indicating whether refund is supported
+        /// 是否支持退款
         /// </summary>
         bool SupportRefund { get; }
 
@@ -125,17 +125,17 @@ namespace Nop.Services.Payments
         bool SupportVoid { get; }
 
         /// <summary>
-        /// Gets a recurring payment type of payment method
+        /// 获取定期付款方式的付款方式
         /// </summary>
         RecurringPaymentType RecurringPaymentType { get; }
-        
+
         /// <summary>
-        /// Gets a payment method type
+        ///获取付款方式类型
         /// </summary>
         PaymentMethodType PaymentMethodType { get; }
 
         /// <summary>
-        /// Gets a value indicating whether we should display a payment information page for this plugin
+        /// 指示是否要显示此插件的付款信息页面
         /// </summary>
         bool SkipPaymentInfo { get; }
 

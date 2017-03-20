@@ -5,7 +5,7 @@ using Nop.Core.Domain.Payments;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Process payment result
+    /// 处理付款结果
     /// </summary>
     public partial class ProcessPaymentResult
     {
@@ -20,7 +20,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a value indicating whether request has been completed successfully
+        /// 请求是否已成功完成
         /// </summary>
         public bool Success
         {
@@ -28,7 +28,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Add error
+        /// 添加错误
         /// </summary>
         /// <param name="error">Error</param>
         public void AddError(string error)
@@ -37,7 +37,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Errors
+        /// 错误列表
         /// </summary>
         public IList<string> Errors { get; set; }
 
@@ -48,27 +48,27 @@ namespace Nop.Services.Payments
         public string AvsResult { get; set; }
 
         /// <summary>
-        /// Gets or sets the authorization transaction identifier
+        /// 
         /// </summary>
         public string AuthorizationTransactionId { get; set; }
 
         /// <summary>
-        /// Gets or sets the authorization transaction code
+        /// 获取或设置授权事务代码
         /// </summary>
         public string AuthorizationTransactionCode { get; set; }
 
         /// <summary>
-        /// Gets or sets the authorization transaction result
+        /// 获取或设置授权交易结果
         /// </summary>
         public string AuthorizationTransactionResult { get; set; }
 
         /// <summary>
-        /// Gets or sets the capture transaction identifier
+        /// 获取或设置捕获事务标识符
         /// </summary>
         public string CaptureTransactionId { get; set; }
 
         /// <summary>
-        /// Gets or sets the capture transaction result
+        /// 结果
         /// </summary>
         public string CaptureTransactionResult { get; set; }
 

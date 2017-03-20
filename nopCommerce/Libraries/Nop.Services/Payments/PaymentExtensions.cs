@@ -12,14 +12,14 @@ using Nop.Services.Orders;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Payment extensions
+    /// Payment扩展方法
     /// </summary>
     public static class PaymentExtensions
     {
         /// <summary>
-        /// Is payment method active?
+        /// 付款方式是否已启用
         /// </summary>
-        /// <param name="paymentMethod">Payment method</param>
+        /// <param name="paymentMethod">付款方式</param>
         /// <param name="paymentSettings">Payment settings</param>
         /// <returns>Result</returns>
         public static bool IsPaymentMethodActive(this IPaymentMethod paymentMethod,
@@ -40,13 +40,13 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Calculate payment method fee
+        /// 计算付款方式费用
         /// </summary>
-        /// <param name="paymentMethod">Payment method</param>
+        /// <param name="paymentMethod">付款方式</param>
         /// <param name="orderTotalCalculationService">Order total calculation service</param>
-        /// <param name="cart">Shopping cart</param>
-        /// <param name="fee">Fee value</param>
-        /// <param name="usePercentage">Is fee amount specified as percentage or fixed value?</param>
+        /// <param name="cart">购物车</param>
+        /// <param name="fee">费用</param>
+        /// <param name="usePercentage">费用金额指定为百分比或固定值?</param>
         /// <returns>Result</returns>
         public static decimal CalculateAdditionalFee(this IPaymentMethod paymentMethod, 
             IOrderTotalCalculationService orderTotalCalculationService, IList<ShoppingCartItem> cart,
@@ -144,7 +144,7 @@ namespace Nop.Services.Payments
             }
         }
         /// <summary>
-        /// Dictonary serializer
+        /// 字典序列化
         /// </summary>
         public class DictionarySerializer : IXmlSerializable
         {
