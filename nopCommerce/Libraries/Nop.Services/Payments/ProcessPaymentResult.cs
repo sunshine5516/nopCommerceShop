@@ -73,17 +73,17 @@ namespace Nop.Services.Payments
         public string CaptureTransactionResult { get; set; }
 
         /// <summary>
-        /// Gets or sets the subscription transaction identifier
+        /// 获取或设置预订事务标识符
         /// </summary>
         public string SubscriptionTransactionId { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets a value indicating whether storing of credit card number, CVV2 is allowed
+        /// 是否允许存储信用卡号，CVV2
         /// </summary>
         public bool AllowStoringCreditCardNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets a payment status after processing
+        /// 处理后的付款状态
         /// </summary>
         public PaymentStatus NewPaymentStatus
         {

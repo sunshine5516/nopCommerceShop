@@ -1,20 +1,20 @@
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Represents a recurring payment type
+    /// 定期付款类型
     /// </summary>
     public enum RecurringPaymentType
     {
         /// <summary>
-        /// Not supported
+        /// 不支持
         /// </summary>
         NotSupported = 0,
         /// <summary>
-        /// Manual
+        /// 手选
         /// </summary>
         Manual = 10,
         /// <summary>
-        /// Automatic (payment is processed on payment gateway site)
+        /// 自动（在支付网关站点处理付款）
         /// </summary>
         Automatic = 20
     }

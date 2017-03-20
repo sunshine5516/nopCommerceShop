@@ -11,17 +11,17 @@ namespace Nop.Core.Domain.Payments
         }
 
         /// <summary>
-        /// Gets or sets a system names of active payment methods
+        /// 活动付款方式的系统名称
         /// </summary>
         public List<string> ActivePaymentMethodSystemNames { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether customers are allowed to repost (complete) payments for redirection payment methods
+        /// 客户是否允许重定向付款方式的付款（完成）
         /// </summary>
         public bool AllowRePostingPayments { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether we should bypass 'select payment method' page if we have only one payment method
+        /// 如果我们只有一种付款方式，是否应绕过“选择付款方式”页
         /// </summary>
         public bool BypassPaymentMethodSelectionIfOnlyOne { get; set; }
     }

@@ -5,7 +5,7 @@ using Nop.Core.Domain.Payments;
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Refund payment result
+    /// 退款结果
     /// </summary>
     public partial class RefundPaymentResult
     {
@@ -20,7 +20,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Gets a value indicating whether request has been completed successfully
+        /// 请求是否已成功完成
         /// </summary>
         public bool Success
         {
@@ -28,7 +28,7 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Add error
+        /// 添加错误信息
         /// </summary>
         /// <param name="error">Error</param>
         public void AddError(string error) 
@@ -37,12 +37,12 @@ namespace Nop.Services.Payments
         }
 
         /// <summary>
-        /// Errors
+        /// 错误列表
         /// </summary>
         public IList<string> Errors { get; set; }
 
         /// <summary>
-        /// Gets or sets a payment status after processing
+        /// 处理后的支付状态
         /// </summary>
         public PaymentStatus NewPaymentStatus
         {

@@ -13,7 +13,7 @@ using Nop.Core.Domain.Tax;
 namespace Nop.Core.Domain.Orders
 {
     /// <summary>
-    /// Represents an order
+    /// ¶©µ¥
     /// </summary>
     public partial class Order : BaseEntity
     {

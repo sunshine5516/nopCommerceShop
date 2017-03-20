@@ -3,22 +3,22 @@
 namespace Nop.Services.Payments
 {
     /// <summary>
-    /// Represents a RefundPaymentResult
+    ///退款结果
     /// </summary>
     public partial class RefundPaymentRequest
     {
         /// <summary>
-        /// Gets or sets an order
+        /// 订单
         /// </summary>
         public Order Order { get; set; }
 
         /// <summary>
-        /// Gets or sets an amount
+        /// 退款金额
         /// </summary>
         public decimal AmountToRefund { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether it's a partial refund; otherwize, full refund
+        ///是否为部分退款; 
         /// </summary>
         public bool IsPartialRefund { get; set; }
     }

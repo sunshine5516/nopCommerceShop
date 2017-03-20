@@ -8,7 +8,7 @@ namespace Nop.Services.Payments
     public partial class VoidPaymentRequest
     {
         /// <summary>
-        /// Gets or sets an order
+        /// 订单
         /// </summary>
         public Order Order { get; set; }
     }
