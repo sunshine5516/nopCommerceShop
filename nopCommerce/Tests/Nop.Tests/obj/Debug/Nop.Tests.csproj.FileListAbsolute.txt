@@ -41,3 +41,12 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Tests\Nop.Tests\bin\Debu
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\Nop.Tests.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\Nop.Tests.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\nunit.framework.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\Rhino.Mocks.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\nunit.framework.xml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\bin\Debug\Rhino.Mocks.xml
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.csprojResolveAssemblyReference.cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.dll
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Tests\obj\Debug\Nop.Tests.pdb

@@ -6,7 +6,7 @@ using Nop.Core.Infrastructure;
 namespace Nop.Web.Framework
 {
     /// <summary>
-    /// Represents a RemotePost helper class
+    /// RemotePost帮助类
     /// </summary>
     public partial class RemotePost
     {
@@ -15,27 +15,27 @@ namespace Nop.Web.Framework
         private readonly NameValueCollection _inputValues;
 
         /// <summary>
-        /// Gets or sets a remote URL
+        /// URL
         /// </summary>
         public string Url { get; set; }
 
         /// <summary>
-        /// Gets or sets a method
+        /// 方法（post，get）
         /// </summary>
         public string Method { get; set; }
 
         /// <summary>
-        /// Gets or sets a form name
+        /// 获取或设置表单名称
         /// </summary>
         public string FormName { get; set; }
 
         /// <summary>
-        /// Gets or sets a form character-sets the server can handle for form-data.
+        /// 编码字符串
         /// </summary>
         public string AcceptCharset { get; set; }
 
         /// <summary>
-        /// A value indicating whether we should create a new "input" HTML element for each value (in case if there are more than one) for the same "name" attributes.
+        /// 是否应为相同的“名称”属性为每个值（如果有多个）创建一个新的“输入”HTML元素。
         /// </summary>
         public bool NewInputForEachValue { get; set; }
 
@@ -48,7 +48,7 @@ namespace Nop.Web.Framework
         }
 
         /// <summary>
-        /// Creates a new instance of the RemotePost class
+        /// 构造函数
         /// </summary>
         public RemotePost()
             : this(EngineContext.Current.Resolve<HttpContextBase>(), EngineContext.Current.Resolve<IWebHelper>())
@@ -56,7 +56,7 @@ namespace Nop.Web.Framework
         }
 
         /// <summary>
-        /// Creates a new instance of the RemotePost class
+        ///构造函数
         /// </summary>
         /// <param name="httpContext">HTTP Context</param>
         /// <param name="webHelper">Web helper</param>
@@ -72,17 +72,17 @@ namespace Nop.Web.Framework
         }
 
         /// <summary>
-        /// Adds the specified key and value to the dictionary (to be posted).
+        /// 添加键值对
         /// </summary>
-        /// <param name="name">The key of the element to add</param>
-        /// <param name="value">The value of the element to add.</param>
+        /// <param name="name">key</param>
+        /// <param name="value">value</param>
         public void Add(string name, string value)
         {
             _inputValues.Add(name, value);
         }
         
         /// <summary>
-        /// Post
+        /// Post提交
         /// </summary>
         public void Post()
         {
@@ -121,7 +121,6 @@ namespace Nop.Web.Framework
             _httpContext.Response.Write("</form>");
             _httpContext.Response.Write("</body></html>");
             _httpContext.Response.End();
-            //store a value indicating whether POST has been done
             _webHelper.IsPostBeingDone = true;
         }
     }
