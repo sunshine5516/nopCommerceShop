@@ -82,3 +82,16 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\n
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.pdb
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Views\ShippingByWeight\Configure.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Views\ShippingByWeight\EditPopup.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Views\ShippingByWeight\_CreateOrUpdate.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Views\ShippingByWeight\AddPopup.cshtml
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\web.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Description.txt
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\logo.jpg
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Nop.Plugin.Shipping.ByWeight.dll.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Nop.Plugin.Shipping.ByWeight.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.ByWeight\Nop.Plugin.Shipping.ByWeight.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.csproj.App.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.ByWeight\obj\Debug\Nop.Plugin.Shipping.ByWeight.pdb

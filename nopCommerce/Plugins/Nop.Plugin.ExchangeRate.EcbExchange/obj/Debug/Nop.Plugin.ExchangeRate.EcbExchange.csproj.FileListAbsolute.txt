@@ -52,3 +52,12 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\n
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.csprojResolveAssemblyReference.cache
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Description.txt
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\logo.jpg
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.dll.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.pdb
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.csproj.App.config
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.dll
+E:\Code\nopCommerce\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.ExchangeRate.EcbExchange\obj\Debug\Nop.Plugin.ExchangeRate.EcbExchange.pdb
