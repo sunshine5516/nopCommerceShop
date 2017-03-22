@@ -18,15 +18,14 @@ namespace Nop.Plugin.Payments.CheckMoneyOrder.Controllers
         private readonly ISettingService _settingService;
         private readonly ILocalizationService _localizationService;
         private readonly ILanguageService _languageService;
-        private readonly CheckMoneyOrderPaymentSettings _setting;
+        //private readonly CheckMoneyOrderPaymentSettings _setting;
 
         public PaymentCheckMoneyOrderController(IWorkContext workContext,
             IStoreService storeService,
             ISettingService settingService,
             IStoreContext storeContext,
             ILocalizationService localizationService,
-            ILanguageService languageService,
-            CheckMoneyOrderPaymentSettings setting)
+            ILanguageService languageService)
         {
             this._workContext = workContext;
             this._storeService = storeService;
@@ -34,7 +33,7 @@ namespace Nop.Plugin.Payments.CheckMoneyOrder.Controllers
             this._storeContext = storeContext;
             this._localizationService = localizationService;
             this._languageService = languageService;
-            this._setting = setting;
+            //this._setting = setting;
         }
         
         [AdminAuthorize]

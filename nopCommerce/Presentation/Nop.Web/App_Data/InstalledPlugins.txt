@@ -4,10 +4,6 @@ DiscountRequirement.HasOneProduct
 DiscountRequirement.MustBeAssignedToCustomerRole
 CurrencyExchange.ECB
 ExternalAuth.Facebook
-Payments.Manual
-Payments.PayPalDirect
-Payments.PayPalStandard
-Payments.PurchaseOrder
 Pickup.PickupInStore
 PromotionFeed.Froogle
 Shipping.AustraliaPost
@@ -22,5 +18,6 @@ Tax.CountryStateZip
 Widgets.GoogleAnalytics
 Widgets.HelloWorld2
 Widgets.NivoSlider
-Payments.CheckMoneyOrder
 Payments.Alipay
+Payments.CheckMoneyOrder
+Payments.PayPalDirect

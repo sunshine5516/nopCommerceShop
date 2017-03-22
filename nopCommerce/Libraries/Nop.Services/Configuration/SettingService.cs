@@ -347,7 +347,7 @@ namespace Nop.Services.Configuration
         }
 
         /// <summary>
-        /// Load settings
+        /// 加载 settings信息
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
         /// <param name="storeId">Store identifier for which settigns should be loaded</param>
@@ -383,10 +383,10 @@ namespace Nop.Services.Configuration
         }
 
         /// <summary>
-        /// Save settings object
+        /// 保存Setting信息
         /// </summary>
-        /// <typeparam name="T">Type</typeparam>
-        /// <param name="storeId">Store identifier</param>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="storeId">storeId</param>
         /// <param name="settings">Setting instance</param>
         public virtual void SaveSetting<T>(T settings, int storeId = 0) where T : ISettings, new()
         {
