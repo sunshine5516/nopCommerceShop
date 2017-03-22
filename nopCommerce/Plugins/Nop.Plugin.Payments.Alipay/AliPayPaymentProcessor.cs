@@ -356,9 +356,6 @@ namespace Nop.Plugin.Payments.Alipay
         }
         #endregion
         #region 网站验证
-
-
-
         /// <summary>
         /// 验证消息是否是支付宝发出的和发消息
         /// </summary>
