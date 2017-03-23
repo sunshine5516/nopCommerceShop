@@ -6,4 +6,4 @@ SupportedVersions: 3.80
 Author: Jayson
 DisplayOrder: 1
 FileName: Nop.Plugin.Payments.Alipay.dll
-Description: Alipay
+Description: Alipay支付宝支付
