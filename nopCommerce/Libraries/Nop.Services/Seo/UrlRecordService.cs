@@ -90,7 +90,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Gets all cached URL records
+        /// 获取所有路有缓存信息
         /// </summary>
         /// <returns>cached URL records</returns>
         protected virtual IList<UrlRecordForCaching> GetAllUrlRecordsCached()
@@ -236,7 +236,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Find URL record (cached version).
+        /// 查找URL记录（缓存版）
         /// This method works absolutely the same way as "GetBySlug" one but caches the results.
         /// Hence, it's used only for performance optimization in public store
         /// </summary>
@@ -249,7 +249,7 @@ namespace Nop.Services.Seo
 
             if (_localizationSettings.LoadAllUrlRecordsOnStartup)
             {
-                //load all records (we know they are cached)
+                //加载缓存记录
                 var source = GetAllUrlRecordsCached();
                 var query = from ur in source
                             where ur.Slug.Equals(slug, StringComparison.InvariantCultureIgnoreCase)
@@ -264,7 +264,7 @@ namespace Nop.Services.Seo
             string key = string.Format(URLRECORD_BY_SLUG_KEY, slug);
             return _cacheManager.Get(key, () =>
             {
-                var urlRecord = GetBySlug(slug);
+                var urlRecord = GetBySlug(slug);//数据库读取
                 if (urlRecord == null)
                     return null;
 

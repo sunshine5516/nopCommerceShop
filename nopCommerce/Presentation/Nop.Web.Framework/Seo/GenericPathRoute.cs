@@ -11,7 +11,7 @@ using Nop.Web.Framework.Localization;
 namespace Nop.Web.Framework.Seo
 {
     /// <summary>
-    /// Provides properties and methods for defining a SEO friendly route, and for getting information about the route.
+    /// 提供定义SEO友好路由的属性和方法，以及获取有关路由的信息。
     /// </summary>
     public partial class GenericPathRoute : LocalizedRoute
     {
@@ -81,9 +81,9 @@ namespace Nop.Web.Framework.Seo
             if (data != null && DataSettingsHelper.DatabaseIsInstalled())
             {
                 var urlRecordService = EngineContext.Current.Resolve<IUrlRecordService>();
-                var slug = data.Values["generic_se_name"] as string;
-                //performance optimization.
-                //we load a cached verion here. it reduces number of SQL requests for each page load
+                var slug = data.Values["generic_se_name"] as string;//获取标识值
+                //性能优化
+                //从缓存中取数据，减少加载页面的sql请求数
                 var urlRecord = urlRecordService.GetBySlugCached(slug);
                 //comment the line above and uncomment the line below in order to disable this performance "workaround"
                 //var urlRecord = urlRecordService.GetBySlug(slug);

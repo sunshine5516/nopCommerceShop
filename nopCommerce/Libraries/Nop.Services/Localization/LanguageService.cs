@@ -112,10 +112,10 @@ namespace Nop.Services.Localization
         }
 
         /// <summary>
-        /// Gets all languages
+        /// 获取所有语言
         /// </summary>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
-        /// <param name="showHidden">A value indicating whether to show hidden records</param>
+        /// <param name="storeId">StoreId; 0加载所有</param>
+        /// <param name="showHidden">是否加载隐藏的记录</param>
         /// <returns>Languages</returns>
         public virtual IList<Language> GetAllLanguages(bool showHidden = false, int storeId = 0)
         {
