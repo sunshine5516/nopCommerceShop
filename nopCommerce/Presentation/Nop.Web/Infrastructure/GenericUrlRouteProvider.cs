@@ -6,13 +6,13 @@ using Nop.Web.Framework.Seo;
 namespace Nop.Web.Infrastructure
 {
     /// <summary>
-    /// 插件的路由
+    /// 注册路由事件，注册一些友好路由
     /// </summary>
     public partial class GenericUrlRouteProvider : IRouteProvider
     {
         public void RegisterRoutes(RouteCollection routes)
         {
-            //generic URLs
+            //调用MapGenericPathRoute扩展路由方法，自定义路由
             routes.MapGenericPathRoute("GenericUrl",
                                        "{generic_se_name}",
                                        new {controller = "Common", action = "GenericUrl"},
