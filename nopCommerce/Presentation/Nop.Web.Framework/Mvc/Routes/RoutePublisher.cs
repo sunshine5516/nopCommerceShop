@@ -51,7 +51,7 @@ namespace Nop.Web.Framework.Mvc.Routes
         /// <param name="routes">Routes</param>
         public virtual void RegisterRoutes(RouteCollection routes)
         {
-            //通过typeFinder找出所有（包括插件）实现了接口IRouteProvider相关的类型
+            //通过typeFinder找出所有（包括插件）实现了路由接口IRouteProvider相关的类型
             var routeProviderTypes = typeFinder.FindClassesOfType<IRouteProvider>();
             var routeProviders = new List<IRouteProvider>();
             foreach (var providerType in routeProviderTypes)

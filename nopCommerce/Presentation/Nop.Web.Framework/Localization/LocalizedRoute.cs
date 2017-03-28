@@ -7,7 +7,7 @@ using Nop.Core.Infrastructure;
 namespace Nop.Web.Framework.Localization
 {
     /// <summary>
-    ///路由本地化
+    /// 重写路由
     /// </summary>
     public class LocalizedRoute : Route
     {
@@ -71,7 +71,7 @@ namespace Nop.Web.Framework.Localization
         #region 方法
 
         /// <summary>
-        /// Returns information about the requested route.
+        /// 入站URL进行匹配的工作机制，重写路由请求方法，返回请求路由信息
         /// </summary>
         /// <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
         /// <returns>
@@ -106,7 +106,7 @@ namespace Nop.Web.Framework.Localization
         }
 
         /// <summary>
-        /// 返回与路由相关联的网址的相关信息。
+        /// 出站URL生成的工作机制， 返回与路由相关联的网址的相关信息。
         /// </summary>
         /// <param name="requestContext">封装有关所请求路由的信息的对象.</param>
         /// <param name="values">包含路由参数的对象.</param>

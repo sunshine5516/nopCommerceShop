@@ -31,6 +31,7 @@
         liClass += " last";
     }
     <li class="@liClass">
+        @*@Html.RouteLink("Category",new { SeName = category.SeName, categoryid=categoryid })*@
         <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name
             @if (category.NumberOfProducts.HasValue)
             {

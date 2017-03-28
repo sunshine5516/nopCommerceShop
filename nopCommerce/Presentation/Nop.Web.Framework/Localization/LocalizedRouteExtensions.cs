@@ -6,7 +6,7 @@ namespace Nop.Web.Framework.Localization
 {
     public static class LocalizedRouteExtensions
     {
-        //Override for localized route
+        //路由扩展方法
         public static Route MapLocalizedRoute(this RouteCollection routes, string name, string url)
         {
             return MapLocalizedRoute(routes, name, url, null /* defaults */, (object)null /* constraints */);
@@ -23,6 +23,15 @@ namespace Nop.Web.Framework.Localization
         {
             return MapLocalizedRoute(routes, name, url, null /* defaults */, null /* constraints */, namespaces);
         }
+        /// <summary>
+        /// 匹配本地路由
+        /// </summary>
+        /// <param name="routes"></param>
+        /// <param name="name"></param>
+        /// <param name="url"></param>
+        /// <param name="defaults"></param>
+        /// <param name="namespaces"></param>
+        /// <returns></returns>
         public static Route MapLocalizedRoute(this RouteCollection routes, string name, string url, object defaults, string[] namespaces)
         {
             return MapLocalizedRoute(routes, name, url, defaults, null /* constraints */, namespaces);
