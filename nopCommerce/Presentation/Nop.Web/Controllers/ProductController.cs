@@ -43,7 +43,7 @@ namespace Nop.Web.Controllers
 {
     public partial class ProductController : BasePublicController
     {
-        #region Fields
+        #region 声明实例
 
         private readonly ICategoryService _categoryService;
         private readonly IManufacturerService _manufacturerService;
@@ -88,7 +88,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Constructors
+        #region 构造函数
 
         public ProductController(ICategoryService categoryService,
             IManufacturerService manufacturerService,
@@ -934,7 +934,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Product details page
+        #region 商品详细信息界面
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult ProductDetails(int productId, int updatecartitemid = 0)
@@ -1094,7 +1094,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Recently viewed products
+        #region 近期浏览的商品
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult RecentlyViewedProducts()
@@ -1139,7 +1139,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region New (recently added) products page
+        #region 最近添加的商品
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult NewProducts()
@@ -1202,7 +1202,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Home page bestsellers and products
+        #region 首页畅销商品和产品
 
         [ChildActionOnly]
         public ActionResult HomepageBestSellers(int? productThumbPictureSize)
@@ -1251,7 +1251,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Product reviews
+        #region 产品评论
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult ProductReviews(int productId)
@@ -1478,7 +1478,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Email a friend
+        #region 发送电子邮件给朋友
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult ProductEmailAFriend(int productId)
@@ -1546,7 +1546,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Comparing products
+        #region 比较产品
 
         [HttpPost]
         public ActionResult AddProductToCompareList(int productId)

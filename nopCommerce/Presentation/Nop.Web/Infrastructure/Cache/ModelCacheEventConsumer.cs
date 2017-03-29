@@ -415,7 +415,7 @@ namespace Nop.Web.Infrastructure.Cache
         public const string TOPIC_PATTERN_KEY = "Nop.pres.topic";
 
         /// <summary>
-        /// Key for CategoryTemplate caching
+        /// 属性模板缓存的Key
         /// </summary>
         /// <remarks>
         /// {0} : category template id
@@ -433,7 +433,7 @@ namespace Nop.Web.Infrastructure.Cache
         public const string MANUFACTURER_TEMPLATE_PATTERN_KEY = "Nop.pres.manufacturertemplate";
 
         /// <summary>
-        /// Key for ProductTemplate caching
+        /// 商品模板缓存的Key
         /// </summary>
         /// <remarks>
         /// {0} : product template id
