@@ -414,7 +414,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Categories
+        #region 导航属性
         
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult Category(int categoryId, CatalogPagingFilteringModel command)
@@ -668,7 +668,10 @@ namespace Nop.Web.Controllers
 
             return PartialView(model);
         }
-
+        /// <summary>
+        /// d
+        /// </summary>
+        /// <returns></returns>
         [ChildActionOnly]
         public ActionResult TopMenu()
         {
@@ -752,7 +755,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Manufacturers
+        #region 制造商
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult Manufacturer(int manufacturerId, CatalogPagingFilteringModel command)
@@ -966,7 +969,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Vendors
+        #region 供应商
 
         [NopHttpsRequirement(SslRequirement.No)]
         public ActionResult Vendor(int vendorId, CatalogPagingFilteringModel command)
@@ -1107,8 +1110,8 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Product tags
-        
+        #region 产品标签
+
         [ChildActionOnly]
         public ActionResult PopularProductTags()
         {
@@ -1218,7 +1221,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Searching
+        #region 搜索商品
 
         [NopHttpsRequirement(SslRequirement.No)]
         [ValidateInput(false)]

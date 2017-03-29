@@ -2,7 +2,7 @@
 @{
     Layout = "~/Views/Shared/_ColumnsTwo.cshtml";
 
-    //title
+    //商品属性布局页（网格或列表布局）
     Html.AddTitleParts(!String.IsNullOrEmpty(Model.MetaTitle) ? Model.MetaTitle : Model.Name);
     //meta
     Html.AddMetaDescriptionParts(Model.MetaDescription);

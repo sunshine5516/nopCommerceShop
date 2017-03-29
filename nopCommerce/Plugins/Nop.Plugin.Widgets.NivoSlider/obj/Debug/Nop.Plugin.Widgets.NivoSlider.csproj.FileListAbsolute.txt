@@ -212,7 +212,6 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\n
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csproj.App.config
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.pdb
-F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\sample-images\banner1.jpg
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\sample-images\banner2.jpg
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Content\nivoslider\themes\custom\arrows.png
@@ -249,3 +248,4 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Widge
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csprojResolveAssemblyReference.cache

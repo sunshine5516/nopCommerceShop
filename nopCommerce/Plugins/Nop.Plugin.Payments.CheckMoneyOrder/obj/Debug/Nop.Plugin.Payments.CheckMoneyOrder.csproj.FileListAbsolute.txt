@@ -68,7 +68,6 @@ F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\n
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.csproj.App.config
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.dll
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.pdb
-F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentCheckMoneyOrder\Configure.cshtml
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentCheckMoneyOrder\PaymentInfo.cshtml
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\web.config
@@ -81,3 +80,4 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payme
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\Nop.Plugin.Payments.CheckMoneyOrder.csprojResolveAssemblyReference.cache

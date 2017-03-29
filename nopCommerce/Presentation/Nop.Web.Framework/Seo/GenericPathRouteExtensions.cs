@@ -37,7 +37,7 @@ namespace Nop.Web.Framework.Seo
             {
                 throw new ArgumentNullException("url");
             }
-
+            ///路由重写
             var route = new GenericPathRoute(url, new MvcRouteHandler())
             {
                 Defaults = new RouteValueDictionary(defaults),
