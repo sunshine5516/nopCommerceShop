@@ -92,7 +92,7 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Deletes an email account
+        /// 删除账号
         /// </summary>
         /// <param name="emailAccount">Email account</param>
         public virtual void DeleteEmailAccount(EmailAccount emailAccount)
@@ -110,7 +110,7 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Gets an email account by identifier
+        /// 根据ID获取账号
         /// </summary>
         /// <param name="emailAccountId">The email account identifier</param>
         /// <returns>Email account</returns>
@@ -123,7 +123,7 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Gets all email accounts
+        /// 获取所有电子邮件账号
         /// </summary>
         /// <returns>Email accounts list</returns>
         public virtual IList<EmailAccount> GetAllEmailAccounts()
@@ -134,5 +134,54 @@ namespace Nop.Services.Messages
             var emailAccounts = query.ToList();
             return emailAccounts;
         }
+
+        public virtual IList<EmailAccount> GetEmailAccountsByIds(int[] emailAccountIds)
+        {
+            if (emailAccountIds == null || emailAccountIds.Length == 0)
+                return new List<EmailAccount>();
+            var query = from e in _emailAccountRepository.Table
+                        where emailAccountIds.Contains(e.Id)
+                        select e;
+            var emails = query.ToList();
+            var sortEmails = new List<EmailAccount>();
+            foreach (int id in emailAccountIds)
+            {
+                var emailAccount = emails.Find(x => x.Id == id);
+                if (emailAccount != null)
+                {
+                    sortEmails.Add(emailAccount);
+                }
+            }
+            return sortEmails;
+        }
+        /// <summary>
+        /// 批量删除
+        /// </summary>
+        /// <param name="emailAccounts"></param>
+        public virtual void DeleteEmailAccounts(IList<EmailAccount> emailAccounts)
+        {
+            if (emailAccounts == null)
+            {
+                throw new ArgumentNullException("emailAccounts");
+            }
+            _emailAccountRepository.Delete(emailAccounts);
+            foreach (var account in emailAccounts)
+            {
+                //event notification
+                _eventPublisher.EntityDeleted(account);
+            }
+            //throw new NotImplementedException();
+        }
+        //public virtual void UpdateProducts(IList<EmailAccount> emailAccounts)
+        //{
+        //    if (emailAccounts == null)
+        //        throw new ArgumentNullException("emailAccounts");
+        //    _emailAccountRepository.Update(emailAccounts);
+        //    //event notification
+        //    foreach (var account in emailAccounts)
+        //    {
+        //        _eventPublisher.EntityUpdated(account);
+        //    }
+        //}
     }
 }

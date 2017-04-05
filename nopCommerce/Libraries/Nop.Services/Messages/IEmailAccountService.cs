@@ -6,32 +6,42 @@ namespace Nop.Services.Messages
     public partial interface IEmailAccountService
     {
         /// <summary>
-        /// Inserts an email account
+        /// 添加
         /// </summary>
         /// <param name="emailAccount">Email account</param>
         void InsertEmailAccount(EmailAccount emailAccount);
 
         /// <summary>
-        /// Updates an email account
+        /// 更新电子邮件
         /// </summary>
         /// <param name="emailAccount">Email account</param>
         void UpdateEmailAccount(EmailAccount emailAccount);
 
         /// <summary>
-        /// Deletes an email account
+        /// 删除电子邮件
         /// </summary>
         /// <param name="emailAccount">Email account</param>
         void DeleteEmailAccount(EmailAccount emailAccount);
+        /// <summary>
+        /// 批量删除电子邮件账号
+        /// </summary>
+        /// <param name="products">Products</param>
+        void DeleteEmailAccounts(IList<EmailAccount> emailAccounts);
 
         /// <summary>
-        /// Gets an email account by identifier
+        /// 根据id获取电子邮件
         /// </summary>
         /// <param name="emailAccountId">The email account identifier</param>
         /// <returns>Email account</returns>
         EmailAccount GetEmailAccountById(int emailAccountId);
-
         /// <summary>
-        /// Gets all email accounts
+        /// 根据获取所有的商品
+        /// </summary>
+        /// <param name="emailAccountIds"></param>
+        /// <returns></returns>
+        IList<EmailAccount> GetEmailAccountsByIds(int[] emailAccountIds);
+        /// <summary>
+        /// 获取所有电子邮件账号
         /// </summary>
         /// <returns>Email accounts list</returns>
         IList<EmailAccount> GetAllEmailAccounts();

@@ -11,6 +11,7 @@ using Nop.Services.Messages;
 using Nop.Services.Security;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Kendoui;
+using System.Collections.Generic;
 
 namespace Nop.Admin.Controllers
 {
@@ -181,6 +182,7 @@ namespace Nop.Admin.Controllers
                 return AccessDeniedView();
 
             var emailAccount = _emailAccountService.GetEmailAccountById(model.Id);
+            //emailAccount.Password = "55165736shine";
             if (emailAccount == null)
                 //No email account found with the specified id
                 return RedirectToAction("List");
@@ -235,5 +237,18 @@ namespace Nop.Admin.Controllers
 	            return RedirectToAction("Edit", new {id = emailAccount.Id});
 	        }
 	    }
-	}
+        [HttpPost]
+        public ActionResult DeleteSelected(ICollection<int> selectedIds)
+        {
+            if (!_permissionService.Authorize(StandardPermissionProvider.ManageEmailAccounts))
+                return AccessDeniedView();
+            if (selectedIds != null)
+            {
+                _emailAccountService.DeleteEmailAccounts(_emailAccountService.GetEmailAccountsByIds(selectedIds.ToArray()));
+                //_emailAccountService.DeleteEmailAccounts(_emailAccountService.GetEmailAccountById(selectedIds.ToArray()).Where(p => _workContext.CurrentVendor == null || p.VendorId == _workContext.CurrentVendor.Id).ToList());
+            }
+            return Json(new { Result = true });
+        }
+
+    }
 }
