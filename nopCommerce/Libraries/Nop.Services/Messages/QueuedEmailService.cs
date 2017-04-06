@@ -40,7 +40,7 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Inserts a queued email
+        /// 插入电子邮件队列
         /// </summary>
         /// <param name="queuedEmail">Queued email</param>        
         public virtual void InsertQueuedEmail(QueuedEmail queuedEmail)
@@ -142,16 +142,16 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Gets all queued emails
+        /// 获取所有的消息队列数据
         /// </summary>
         /// <param name="fromEmail">From Email</param>
         /// <param name="toEmail">To Email</param>
-        /// <param name="createdFromUtc">Created date from (UTC); null to load all records</param>
-        /// <param name="createdToUtc">Created date to (UTC); null to load all records</param>
-        /// <param name="loadNotSentItemsOnly">A value indicating whether to load only not sent emails</param>
+        /// <param name="createdFromUtc">Created date from (UTC); null加载所有</param>
+        /// <param name="createdToUtc">Created date to (UTC); null加载所有</param>
+        /// <param name="loadNotSentItemsOnly"> </param>
         /// <param name="loadOnlyItemsToBeSent">A value indicating whether to load only emails for ready to be sent</param>
-        /// <param name="maxSendTries">Maximum send tries</param>
-        /// <param name="loadNewest">A value indicating whether we should sort queued email descending; otherwise, ascending.</param>
+        /// <param name="maxSendTries">最大尝试次数</param>
+        /// <param name="loadNewest">是否降序排序;</param>
         /// <param name="pageIndex">Page index</param>
         /// <param name="pageSize">Page size</param>
         /// <returns>Email item list</returns>

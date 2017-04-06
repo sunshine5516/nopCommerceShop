@@ -252,6 +252,7 @@
     <Compile Include="Logging\ClearLogTask.cs" />
     <Compile Include="Media\AzurePictureService.cs" />
     <Compile Include="Media\ResizeType.cs" />
+    <Compile Include="Messages\LogTask.cs" />
     <Compile Include="Nop_demo\Inop_demoService.cs" />
     <Compile Include="Nop_demo\Nop_demoService.cs" />
     <Compile Include="Orders\UpdateOrderParameters.cs" />

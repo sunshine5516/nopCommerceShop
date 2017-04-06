@@ -7,7 +7,7 @@ using Nop.Core.Domain.Tasks;
 namespace Nop.Services.Tasks
 {
     /// <summary>
-    /// Task service
+    /// IScheduleTaskService的实现类，完成对数据库的相关操作。
     /// </summary>
     public partial class ScheduleTaskService : IScheduleTaskService
     {

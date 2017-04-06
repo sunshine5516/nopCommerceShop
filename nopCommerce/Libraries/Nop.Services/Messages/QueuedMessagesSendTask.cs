@@ -5,7 +5,7 @@ using Nop.Services.Tasks;
 namespace Nop.Services.Messages
 {
     /// <summary>
-    /// Represents a task for sending queued message 发送电子邮件
+    /// 发送电子邮件
     /// </summary>
     public partial class QueuedMessagesSendTask : ITask
     {

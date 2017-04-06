@@ -74,7 +74,7 @@ namespace Nop.Web.Infrastructure
                             new { controller = "Order", action = "CustomerOrders" },
                             new[] { "Nop.Web.Controllers" });
 
-            //contact us
+            //联系我们
             routes.MapLocalizedRoute("ContactUs",
                             "contactus",
                             new { controller = "Common", action = "ContactUs" },
