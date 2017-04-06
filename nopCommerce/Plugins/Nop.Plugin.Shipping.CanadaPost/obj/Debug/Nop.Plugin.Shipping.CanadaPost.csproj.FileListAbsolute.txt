@@ -67,3 +67,13 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Shipp
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\ShippingCanadaPost\Configure.cshtml
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb

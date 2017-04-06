@@ -82,3 +82,15 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Feed.
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.pdb
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Views\FeedFroogle\Configure.cshtml
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Description.txt
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\web.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Content\styles.css
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\logo.jpg
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.dll.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Feed.Froogle\Nop.Plugin.Feed.Froogle.pdb
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.csproj.App.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Feed.Froogle\obj\Debug\Nop.Plugin.Feed.Froogle.pdb

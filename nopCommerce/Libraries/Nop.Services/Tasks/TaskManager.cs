@@ -14,6 +14,7 @@ namespace Nop.Services.Tasks
     {
         private static readonly TaskManager _taskManager = new TaskManager();
         private readonly List<TaskThread> _taskThreads = new List<TaskThread>();
+        
         private const int _notRunTasksInterval = 60 * 30; //30 minutes
 
         private TaskManager()
@@ -26,6 +27,11 @@ namespace Nop.Services.Tasks
         public void Initialize()
         {
             this._taskThreads.Clear();
+
+            //var typeFinder = _containerManager.Resolve<ITypeFinder>();
+            //var taskService = typeFinder.FindClassesOfType<IScheduleTaskService>();
+
+            //taskService.
 
             var taskService = EngineContext.Current.Resolve<IScheduleTaskService>();
             var scheduleTasks = taskService

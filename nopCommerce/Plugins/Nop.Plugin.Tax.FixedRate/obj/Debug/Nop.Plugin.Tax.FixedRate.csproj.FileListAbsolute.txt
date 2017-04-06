@@ -75,3 +75,14 @@ E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Tax.F
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.dll
 E:\Code\nopCommerce\nopCommerce二次开发\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.pdb
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\Description.txt
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\web.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\Views\TaxFixedRate\Configure.cshtml
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\logo.jpg
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\Nop.Plugin.Tax.FixedRate.dll.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\Nop.Plugin.Tax.FixedRate.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\Plugins\Tax.FixedRate\Nop.Plugin.Tax.FixedRate.pdb
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.csproj.App.config
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.csprojResolveAssemblyReference.cache
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.dll
+E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Plugins\Nop.Plugin.Tax.FixedRate\obj\Debug\Nop.Plugin.Tax.FixedRate.pdb

@@ -64,11 +64,11 @@ namespace Nop.Services.Tasks
         #region Methods
 
         /// <summary>
-        /// Executes the task
+        /// 执行任务
         /// </summary>
-        /// <param name="throwException">A value indicating whether exception should be thrown if some error happens</param>
-        /// <param name="dispose">A value indicating whether all instances should be disposed after task run</param>
-        /// <param name="ensureRunOnOneWebFarmInstance">A value indicating whether we should ensure this task is run on one farm node at a time</param>
+        /// <param name="throwException">如果发生某些错误，是否应抛出异常</param>
+        /// <param name="dispose">在任务运行后是否应该处理所有实例的值</param>
+        /// <param name="ensureRunOnOneWebFarmInstance"></param>
         public void Execute(bool throwException = false, bool dispose = true, bool ensureRunOnOneWebFarmInstance = true)
         {
             //background tasks has an issue with Autofac
@@ -157,22 +157,22 @@ namespace Nop.Services.Tasks
         #region Properties
 
         /// <summary>
-        /// Datetime of the last start
+        /// 最后一个开始的日期
         /// </summary>
         public DateTime? LastStartUtc { get; private set; }
 
         /// <summary>
-        /// Datetime of the last end
+        /// 最后一个的日期
         /// </summary>
         public DateTime? LastEndUtc { get; private set; }
 
         /// <summary>
-        /// Datetime of the last success
+        /// 最后成功的日期
         /// </summary>
         public DateTime? LastSuccessUtc { get; private set; }
 
         /// <summary>
-        /// A value indicating type of the task
+        /// task类型
         /// </summary>
         public string Type { get; private set; }
 
@@ -182,12 +182,12 @@ namespace Nop.Services.Tasks
         public bool StopOnError { get; private set; }
 
         /// <summary>
-        /// Get the task name
+        /// 
         /// </summary>
         public string Name { get; private set; }
 
         /// <summary>
-        /// A value indicating whether the task is enabled
+        /// 是否可用
         /// </summary>
         public bool Enabled { get; set; }
 

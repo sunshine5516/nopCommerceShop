@@ -94,17 +94,17 @@ namespace Nop.Services.Tasks
 
 
         /// <summary>
-        /// Gets or sets the interval in seconds at which to run the tasks
+        /// 运行任务的间隔（以秒为单位）
         /// </summary>
         public int Seconds { get; set; }
 
         /// <summary>
-        /// Get or sets a datetime when thread has been started
+        /// 线程启动时间
         /// </summary>
         public DateTime StartedUtc { get; private set; }
 
         /// <summary>
-        /// Get or sets a value indicating whether thread is running
+        /// 线程是否运行
         /// </summary>
         public bool IsRunning { get; private set; }
 
@@ -125,7 +125,7 @@ namespace Nop.Services.Tasks
         }
 
         /// <summary>
-        /// Gets the interval at which to run the tasks
+        /// 获取运行任务的时间间隔
         /// </summary>
         public int Interval
         {
@@ -136,7 +136,7 @@ namespace Nop.Services.Tasks
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the thread whould be run only once (per appliction start)
+        /// 线程是否只运行一次（每个应用程序启动）
         /// </summary>
         public bool RunOnlyOnce { get; set; }
     }
