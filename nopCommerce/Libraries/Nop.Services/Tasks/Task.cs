@@ -38,7 +38,11 @@ namespace Nop.Services.Tasks
         #endregion
 
         #region Utilities实用程序
-
+        /// <summary>
+        /// 创建对应的task实例
+        /// </summary>
+        /// <param name="scope"></param>
+        /// <returns></returns>
         private ITask CreateTask(ILifetimeScope scope)
         {
             ITask task = null;

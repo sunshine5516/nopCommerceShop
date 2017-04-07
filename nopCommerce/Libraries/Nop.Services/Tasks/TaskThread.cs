@@ -38,10 +38,14 @@ namespace Nop.Services.Tasks
             }
             this.IsRunning = false;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="state"></param>
         private void TimerHandler(object state)
         {
             this._timer.Change(-1, -1);
+            ///Run方法会执行当前任务类中的Execute（）方法
             this.Run();
             if (this.RunOnlyOnce)
             {
@@ -70,7 +74,7 @@ namespace Nop.Services.Tasks
         }
 
         /// <summary>
-        /// 初始化定时器
+        /// 初始化定时器，创建了Timer对象，在定时的时间内会执行TimerHandler()方法体中内容
         /// </summary>
         public void InitTimer()
         {
