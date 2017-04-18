@@ -91,7 +91,7 @@ namespace Nop.Services.Logging
         }
 
         /// <summary>
-        /// Deletes a log item
+        /// 删除日志
         /// </summary>
         /// <param name="log">Log item</param>
         public virtual void DeleteLog(Log log)
@@ -103,7 +103,7 @@ namespace Nop.Services.Logging
         }
 
         /// <summary>
-        /// Deletes a log items
+        /// 批量删除日志
         /// </summary>
         /// <param name="logs">Log items</param>
         public virtual void DeleteLogs(IList<Log> logs)
@@ -115,7 +115,7 @@ namespace Nop.Services.Logging
         }
 
         /// <summary>
-        /// Clears a log
+        /// 清除日志
         /// </summary>
         public virtual void ClearLog()
         {
@@ -138,13 +138,13 @@ namespace Nop.Services.Logging
         }
 
         /// <summary>
-        /// Gets all log items
+        /// 获取所有日志记录
         /// </summary>
-        /// <param name="fromUtc">Log item creation from; null to load all records</param>
-        /// <param name="toUtc">Log item creation to; null to load all records</param>
+        /// <param name="fromUtc">开始时间，null加载所有记录</param>
+        /// <param name="toUtc">结束时间，null加载所有记录</param>
         /// <param name="message">Message</param>
-        /// <param name="logLevel">Log level; null to load all records</param>
-        /// <param name="pageIndex">Page index</param>
+        /// <param name="logLevel">Log level;null加载所有记录</param>
+        /// <param name="pageIndex">index</param>
         /// <param name="pageSize">Page size</param>
         /// <returns>Log item items</returns>
         public virtual IPagedList<Log> GetAllLogs(DateTime? fromUtc = null, DateTime? toUtc = null,
@@ -170,7 +170,7 @@ namespace Nop.Services.Logging
         }
 
         /// <summary>
-        /// Gets a log item
+        /// 根据Id获取log
         /// </summary>
         /// <param name="logId">Log item identifier</param>
         /// <returns>Log item</returns>

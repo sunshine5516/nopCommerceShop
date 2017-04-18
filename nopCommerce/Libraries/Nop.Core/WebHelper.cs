@@ -11,7 +11,7 @@ using Nop.Core.Infrastructure;
 namespace Nop.Core
 {
     /// <summary>
-    /// Represents a common helper
+    /// Web帮助类接口，包括获取IP地址等方法
     /// </summary>
     public partial class WebHelper : IWebHelper
     {
@@ -111,7 +111,7 @@ namespace Nop.Core
         }
 
         /// <summary>
-        /// Get context IP address
+        /// 获取上下文IP地址
         /// </summary>
         /// <returns>URL referrer</returns>
         public virtual string GetCurrentIpAddress()
@@ -169,9 +169,9 @@ namespace Nop.Core
         }
 
         /// <summary>
-        /// Gets this page name
+        /// 获取当前页面名称
         /// </summary>
-        /// <param name="includeQueryString">Value indicating whether to include query strings</param>
+        /// <param name="includeQueryString">是否包含查询字符串</param>
         /// <returns>Page name</returns>
         public virtual string GetThisPageUrl(bool includeQueryString)
         {

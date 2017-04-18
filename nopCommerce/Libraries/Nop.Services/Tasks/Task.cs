@@ -13,8 +13,8 @@ namespace Nop.Services.Tasks
     /// </summary>
     public partial class Task
     {
-        #region 构造函数
 
+        #region 构造函数
         /// <summary>
         /// Ctor for Task
         /// </summary>
@@ -49,7 +49,7 @@ namespace Nop.Services.Tasks
             if (this.Enabled)
             {
                 var type2 = System.Type.GetType(this.Type);
-                if (type2 != null)
+                
                 {
                     object instance;
                     if (!EngineContext.Current.ContainerManager.TryResolve(type2, scope, out instance))

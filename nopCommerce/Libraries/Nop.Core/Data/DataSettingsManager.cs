@@ -61,7 +61,7 @@ namespace Nop.Core.Data
         }
 
         /// <summary>
-        /// Convert data settings to string representation
+        ///转换为字符串表示形式
         /// </summary>
         /// <param name="settings">Settings</param>
         /// <returns>Text</returns>
@@ -98,7 +98,7 @@ namespace Nop.Core.Data
         }
 
         /// <summary>
-        /// Save settings to a file
+        /// 保存settings
         /// </summary>
         /// <param name="settings"></param>
         public virtual void SaveSettings(DataSettings settings)

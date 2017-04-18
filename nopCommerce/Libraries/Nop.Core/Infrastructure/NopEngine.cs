@@ -50,10 +50,6 @@ namespace Nop.Core.Infrastructure
             var builder = new ContainerBuilder();
             var container = builder.Build();
             this._containerManager = new ContainerManager(container);
-
-            //we create new instance of ContainerBuilder
-            //because Build() or Update() method can only be called once on a ContainerBuilder.
-
             //依赖
             var typeFinder = new WebAppTypeFinder();
             builder = new ContainerBuilder();

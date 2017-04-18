@@ -9,39 +9,39 @@ namespace Nop.Core.Data
     public interface IDataProvider
     {
         /// <summary>
-        /// Initialize connection factory
+        /// 初始化连接工厂
         /// </summary>
         void InitConnectionFactory();
 
         /// <summary>
-        /// Set database initializer
+        /// 设置数据库初始化程序
         /// </summary>
         void SetDatabaseInitializer();
 
         /// <summary>
-        /// Initialize database
+        /// 数据库初始化
         /// </summary>
         void InitDatabase();
 
         /// <summary>
-        /// A value indicating whether this data provider supports stored procedures
+        /// 是否支持存储过程
         /// </summary>
         bool StoredProceduredSupported { get; }
 
         /// <summary>
-        /// A value indicating whether this data provider supports backup
+        /// 是否支持备份
         /// </summary>
         bool BackupSupported { get; }
 
         /// <summary>
-        /// Gets a support database parameter object (used by stored procedures)
+        /// 获取支持数据库参数对象（由存储过程使用）
         /// </summary>
         /// <returns>Parameter</returns>
         DbParameter GetParameter();
 
         /// <summary>
-        /// Maximum length of the data for HASHBYTES functions
-        /// returns 0 if HASHBYTES function is not supported
+        /// HASHBYTES功能的最大数据长度
+        /// 0表示不支持
         /// </summary>
         /// <returns>Length of the data for HASHBYTES functions</returns>
         int SupportedLengthOfBinaryHash();

@@ -298,10 +298,10 @@ namespace Nop.Core
         }
 
         /// <summary>
-        /// Converts a value to a destination type.
+        /// 将值转换为目标类型。
         /// </summary>
-        /// <param name="value">The value to convert.</param>
-        /// <typeparam name="T">The type to convert the value to.</typeparam>
+        /// <param name="value">要转换的值</param>
+        /// <typeparam name="T">目标类型.</typeparam>
         /// <returns>The converted value.</returns>
         public static T To<T>(object value)
         {

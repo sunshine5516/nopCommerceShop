@@ -21,42 +21,42 @@ namespace Nop.Core.Domain.Common
         public bool SitemapIncludeProducts { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether to display a warning if java-script is disabled
+        /// 是否在禁用javascropt脚本时显示警告
         /// </summary>
         public bool DisplayJavaScriptDisabledWarning { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether full-text search is supported
+        /// 是否支持全文搜索模式
         /// </summary>
         public bool UseFullTextSearch { get; set; }
 
         /// <summary>
-        /// Gets or sets a Full-Text search mode
+        /// 获取或设置全文搜索模式
         /// </summary>
         public FulltextSearchMode FullTextMode { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether 404 errors (page or file not found) should be logged
+        /// 404错误是否要被记录
         /// </summary>
         public bool Log404Errors { get; set; }
 
         /// <summary>
-        /// Gets or sets a breadcrumb delimiter used on the site
+        /// 获取或设置网站上使用的面包屑分隔符
         /// </summary>
         public string BreadcrumbDelimiter { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether we should render <meta http-equiv="X-UA-Compatible" content="IE=edge"/> tag
+        /// 是否呈现 <meta http-equiv="X-UA-Compatible" content="IE=edge"/> tag
         /// </summary>
         public bool RenderXuaCompatible { get; set; }
 
         /// <summary>
-        /// Gets or sets a value of "X-UA-Compatible" META tag
+        /// 获取或设置“X-UA兼容”META标签的值
         /// </summary>
         public string XuaCompatibleValue { get; set; }
 
         /// <summary>
-        /// Gets or sets ignore words (phrases) to be ignored when logging errors/messages
+        /// 获取或设置忽略记录错误/消息时忽略的单词（短语）
         /// </summary>
         public List<string> IgnoreLogWordlist { get; set; }
     }
