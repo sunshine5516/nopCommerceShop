@@ -28,7 +28,7 @@
 {
     @if (Model.DisplayCategoryBreadcrumb)
     {
-        <div class="breadcrumb">
+        @*<div class="breadcrumb">
             <ul>
                 <li>
                     <a href="@Url.RouteUrl("HomePage")" title="@T("Categories.Breadcrumb.Top")">@T("Categories.Breadcrumb.Top")</a>
@@ -51,7 +51,7 @@
                 }
             </ul>
         </div>
-        @Html.Widget("categorydetails_after_breadcrumb", Model.Id)
+        @Html.Widget("categorydetails_after_breadcrumb", Model.Id)*@
     }
 }
 <div class="page category-page">

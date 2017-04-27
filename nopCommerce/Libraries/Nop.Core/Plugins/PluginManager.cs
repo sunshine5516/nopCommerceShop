@@ -22,6 +22,7 @@ namespace Nop.Core.Plugins
     /// </summary>
     public class PluginManager
     {
+
         #region 常量
         /// <summary>
         /// 已经安装的插件信息
@@ -126,7 +127,7 @@ namespace Nop.Core.Plugins
                         {
                             if (descriptionFile.Directory == null)
                                 throw new Exception(string.Format("Directory cannot be resolved for '{0}' description file", descriptionFile.Name));
-                            //get list of all DLLs in plugins (not in bin!)
+                            //获取插件中所有dll的列表 (not in bin!)
                             var pluginFiles = descriptionFile.Directory.GetFiles("*.dll", SearchOption.AllDirectories)
                                 //just make sure we're not registering shadow copied plugins
                                 .Where(x => !binFiles.Select(q => q.FullName).Contains(x.FullName))
@@ -146,8 +147,8 @@ namespace Nop.Core.Plugins
                                 .Where(x => !x.Name.Equals(mainPluginFile.Name, StringComparison.InvariantCultureIgnoreCase))
                                 .Where(x => !IsAlreadyLoaded(x)))
                                     PerformFileDeploy(plugin);
-                            
-                            //init plugin type (only one plugin per assembly is allowed)
+
+                            //初始化插件（每个程序集只允许一个插件）
                             foreach (var t in pluginDescriptor.ReferencedAssembly.GetTypes())
                                 if (typeof(IPlugin).IsAssignableFrom(t))
                                     if (!t.IsInterface)
@@ -247,7 +248,7 @@ namespace Nop.Core.Plugins
         }
 
         /// <summary>
-        /// 标记为未安装状态
+        /// 删除所有插件
         /// </summary>
         public static void MarkAllPluginsAsUninstalled()
         {
@@ -294,7 +295,7 @@ namespace Nop.Core.Plugins
         }
 
         /// <summary>
-        /// Indicates whether assembly file is already loaded
+        /// 程序集是否已加载
         /// </summary>
         /// <param name="fileInfo">File info</param>
         /// <returns>Result</returns>
@@ -463,9 +464,9 @@ namespace Nop.Core.Plugins
 
             return shadowCopiedPlug;
         }
-        
+
         /// <summary>
-        /// Determines if the folder is a bin plugin folder for a package
+        /// 确定文件夹是否是包的bin插件文件夹
         /// </summary>
         /// <param name="folder"></param>
         /// <returns></returns>
@@ -473,7 +474,8 @@ namespace Nop.Core.Plugins
         {
             if (folder == null) return false;
             if (folder.Parent == null) return false;
-            if (!folder.Parent.Name.Equals("Plugins", StringComparison.InvariantCultureIgnoreCase)) return false;
+            if (!folder.Parent.Name.Equals("Plugins", StringComparison.InvariantCultureIgnoreCase))
+                return false;
             return true;
         }
 

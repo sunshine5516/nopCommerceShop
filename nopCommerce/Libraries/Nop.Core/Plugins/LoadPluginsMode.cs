@@ -6,15 +6,15 @@ namespace Nop.Core.Plugins
     public enum LoadPluginsMode
     {
         /// <summary>
-        /// All (Installed & Not installed)
+        /// 加载所有
         /// </summary>
         All = 0,
         /// <summary>
-        /// Installed only
+        /// 只加载安装的
         /// </summary>
         InstalledOnly = 10,
         /// <summary>
-        /// Not installed only
+        /// 只加载未安装的
         /// </summary>
         NotInstalledOnly = 20
     }

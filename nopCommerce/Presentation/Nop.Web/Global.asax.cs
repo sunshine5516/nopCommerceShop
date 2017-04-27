@@ -43,6 +43,7 @@ namespace Nop.Web
 
         protected void Application_Start()
         {
+            //Core.Plugins.PluginManager.Initialize();
             //disable "X-AspNetMvc-Version" header name
             MvcHandler.DisableMvcResponseHeader = true;
 

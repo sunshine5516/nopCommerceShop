@@ -3,7 +3,7 @@
 namespace Nop.Services.Logging
 {
     /// <summary>
-    /// Represents a task to clear [Log] table
+    /// 清除日志Task
     /// </summary>
     public partial class ClearLogTask : ITask
     {
