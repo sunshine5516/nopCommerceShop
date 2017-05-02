@@ -97,9 +97,9 @@ namespace Nop.Core.Domain.Customers
         }
 
         /// <summary>
-        /// Gets a value indicating whether customer is guest
+        /// 是否是用户
         /// </summary>
-        /// <param name="customer">Customer</param>
+        /// <param name="customer">用户</param>
         /// <param name="onlyActiveCustomerRoles">活跃状态的用户</param>
         /// <returns>Result</returns>
         public static bool IsGuest(this Customer customer, bool onlyActiveCustomerRoles = true)

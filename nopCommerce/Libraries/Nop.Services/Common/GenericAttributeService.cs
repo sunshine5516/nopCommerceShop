@@ -131,9 +131,9 @@ namespace Nop.Services.Common
         }
 
         /// <summary>
-        /// Updates the attribute
+        /// 更新属性
         /// </summary>
-        /// <param name="attribute">Attribute</param>
+        /// <param name="attribute">属性</param>
         public virtual void UpdateAttribute(GenericAttribute attribute)
         {
             if (attribute == null)
@@ -169,13 +169,13 @@ namespace Nop.Services.Common
         }
 
         /// <summary>
-        /// Save attribute value
+        /// 保存属性值
         /// </summary>
-        /// <typeparam name="TPropType">Property type</typeparam>
-        /// <param name="entity">Entity</param>
+        /// <typeparam name="TPropType">属性类型</typeparam>
+        /// <param name="entity">实体</param>
         /// <param name="key">Key</param>
         /// <param name="value">Value</param>
-        /// <param name="storeId">Store identifier; pass 0 if this attribute will be available for all stores</param>
+        /// <param name="storeId">StoreId; 如果此属性可用于所有商店，则传递0</param>
         public virtual void SaveAttribute<TPropType>(BaseEntity entity, string key, TPropType value, int storeId = 0)
         {
             if (entity == null)

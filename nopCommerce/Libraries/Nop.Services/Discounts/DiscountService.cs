@@ -145,17 +145,17 @@ namespace Nop.Services.Discounts
         /// <summary>
         /// 获取所有折扣信息
         /// </summary>
-        /// <param name="discountType">Discount type; null to load all discount</param>
-        /// <param name="couponCode">Coupon code to find (exact match)</param>
-        /// <param name="discountName">Discount name</param>
-        /// <param name="showHidden">A value indicating whether to show hidden records</param>
-        /// <returns>Discounts</returns>
+        /// <param name="discountType">折扣类型; null加载所有折扣</param>
+        /// <param name="couponCode">优惠券代码（完全匹配)</param>
+        /// <param name="discountName">折扣名称</param>
+        /// <param name="showHidden">是否显示隐藏记录的值</param>
+        /// <returns>折扣信息</returns>
         public virtual IList<Discount> GetAllDiscounts(DiscountType? discountType,
             string couponCode = "", string discountName = "", bool showHidden = false)
         {
-            //we load all discounts, and filter them using "discountType" parameter later (in memory)
-            //we do it because we know that this method is invoked several times per HTTP request with distinct "discountType" parameter
-            //that's why let's access the database only once
+            //我们加载所有折扣，然后使用“discountType”参数过滤（在内存中）
+            //我们这样做是因为我们知道每个HTTP请求使用不同的“discountType”参数调用这个方法
+            //这就是为什么我们只访问数据库一次
             string key = string.Format(DISCOUNTS_ALL_KEY, showHidden, couponCode, discountName);
             var result = _cacheManager.Get(key, () =>
             {
@@ -183,8 +183,8 @@ namespace Nop.Services.Discounts
                 var discounts = query.ToList();
                 return discounts;
             });
-            //we know that this method is usually inkoved multiple times
-            //that's why we filter discounts by type on the application layer
+            //我们知道这种方法通常是多次打印
+            //这就是为什么我们根据应用层上的类型过滤折扣
             if (discountType.HasValue)
             {
                 result = result.Where(d => d.DiscountType == discountType.Value).ToList();
@@ -268,9 +268,9 @@ namespace Nop.Services.Discounts
         }
 
         /// <summary>
-        /// Get discount by coupon code
+        /// 根据优惠码获取折扣
         /// </summary>
-        /// <param name="couponCode">Coupon code</param>
+        /// <param name="couponCode">折扣码</param>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>
         /// <returns>Discount</returns>
         public virtual Discount GetDiscountByCouponCode(string couponCode, bool showHidden = false)

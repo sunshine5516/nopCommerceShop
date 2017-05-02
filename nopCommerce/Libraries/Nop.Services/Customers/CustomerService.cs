@@ -517,15 +517,15 @@ namespace Nop.Services.Customers
         }
 
         /// <summary>
-        /// Reset data required for checkout
+        /// 重置需要结帐的数据
         /// </summary>
         /// <param name="customer">Customer</param>
-        /// <param name="storeId">Store identifier</param>
-        /// <param name="clearCouponCodes">A value indicating whether to clear coupon code</param>
-        /// <param name="clearCheckoutAttributes">A value indicating whether to clear selected checkout attributes</param>
-        /// <param name="clearRewardPoints">A value indicating whether to clear "Use reward points" flag</param>
-        /// <param name="clearShippingMethod">A value indicating whether to clear selected shipping method</param>
-        /// <param name="clearPaymentMethod">A value indicating whether to clear selected payment method</param>
+        /// <param name="storeId">StoreId</param>
+        /// <param name="clearCouponCodes">是否清除优惠券代码的值</param>
+        /// <param name="clearCheckoutAttributes">是否清除所选结帐属性的值</param>
+        /// <param name="clearRewardPoints">是否清除“使用积分”标志的值</param>
+        /// <param name="clearShippingMethod">是否清除所选运送方式的值</param>
+        /// <param name="clearPaymentMethod">是否清除所选付款方式的值</param>
         public virtual void ResetCheckoutData(Customer customer, int storeId,
             bool clearCouponCodes = false, bool clearCheckoutAttributes = false,
             bool clearRewardPoints = true, bool clearShippingMethod = true,
@@ -533,27 +533,27 @@ namespace Nop.Services.Customers
         {
             if (customer == null)
                 throw new ArgumentNullException();
-            
-            //clear entered coupon codes
+
+            //清除输入的优惠券代码
             if (clearCouponCodes)
             {
                 _genericAttributeService.SaveAttribute<ShippingOption>(customer, SystemCustomerAttributeNames.DiscountCouponCode, null);
                 _genericAttributeService.SaveAttribute<ShippingOption>(customer, SystemCustomerAttributeNames.GiftCardCouponCodes, null);
             }
 
-            //clear checkout attributes
+            //清除结帐属性
             if (clearCheckoutAttributes)
             {
                 _genericAttributeService.SaveAttribute<ShippingOption>(customer, SystemCustomerAttributeNames.CheckoutAttributes, null, storeId);
             }
 
-            //clear reward points flag
+            //清除奖励积分
             if (clearRewardPoints)
             {
                 _genericAttributeService.SaveAttribute(customer, SystemCustomerAttributeNames.UseRewardPointsDuringCheckout, false, storeId);
             }
 
-            //clear selected shipping method
+            //清除选择的运送方式
             if (clearShippingMethod)
             {
                 _genericAttributeService.SaveAttribute<ShippingOption>(customer, SystemCustomerAttributeNames.SelectedShippingOption, null, storeId);
@@ -561,7 +561,7 @@ namespace Nop.Services.Customers
                 _genericAttributeService.SaveAttribute<ShippingOption>(customer, SystemCustomerAttributeNames.SelectedPickupPoint, null, storeId);
             }
 
-            //clear selected payment method
+            //清除选择的付款方式
             if (clearPaymentMethod)
             {
                 _genericAttributeService.SaveAttribute<string>(customer, SystemCustomerAttributeNames.SelectedPaymentMethod, null, storeId);

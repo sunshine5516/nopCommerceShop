@@ -2241,7 +2241,11 @@ namespace Nop.Web.Controllers
                 return RedirectToRoute("HomePage");
             }
         }
-        
+        /// <summary>
+        /// 订单结算
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         [HttpPost, ActionName("Cart")]
         [FormValueRequired("checkout")]
@@ -2281,7 +2285,12 @@ namespace Nop.Web.Controllers
             
             return RedirectToRoute("Checkout");
         }
-
+        /// <summary>
+        /// 折扣码结算
+        /// </summary>
+        /// <param name="discountcouponcode"></param>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         [HttpPost, ActionName("Cart")]
         [FormValueRequired("applydiscountcouponcode")]
@@ -2303,7 +2312,7 @@ namespace Nop.Web.Controllers
             var model = new ShoppingCartModel();
             if (!String.IsNullOrWhiteSpace(discountcouponcode))
             {
-                //we find even hidden records here. this way we can display a user-friendly message if it's expired
+                //我们甚至在这里找到隐藏记录。 这样，如果它已过期,我们可以显示一个用户友好的消息
                 var discount = _discountService.GetDiscountByCouponCode(discountcouponcode, true);
                 if (discount != null && discount.RequiresCouponCode)
                 {

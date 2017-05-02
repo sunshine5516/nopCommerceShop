@@ -56,10 +56,10 @@ namespace Nop.Services.Orders
         }
 
         /// <summary>
-        /// Gets selected checkout attributes
+        /// 获取选定的结帐属性
         /// </summary>
-        /// <param name="attributesXml">Attributes in XML format</param>
-        /// <returns>Selected checkout attributes</returns>
+        /// <param name="attributesXml">XML格式的属性</param>
+        /// <returns>所选结帐属性</returns>
         public virtual IList<CheckoutAttribute> ParseCheckoutAttributes(string attributesXml)
         {
             var result = new List<CheckoutAttribute>();

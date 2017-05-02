@@ -14,10 +14,10 @@ namespace Nop.Services.Orders
     public static class ShoppingCartExtensions
     {
         /// <summary>
-        /// Indicates whether the shopping cart requires shipping
+        /// 购物车是否需要运送
         /// </summary>
         /// <param name="shoppingCart">Shopping cart</param>
-        /// <returns>True if the shopping cart requires shipping; otherwise, false.</returns>
+        /// <returns>如果购物车需要运送，则为True; 否则false.</returns>
         public static bool RequiresShipping(this IList<ShoppingCartItem> shoppingCart)
         {
             foreach (var shoppingCartItem in shoppingCart)

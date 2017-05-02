@@ -523,10 +523,10 @@ namespace Nop.Web.Controllers
                 )
                 return new HttpUnauthorizedResult();
 
-            //reset checkout data
+            //重置结算数据
             _customerService.ResetCheckoutData(_workContext.CurrentCustomer, _storeContext.CurrentStore.Id);
 
-            //validation (cart)
+            //验证（购物车）
             var checkoutAttributesXml = _workContext.CurrentCustomer.GetAttribute<string>(SystemCustomerAttributeNames.CheckoutAttributes, _genericAttributeService, _storeContext.CurrentStore.Id);
             var scWarnings = _shoppingCartService.GetShoppingCartWarnings(cart, checkoutAttributesXml, true);
             if (scWarnings.Any())

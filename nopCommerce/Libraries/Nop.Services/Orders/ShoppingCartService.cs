@@ -809,11 +809,11 @@ namespace Nop.Services.Orders
         }
 
         /// <summary>
-        /// Validates whether this shopping cart is valid
+        /// 验证此购物车是否有效
         /// </summary>
-        /// <param name="shoppingCart">Shopping cart</param>
-        /// <param name="checkoutAttributesXml">Checkout attributes in XML format</param>
-        /// <param name="validateCheckoutAttributes">A value indicating whether to validate checkout attributes</param>
+        /// <param name="shoppingCart">购物车</param>
+        /// <param name="checkoutAttributesXml">以XML格式结算属性</param>
+        /// <param name="validateCheckoutAttributes">是否验证结帐属性的值</param>
         /// <returns>Warnings</returns>
         public virtual IList<string> GetShoppingCartWarnings(IList<ShoppingCartItem> shoppingCart, 
             string checkoutAttributesXml, bool validateCheckoutAttributes)
@@ -838,11 +838,11 @@ namespace Nop.Services.Orders
                     hasStandartProducts = true;
             }
 
-            //don't mix standard and recurring products
+            //不要混合标准和循环产品
             if (hasStandartProducts && hasRecurringProducts)
                 warnings.Add(_localizationService.GetResource("ShoppingCart.CannotMixStandardAndAutoshipProducts"));
 
-            //recurring cart validation
+            //定期购物车验证
             if (hasRecurringProducts)
             {
                 int cycleLength;
@@ -857,13 +857,13 @@ namespace Nop.Services.Orders
                 }
             }
 
-            //validate checkout attributes
+            //验证结帐属性
             if (validateCheckoutAttributes)
             {
-                //selected attributes
+                //所选属性
                 var attributes1 = _checkoutAttributeParser.ParseCheckoutAttributes(checkoutAttributesXml);
 
-                //existing checkout attributes
+                //现有结帐属性
                 var attributes2 = _checkoutAttributeService.GetAllCheckoutAttributes(_storeContext.CurrentStore.Id, !shoppingCart.RequiresShipping());
                 foreach (var a2 in attributes2)
                 {
