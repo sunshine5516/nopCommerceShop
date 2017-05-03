@@ -49,7 +49,7 @@ namespace Nop.Web.Framework.Controllers
             return RenderPartialViewToString(null, model);
         }
         /// <summary>
-        /// Render partial view to string
+        /// 渲染部分视图到字符串
         /// </summary>
         /// <param name="viewName">View name</param>
         /// <param name="model">Model</param>

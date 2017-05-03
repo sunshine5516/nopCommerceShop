@@ -191,11 +191,11 @@ namespace Nop.Services.Shipping
 
             return _shippingMethodRepository.GetById(shippingMethodId);
         }
-        
+
         /// <summary>
-        /// Gets all shipping methods
+        /// 获得所有运送方式
         /// </summary>
-        /// <param name="filterByCountryId">The country indentifier to filter by</param>
+        /// <param name="filterByCountryId">要过滤的国家标Id</param>
         /// <returns>Shipping methods</returns>
         public virtual IList<ShippingMethod> GetAllShippingMethods(int? filterByCountryId = null)
         {
@@ -834,13 +834,13 @@ namespace Nop.Services.Shipping
         }
 
         /// <summary>
-        ///  Gets available shipping options
+        ///  获得可用的运送选项
         /// </summary>
-        /// <param name="cart">Shopping cart</param>
-        /// <param name="shippingAddress">Shipping address</param>
-        /// <param name="allowedShippingRateComputationMethodSystemName">Filter by shipping rate computation method identifier; null to load shipping options of all shipping rate computation methods</param>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
-        /// <returns>Shipping options</returns>
+        /// <param name="cart">购物车</param>
+        /// <param name="shippingAddress">运送地址</param>
+        /// <param name="allowedShippingRateComputationMethodSystemName">按运费计算方法标识过滤; null加载所有运费计算方法的运送选项</param>
+        /// <param name="storeId">仅在指定的存储中加载记录; 通过0加载所有记录</param>
+        /// <returns>送货选项</returns>
         public virtual GetShippingOptionResponse GetShippingOptions(IList<ShoppingCartItem> cart,
             Address shippingAddress, string allowedShippingRateComputationMethodSystemName = "", 
             int storeId = 0)

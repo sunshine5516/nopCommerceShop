@@ -45,9 +45,9 @@ namespace Nop.Plugin.Shipping.FixedRateShipping
         #region Methods
 
         /// <summary>
-        ///  Gets available shipping options
+        ///  获得可用的运送选项
         /// </summary>
-        /// <param name="getShippingOptionRequest">A request for getting shipping options</param>
+        /// <param name="getShippingOptionRequest">获取运送选项的请求</param>
         /// <returns>Represents a response of getting shipping rate options</returns>
         public GetShippingOptionResponse GetShippingOptions(GetShippingOptionRequest getShippingOptionRequest)
         {

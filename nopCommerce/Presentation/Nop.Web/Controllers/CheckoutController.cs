@@ -34,7 +34,7 @@ namespace Nop.Web.Controllers
     [NopHttpsRequirement(SslRequirement.Yes)]
     public partial class CheckoutController : BasePublicController
     {
-		#region Fields
+		#region 字段
 
         private readonly IWorkContext _workContext;
         private readonly IStoreContext _storeContext;
@@ -71,7 +71,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-		#region Constructors
+		#region 构造函数
 
         public CheckoutController(IWorkContext workContext,
             IStoreContext storeContext,
@@ -595,7 +595,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Methods (multistep checkout)
+        #region Methods (多步结账)
 
         public ActionResult BillingAddress(FormCollection form)
         {
@@ -1306,7 +1306,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Methods (one page checkout)
+        #region Methods (one page checkout一页结账)
 
         [NonAction]
         protected JsonResult OpcLoadStepAfterShippingAddress(List<ShoppingCartItem> cart)
