@@ -20,47 +20,47 @@ namespace Nop.Web.Framework.Localization
         #region 构造函数
 
         /// <summary>
-        /// Initializes a new instance of the System.Web.Routing.Route class, using the specified URL pattern and handler class.
+        /// 使用指定的URL模式和处理程序类初始化System.Web.Routing.Route类的新实例。
         /// </summary>
-        /// <param name="url">The URL pattern for the route.</param>
-        /// <param name="routeHandler">The object that processes requests for the route.</param>
+        /// <param name="url">路由的URL模式.</param>
+        /// <param name="routeHandler">处理路由请求的对象.</param>
         public LocalizedRoute(string url, IRouteHandler routeHandler)
             : base(url, routeHandler)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the System.Web.Routing.Route class, using the specified URL pattern, handler class and default parameter values.
+        /// 使用指定的URL模式和处理程序类初始化System.Web.Routing.Route类的新实例
         /// </summary>
-        /// <param name="url">The URL pattern for the route.</param>
-        /// <param name="defaults">The values to use if the URL does not contain all the parameters.</param>
-        /// <param name="routeHandler">The object that processes requests for the route.</param>
+        /// <param name="url">路由的URL模式.</param>
+        /// <param name="defaults">如果URL不包含所有参数，则使用的值.</param>
+        /// <param name="routeHandler">处理路由请求的对象.</param>
         public LocalizedRoute(string url, RouteValueDictionary defaults, IRouteHandler routeHandler)
             : base(url, defaults, routeHandler)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the System.Web.Routing.Route class, using the specified URL pattern, handler class, default parameter values and constraints.
+        /// 使用指定的URL模式和处理程序类初始化System.Web.Routing.Route类的新实例。
         /// </summary>
-        /// <param name="url">The URL pattern for the route.</param>
-        /// <param name="defaults">The values to use if the URL does not contain all the parameters.</param>
-        /// <param name="constraints">A regular expression that specifies valid values for a URL parameter.</param>
-        /// <param name="routeHandler">The object that processes requests for the route.</param>
+        /// <param name="url">路由的URL模式.</param>
+        /// <param name="defaults">如果URL不包含所有参数，则使用的值.</param>
+        /// <param name="constraints">指定URL参数有效值的正则表达式.</param>
+        /// <param name="routeHandler">处理路由请求的对象.</param>
         public LocalizedRoute(string url, RouteValueDictionary defaults, RouteValueDictionary constraints, IRouteHandler routeHandler)
             : base(url, defaults, constraints, routeHandler)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the System.Web.Routing.Route class, using the specified URL pattern, handler class, default parameter values, 
+        /// 使用指定的URL模式和处理程序类初始化System.Web.Routing.Route类的新实例。
         /// constraints,and custom values.
         /// </summary>
-        /// <param name="url">The URL pattern for the route.</param>
-        /// <param name="defaults">The values to use if the URL does not contain all the parameters.</param>
-        /// <param name="constraints">A regular expression that specifies valid values for a URL parameter.</param>
-        /// <param name="dataTokens">Custom values that are passed to the route handler, but which are not used to determine whether the route matches a specific URL pattern. The route handler might need these values to process the request.</param>
-        /// <param name="routeHandler">The object that processes requests for the route.</param>
+        /// <param name="url">路由的URL模式</param>
+        /// <param name="defaults">如果URL不包含所有参数，则使用的值.</param>
+        /// <param name="constraints">指定URL参数有效值的正则表达式.</param>
+        /// <param name="dataTokens">传递给路由处理程序但不用于确定路由是否匹配特定URL模式的自定义值。 路由处理程序可能需要这些值来处理请求.</param>
+        /// <param name="routeHandler">处理路由请求的对象.</param>
         public LocalizedRoute(string url, RouteValueDictionary defaults, RouteValueDictionary constraints, RouteValueDictionary dataTokens, IRouteHandler routeHandler)
             : base(url, defaults, constraints, dataTokens, routeHandler)
         {
@@ -73,9 +73,9 @@ namespace Nop.Web.Framework.Localization
         /// <summary>
         /// 入站URL进行匹配的工作机制，重写路由请求方法，返回请求路由信息
         /// </summary>
-        /// <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        /// <param name="httpContext">封装有关HTTP请求的信息的对象.</param>
         /// <returns>
-        /// An object that contains the values from the route definition.
+        ///包含路由定义中的值的对象。
         /// </returns>
         public override RouteData GetRouteData(HttpContextBase httpContext)
         {

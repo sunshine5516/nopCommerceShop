@@ -3,12 +3,12 @@
 namespace Nop.Web.Framework.Mvc.Routes
 {
     /// <summary>
-    /// Route publisher
+    /// 发布路由
     /// </summary>
     public interface IRoutePublisher
     {
         /// <summary>
-        /// Register routes
+        /// 注册路由
         /// </summary>
         /// <param name="routes">Routes</param>
         void RegisterRoutes(RouteCollection routes);

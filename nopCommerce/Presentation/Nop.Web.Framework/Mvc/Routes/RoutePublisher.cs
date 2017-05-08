@@ -56,7 +56,7 @@ namespace Nop.Web.Framework.Mvc.Routes
             var routeProviders = new List<IRouteProvider>();
             foreach (var providerType in routeProviderTypes)
             {
-                //Ignore not installed plugins
+                //忽略未安装的插件
                 var plugin = FindPlugin(providerType);
                 if (plugin != null && !plugin.Installed)
                     continue;

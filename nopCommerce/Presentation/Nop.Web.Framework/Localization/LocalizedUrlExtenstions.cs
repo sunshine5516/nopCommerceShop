@@ -7,9 +7,9 @@ namespace Nop.Web.Framework.Localization
     public static class LocalizedUrlExtenstions
     {
         private static int _seoCodeLength = 2;
-        
+
         /// <summary>
-        /// Returns a value indicating whether nopCommerce is run in virtual directory
+        /// 返回一个值，指示nopCommerce是否在虚拟目录中运行
         /// </summary>
         /// <param name="applicationPath">Application path</param>
         /// <returns>Result</returns>
@@ -22,7 +22,7 @@ namespace Nop.Web.Framework.Localization
         }
 
         /// <summary>
-        /// Remove application path from raw URL
+        /// 从原始URL中删除应用程序路径
         /// </summary>
         /// <param name="rawUrl">Raw URL</param>
         /// <param name="applicationPath">Application path</param>
@@ -67,7 +67,7 @@ namespace Nop.Web.Framework.Localization
         }
 
         /// <summary>
-        /// Get a value indicating whether URL is localized (contains SEO code)
+        /// 获取一个值，指示URL是否本地化（包含SEO代码）
         /// </summary>
         /// <param name="url">URL</param>
         /// <param name="applicationPath">Application path</param>
@@ -114,7 +114,7 @@ namespace Nop.Web.Framework.Localization
         }
 
         /// <summary>
-        /// Remove language SEO code from URL
+        /// 从URL中删除语言SEO代码
         /// </summary>
         /// <param name="url">Raw URL</param>
         /// <param name="applicationPath">Application path</param>
