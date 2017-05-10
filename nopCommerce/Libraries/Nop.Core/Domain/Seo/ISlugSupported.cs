@@ -2,7 +2,7 @@
 namespace Nop.Core.Domain.Seo
 {
     /// <summary>
-    /// Represents an entity which supports slug (SEO friendly one-word URLs)
+    /// 代表一个支持slug（SEO友好的单字URL）的实体
     /// </summary>
     public interface ISlugSupported
     {

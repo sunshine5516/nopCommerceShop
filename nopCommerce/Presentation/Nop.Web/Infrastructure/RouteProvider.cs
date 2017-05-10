@@ -2,6 +2,7 @@
 using System.Web.Routing;
 using Nop.Web.Framework.Localization;
 using Nop.Web.Framework.Mvc.Routes;
+using Nop.Web.Framework.Seo;
 
 namespace Nop.Web.Infrastructure
 {
@@ -13,7 +14,20 @@ namespace Nop.Web.Infrastructure
         public void RegisterRoutes(RouteCollection routes)
         {
             //We reordered our routes so the most used ones are on top. It can improve performance.
+            //routes.MapGenericPathRoute("GenericUrl",
+            //                          "{generic_se_name}",
+            //                          new { controller = "Common", action = "GenericUrl" },
+            //                          new[] { "Nop.Web.Controllers" });
 
+            //routes.MapLocalizedRoute("Product",
+            //                         "{SeName}",
+            //                         new { controller = "Product", action = "ProductDetails" },
+            //                         new[] { "Nop.Web.Controllers" });
+
+            //routes.MapLocalizedRoute("Category",
+            //                "{SeName}",
+            //                new { controller = "Catalog", action = "Category" },
+            //                new[] { "Nop.Web.Controllers" });
             //home page
             routes.MapLocalizedRoute("HomePage",
                             "",

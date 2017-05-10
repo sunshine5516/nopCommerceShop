@@ -46,7 +46,7 @@ namespace Nop.Web.Framework.Localization
             {
                 throw new ArgumentNullException("url");
             }
-            ///重写路由
+          
             var route = new LocalizedRoute(url, new MvcRouteHandler())
             {
                 Defaults = new RouteValueDictionary(defaults),

@@ -15,14 +15,14 @@ namespace Nop.Web.Infrastructure
             //调用MapGenericPathRoute扩展路由方法，自定义路由
             routes.MapGenericPathRoute("GenericUrl",
                                        "{generic_se_name}",
-                                       new {controller = "Common", action = "GenericUrl"},
-                                       new[] {"Nop.Web.Controllers"});
+                                       new { controller = "Common", action = "GenericUrl" },
+                                       new[] { "Nop.Web.Controllers" });
 
-            //define this routes to use in UI views (in case if you want to customize some of them later)
+            ////define this routes to use in UI views (in case if you want to customize some of them later)
             routes.MapLocalizedRoute("Product",
                                      "{SeName}",
                                      new { controller = "Product", action = "ProductDetails" },
-                                     new[] {"Nop.Web.Controllers"});
+                                     new[] { "Nop.Web.Controllers" });
 
             routes.MapLocalizedRoute("Category",
                             "{SeName}",

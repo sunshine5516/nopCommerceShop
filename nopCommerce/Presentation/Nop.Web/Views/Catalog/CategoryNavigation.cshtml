@@ -31,7 +31,7 @@
         liClass += " last";
     }
     <li class="@liClass">
-        @Url.HttpRouteUrl("Category", new { SeName = category.SeName })
+        @*@Url.HttpRouteUrl("Category", new { SeName = category.SeName })*@
         @*@Html.rou("Category", new { SeName = category.SeName })*@
         <a href="@Url.RouteUrl("Category", new { SeName = category.SeName})">@category.Name
             @if (category.NumberOfProducts.HasValue)

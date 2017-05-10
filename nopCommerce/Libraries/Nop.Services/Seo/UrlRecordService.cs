@@ -10,11 +10,12 @@ using Nop.Core.Domain.Seo;
 namespace Nop.Services.Seo
 {
     /// <summary>
-    /// Provides information about URL records
+    ///提供有关URL记录的信息
     /// </summary>
     public partial class UrlRecordService : IUrlRecordService
     {
-        #region Constants
+        #region 常量
+
 
         /// <summary>
         /// Key for caching
@@ -30,20 +31,20 @@ namespace Nop.Services.Seo
         /// </summary>
         private const string URLRECORD_ALL_KEY = "Nop.urlrecord.all";
         /// <summary>
-        /// Key for caching
+        /// 缓存URLRECORD
         /// </summary>
         /// <remarks>
         /// {0} : slug
         /// </remarks>
         private const string URLRECORD_BY_SLUG_KEY = "Nop.urlrecord.active.slug-{0}";
         /// <summary>
-        /// Key pattern to clear cache
+        /// 清除URLRECORD缓存
         /// </summary>
         private const string URLRECORD_PATTERN_KEY = "Nop.urlrecord.";
 
         #endregion
 
-        #region Fields
+        #region 字段
 
         private readonly IRepository<UrlRecord> _urlRecordRepository;
         private readonly ICacheManager _cacheManager;
@@ -51,7 +52,7 @@ namespace Nop.Services.Seo
 
         #endregion
 
-        #region Ctor
+        #region 构造函数
 
         /// <summary>
         /// Ctor
@@ -70,7 +71,7 @@ namespace Nop.Services.Seo
 
         #endregion
 
-        #region Utilities
+        #region 帮助方法
 
         protected UrlRecordForCaching Map(UrlRecord record)
         {
@@ -114,7 +115,7 @@ namespace Nop.Services.Seo
 
         #endregion
 
-        #region Nested classes
+        #region 嵌套类
 
         [Serializable]
         public class UrlRecordForCaching
@@ -129,10 +130,10 @@ namespace Nop.Services.Seo
 
         #endregion
 
-        #region Methods
+        #region 方法
 
         /// <summary>
-        /// Deletes an URL record
+        /// 删除一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         public virtual void DeleteUrlRecord(UrlRecord urlRecord)
@@ -147,7 +148,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Deletes an URL records
+        /// 删除URL记录
         /// </summary>
         /// <param name="urlRecords">URL records</param>
         public virtual void DeleteUrlRecords(IList<UrlRecord> urlRecords)
@@ -162,7 +163,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Gets an URL records
+        /// 获取URL记录
         /// </summary>
         /// <param name="urlRecordIds">URL record identifiers</param>
         /// <returns>URL record</returns>
@@ -170,11 +171,11 @@ namespace Nop.Services.Seo
         {
             var query = _urlRecordRepository.Table;
 
-            return query.Where(p=>urlRecordIds.Contains(p.Id)).ToList();
+            return query.Where(p => urlRecordIds.Contains(p.Id)).ToList();
         }
 
         /// <summary>
-        /// Gets an URL record
+        /// 根据ID获取URL记录
         /// </summary>
         /// <param name="urlRecordId">URL record identifier</param>
         /// <returns>URL record</returns>
@@ -185,9 +186,9 @@ namespace Nop.Services.Seo
 
             return _urlRecordRepository.GetById(urlRecordId);
         }
-        
+
         /// <summary>
-        /// Inserts an URL record
+        /// 插入一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         public virtual void InsertUrlRecord(UrlRecord urlRecord)
@@ -202,7 +203,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Updates the URL record
+        /// 更新一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         public virtual void UpdateUrlRecord(UrlRecord urlRecord)
@@ -217,7 +218,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Find URL record
+        /// 查找URL记录
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <returns>Found URL record</returns>
@@ -237,8 +238,8 @@ namespace Nop.Services.Seo
 
         /// <summary>
         /// 查找URL记录（缓存版）
-        /// This method works absolutely the same way as "GetBySlug" one but caches the results.
-        /// Hence, it's used only for performance optimization in public store
+        /// 此方法的工作方式与“GetBySlug”一样，但缓存结果。
+        /// 因此，它仅用于框架中的性能优化
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <returns>Found URL record</returns>
@@ -274,7 +275,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Gets all URL records
+        /// 获取所有URL记录
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <param name="pageIndex">Page index</param>
@@ -345,7 +346,7 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Save slug
+        /// 保存slug
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
         /// <param name="entity">Entity</param>
@@ -363,14 +364,14 @@ namespace Nop.Services.Seo
                         where ur.EntityId == entityId &&
                         ur.EntityName == entityName &&
                         ur.LanguageId == languageId
-                        orderby ur.Id descending 
+                        orderby ur.Id descending
                         select ur;
             var allUrlRecords = query.ToList();
             var activeUrlRecord = allUrlRecords.FirstOrDefault(x => x.IsActive);
 
             if (activeUrlRecord == null && !string.IsNullOrWhiteSpace(slug))
             {
-                //find in non-active records with the specified slug
+                //在非活动记录中找到指定的小块
                 var nonActiveRecordWithSpecifiedSlug = allUrlRecords
                     .FirstOrDefault(x => x.Slug.Equals(slug, StringComparison.InvariantCultureIgnoreCase) && !x.IsActive);
                 if (nonActiveRecordWithSpecifiedSlug != null)

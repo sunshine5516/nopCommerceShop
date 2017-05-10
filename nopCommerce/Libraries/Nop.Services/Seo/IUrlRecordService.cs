@@ -5,66 +5,66 @@ using Nop.Core.Domain.Seo;
 namespace Nop.Services.Seo
 {
     /// <summary>
-    /// Provides information about URL records
+    /// 提供有关URL记录的信息
     /// </summary>
     public partial interface  IUrlRecordService
     {
         /// <summary>
-        /// Deletes an URL record
+        /// 删除一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         void DeleteUrlRecord(UrlRecord urlRecord);
 
         /// <summary>
-        /// Deletes an URL records
+        /// 删除URL记录
         /// </summary>
         /// <param name="urlRecords">URL records</param>
         void DeleteUrlRecords(IList<UrlRecord> urlRecords);
 
         /// <summary>
-        /// Gets an URL record
+        /// 获取URL记录
         /// </summary>
-        /// <param name="urlRecordId">URL record identifier</param>
+        /// <param name="urlRecordId">URL recordId</param>
         /// <returns>URL record</returns>
         UrlRecord GetUrlRecordById(int urlRecordId);
 
         /// <summary>
-        /// Gets an URL records
+        /// 获取URL记录
         /// </summary>
-        /// <param name="urlRecordIds">URL record identifiers</param>
+        /// <param name="urlRecordIds">urlRecordIds</param>
         /// <returns>URL record</returns>
         IList<UrlRecord> GetUrlRecordsByIds(int [] urlRecordIds);
 
         /// <summary>
-        /// Inserts an URL record
+        /// 插入一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         void InsertUrlRecord(UrlRecord urlRecord);
 
         /// <summary>
-        /// Updates the URL record
+        /// 更新一个URL记录
         /// </summary>
         /// <param name="urlRecord">URL record</param>
         void UpdateUrlRecord(UrlRecord urlRecord);
 
         /// <summary>
-        /// Find URL record
+        /// 查找URL记录
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <returns>Found URL record</returns>
         UrlRecord GetBySlug(string slug);
 
         /// <summary>
-        /// Find URL record (cached version).
-        /// This method works absolutely the same way as "GetBySlug" one but caches the results.
-        /// Hence, it's used only for performance optimization in public store
+        /// 查找URL记录（缓存版本）。
+        /// 此方法的工作方式与“GetBySlug”一样，但缓存结果。
+        /// 因此，它仅用于框架中的性能优化
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <returns>Found URL record</returns>
         UrlRecordService.UrlRecordForCaching GetBySlugCached(string slug);
 
         /// <summary>
-        /// Gets all URL records
+        /// 获取所有URL记录
         /// </summary>
         /// <param name="slug">Slug</param>
         /// <param name="pageIndex">Page index</param>
