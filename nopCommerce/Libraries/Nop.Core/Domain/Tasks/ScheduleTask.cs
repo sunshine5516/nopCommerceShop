@@ -7,6 +7,7 @@ namespace Nop.Core.Domain.Tasks
     /// </summary>
     public partial class ScheduleTask : BaseEntity
     {
+        //public string Tage { get; set; }
         /// <summary>
         /// Gets or sets the name
         /// </summary>

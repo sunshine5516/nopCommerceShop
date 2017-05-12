@@ -19,6 +19,9 @@ namespace Nop.Data
     public class NopObjectContext : DbContext, IDbContext
     {
         #region ¹¹Ôìº¯Êý
+        public NopObjectContext() : base("SqlConnectionString")
+        {
+        }
         public NopObjectContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
         {

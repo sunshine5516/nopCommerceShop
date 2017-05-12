@@ -71,6 +71,11 @@
     <Compile Include="Mapping\Orders\ReturnRequestAction.cs" />
     <Compile Include="Mapping\Topics\TopicTemplateMap.cs" />
     <Compile Include="Mapping\Vendors\VendorNoteMap.cs" />
+    <Compile Include="Migrations\201705110814239_InitialMigration.cs" />
+    <Compile Include="Migrations\201705110814239_InitialMigration.Designer.cs">
+      <DependentUpon>201705110814239_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QueryableExtensions.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="DataReaderExtensions.cs" />
@@ -194,7 +199,11 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705110814239_InitialMigration.resx">
+      <DependentUpon>201705110814239_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
