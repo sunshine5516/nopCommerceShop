@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using Nop.Core.Configuration;
@@ -164,6 +165,11 @@ namespace Nop.Core.Caching
         {
             //if (_connectionWrapper != null)
             //    _connectionWrapper.Dispose();
+        }
+
+        public List<KeyValuePair<string, object>> GetAll<T>()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

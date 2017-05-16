@@ -630,6 +630,10 @@ namespace Nop.Admin.Controllers
             return Redirect(returnUrl);
         }
 
+        public ActionResult GetAllCache()
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult RestartApplication(string returnUrl = "")
         {

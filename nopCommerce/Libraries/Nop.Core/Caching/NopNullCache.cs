@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace Nop.Core.Caching
 {
     /// <summary>
@@ -64,6 +67,46 @@ namespace Nop.Core.Caching
         /// </summary>
         public virtual void Dispose()
         {
+        }
+
+        T ICacheManager.Get<T>(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<KeyValuePair<string, object>> ICacheManager.GetAll<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+        void ICacheManager.Set(string key, object data, int cacheTime)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ICacheManager.IsSet(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ICacheManager.Remove(string key)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ICacheManager.RemoveByPattern(string pattern)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ICacheManager.Clear()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IDisposable.Dispose()
+        {
+            throw new NotImplementedException();
         }
     }
 }

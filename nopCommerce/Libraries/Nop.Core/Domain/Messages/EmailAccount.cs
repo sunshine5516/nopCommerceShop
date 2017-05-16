@@ -3,47 +3,47 @@
 namespace Nop.Core.Domain.Messages
 {
     /// <summary>
-    /// Represents an email account
+    /// 电子邮件账号
     /// </summary>
     public partial class EmailAccount : BaseEntity
     {
         /// <summary>
-        /// Gets or sets an email address
+        /// 电子邮件地址
         /// </summary>
         public string Email { get; set; }
 
         /// <summary>
-        /// Gets or sets an email display name
+        /// 昵称
         /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
-        /// Gets or sets an email host
+        /// 电子邮件主机
         /// </summary>
         public string Host { get; set; }
 
         /// <summary>
-        /// Gets or sets an email port
+        /// 电子邮件端口
         /// </summary>
         public int Port { get; set; }
 
         /// <summary>
-        /// Gets or sets an email user name
+        /// 用户名
         /// </summary>
         public string Username { get; set; }
 
         /// <summary>
-        /// Gets or sets an email password
+        /// 密码
         /// </summary>
         public string Password { get; set; }
 
         /// <summary>
-        /// Gets or sets a value that controls whether the SmtpClient uses Secure Sockets Layer (SSL) to encrypt the connection
+        /// 该值控制SmtpClient是否使用安全套接字层（SSL）来加密连接
         /// </summary>
         public bool EnableSsl { get; set; }
 
         /// <summary>
-        /// Gets or sets a value that controls whether the default system credentials of the application are sent with requests.
+        /// 获取或设置一个值，该值控制应用程序的默认系统凭据是否与请求一起发送。
         /// </summary>
         public bool UseDefaultCredentials { get; set; }
 

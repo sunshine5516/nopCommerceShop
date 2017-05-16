@@ -10,7 +10,7 @@ using Nop.Services.Media;
 namespace Nop.Services.Messages
 {
     /// <summary>
-    /// Email sender
+    /// 发送电子邮件
     /// </summary>
     public partial class EmailSender : IEmailSender
     {

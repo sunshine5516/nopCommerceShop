@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Caching;
 
@@ -20,7 +21,17 @@ namespace Nop.Core.Caching
                 return MemoryCache.Default;
             }
         }
-
+        public virtual List<KeyValuePair<string, object>> GetAll<T>()
+        {
+            var keyValues = new List<KeyValuePair<string, object>>();
+            IEnumerable<KeyValuePair<string, object>>
+                items = Cache.AsEnumerable();
+            foreach (KeyValuePair<string, object> item in items)
+            {
+                keyValues.Add(new System.Collections.Generic.KeyValuePair<string, object>(item.Key, item.Value));
+            }
+            return keyValues;
+        }
         /// <summary>
         /// 通过Key获取缓存的value 
         /// </summary>
@@ -29,9 +40,12 @@ namespace Nop.Core.Caching
         /// <returns>与Key对应的value.</returns>
         public virtual T Get<T>(string key)
         {
+            
+
+            //Cache.
             return (T)Cache[key];
         }
-
+        //public virtual 
         /// <summary>
         /// 键值对添加缓存
         /// </summary>

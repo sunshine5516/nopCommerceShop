@@ -5,57 +5,60 @@ using Nop.Core.Domain.Messages;
 
 namespace Nop.Services.Messages
 {
+    /// <summary>
+    /// 邮件队列接口
+    /// </summary>
     public partial interface IQueuedEmailService
     {
         /// <summary>
-        /// Inserts a queued email
+        /// 插入电子邮件队列
         /// </summary>
         /// <param name="queuedEmail">Queued email</param>
         void InsertQueuedEmail(QueuedEmail queuedEmail);
 
         /// <summary>
-        /// Updates a queued email
+        /// 更新电子邮件队列
         /// </summary>
         /// <param name="queuedEmail">Queued email</param>
         void UpdateQueuedEmail(QueuedEmail queuedEmail);
 
         /// <summary>
-        /// Deleted a queued email
+        /// 删除电子邮件队列
         /// </summary>
         /// <param name="queuedEmail">Queued email</param>
         void DeleteQueuedEmail(QueuedEmail queuedEmail);
 
         /// <summary>
-        /// Deleted a queued emails
+        /// 删除电子邮件队列
         /// </summary>
         /// <param name="queuedEmails">Queued emails</param>
         void DeleteQueuedEmails(IList<QueuedEmail> queuedEmails);
 
         /// <summary>
-        /// Gets a queued email by identifier
+        /// 根据ID获取电子邮件队列
         /// </summary>
-        /// <param name="queuedEmailId">Queued email identifier</param>
+        /// <param name="queuedEmailId">QueuedEmailId</param>
         /// <returns>Queued email</returns>
         QueuedEmail GetQueuedEmailById(int queuedEmailId);
 
         /// <summary>
-        /// Get queued emails by identifiers
+        /// 根据ID获取邮件
         /// </summary>
         /// <param name="queuedEmailIds">queued email identifiers</param>
         /// <returns>Queued emails</returns>
         IList<QueuedEmail> GetQueuedEmailsByIds(int[] queuedEmailIds);
 
         /// <summary>
-        /// Search queued emails
+        /// 搜索排队的电子邮件
         /// </summary>
-        /// <param name="fromEmail">From Email</param>
-        /// <param name="toEmail">To Email</param>
-        /// <param name="createdFromUtc">Created date from (UTC); null to load all records</param>
-        /// <param name="createdToUtc">Created date to (UTC); null to load all records</param>
-        /// <param name="loadNotSentItemsOnly">A value indicating whether to load only not sent emails</param>
-        /// <param name="loadOnlyItemsToBeSent">A value indicating whether to load only emails for ready to be sent</param>
-        /// <param name="maxSendTries">Maximum send tries</param>
-        /// <param name="loadNewest">A value indicating whether we should sort queued email descending; otherwise, ascending.</param>
+        /// <param name="fromEmail">发送方</param>
+        /// <param name="toEmail">收件方</param>
+        /// <param name="createdFromUtc">创建时间; null加载所有</param>
+        /// <param name="createdToUtc">创建时间; null加载所有</param>
+        /// <param name="loadNotSentItemsOnly">是否只加载未发送的邮件</param>
+        /// <param name="loadOnlyItemsToBeSent">是否只加载发送的</param>
+        /// <param name="maxSendTries">最大尝试次数</param>
+        /// <param name="loadNewest">是否排序排队的电子邮件降序; 否则上升。</param>
         /// <param name="pageIndex">Page index</param>
         /// <param name="pageSize">Page size</param>
         /// <returns>Queued emails</returns>
@@ -65,7 +68,7 @@ namespace Nop.Services.Messages
             bool loadNewest, int pageIndex = 0, int pageSize = int.MaxValue);
 
         /// <summary>
-        /// Delete all queued emails
+        /// 删除所有排队的电子邮件
         /// </summary>
         void DeleteAllEmails();
     }

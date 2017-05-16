@@ -3,32 +3,32 @@
 namespace Nop.Core.Domain.Messages
 {
     /// <summary>
-    /// Represents an email item
+    /// 发送的队列邮件
     /// </summary>
     public partial class QueuedEmail : BaseEntity
     {
         /// <summary>
-        /// Gets or sets the priority
+        /// 优先等级
         /// </summary>
         public int PriorityId { get; set; }
 
         /// <summary>
-        /// Gets or sets the From property (email address)
+        ///发件方(电子邮件地址)
         /// </summary>
         public string From { get; set; }
 
         /// <summary>
-        /// Gets or sets the FromName property
+        /// 发件方姓名
         /// </summary>
         public string FromName { get; set; }
 
         /// <summary>
-        /// Gets or sets the To property (email address)
+        /// 收件方(电子邮件地址)
         /// </summary>
         public string To { get; set; }
 
         /// <summary>
-        /// Gets or sets the ToName property
+        /// 收件方姓名
         /// </summary>
         public string ToName { get; set; }
 
@@ -43,73 +43,73 @@ namespace Nop.Core.Domain.Messages
         public string ReplyToName { get; set; }
 
         /// <summary>
-        /// Gets or sets the CC
+        /// 转发邮件
         /// </summary>
         public string CC { get; set; }
 
         /// <summary>
-        /// Gets or sets the Bcc
+        /// 私密发送邮件  
         /// </summary>
         public string Bcc { get; set; }
 
         /// <summary>
-        /// Gets or sets the subject
+        /// 邮件主题
         /// </summary>
         public string Subject { get; set; }
 
         /// <summary>
-        /// Gets or sets the body
+        /// 邮件内容
         /// </summary>
         public string Body { get; set; }
 
         /// <summary>
-        /// Gets or sets the attachment file path (full file path)
+        /// 附件文件路径
         /// </summary>
         public string AttachmentFilePath { get; set; }
 
         /// <summary>
-        /// Gets or sets the attachment file name. If specified, then this file name will be sent to a recipient. Otherwise, "AttachmentFilePath" name will be used.
+        /// 附件文件名。 如果指定，则该文件名将被发送给收件人。 否则，将使用“AttachmentFilePath”名称。
         /// </summary>
         public string AttachmentFileName { get; set; }
 
         /// <summary>
-        /// Gets or sets the download identifier of attached file
+        /// 附件文件的下载Id
         /// </summary>
         public int AttachedDownloadId { get; set; }
 
         /// <summary>
-        /// Gets or sets the date and time of item creation in UTC
+        /// 添加时间（UTC）
         /// </summary>
         public DateTime CreatedOnUtc { get; set; }
 
         /// <summary>
-        /// Gets or sets the date and time in UTC before which this email should not be sent
+        /// 不应发送此电子邮件的日期和时间
         /// </summary>
         public DateTime? DontSendBeforeDateUtc { get; set; }
 
         /// <summary>
-        /// Gets or sets the send tries
+        /// 发送次数
         /// </summary>
         public int SentTries { get; set; }
 
         /// <summary>
-        /// Gets or sets the sent date and time
+        /// 发送时间
         /// </summary>
         public DateTime? SentOnUtc { get; set; }
 
         /// <summary>
-        /// Gets or sets the used email account identifier
+        /// EmailAccountId
         /// </summary>
         public int EmailAccountId { get; set; }
 
         /// <summary>
-        /// Gets the email account
+        /// 电子邮件账号
         /// </summary>
         public virtual EmailAccount EmailAccount { get; set; }
 
 
         /// <summary>
-        /// Gets or sets the priority
+        /// 获取或设置优先级
         /// </summary>
         public QueuedEmailPriority Priority
         {

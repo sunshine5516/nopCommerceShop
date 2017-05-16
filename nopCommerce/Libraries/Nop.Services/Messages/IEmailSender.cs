@@ -4,28 +4,28 @@ using Nop.Core.Domain.Messages;
 namespace Nop.Services.Messages
 {
     /// <summary>
-    /// Email sender
+    /// 邮件发送接口
     /// </summary>
     public partial interface IEmailSender
     {
         /// <summary>
-        /// Sends an email
+        /// 发送电子邮件
         /// </summary>
-        /// <param name="emailAccount">Email account to use</param>
-        /// <param name="subject">Subject</param>
-        /// <param name="body">Body</param>
-        /// <param name="fromAddress">From address</param>
-        /// <param name="fromName">From display name</param>
-        /// <param name="toAddress">To address</param>
-        /// <param name="toName">To display name</param>
-        /// <param name="replyToAddress">ReplyTo address</param>
-        /// <param name="replyToName">ReplyTo display name</param>
-        /// <param name="bcc">BCC addresses list</param>
-        /// <param name="cc">CC addresses ist</param>
-        /// <param name="attachmentFilePath">Attachment file path</param>
-        /// <param name="attachmentFileName">Attachment file name. If specified, then this file name will be sent to a recipient. Otherwise, "AttachmentFilePath" name will be used.</param>
-        /// <param name="attachedDownloadId">Attachment download ID (another attachedment)</param>
-        /// <param name="headers">Headers</param>
+        /// <param name="emailAccount">邮件账号</param>
+        /// <param name="subject">主题</param>
+        /// <param name="body">内容</param>
+        /// <param name="fromAddress">发件人地址</param>
+        /// <param name="fromName">发件人姓名</param>
+        /// <param name="toAddress">收件人地址</param>
+        /// <param name="toName">收件人姓名</param>
+        /// <param name="replyToAddress"></param>
+        /// <param name="replyToName"></param>
+        /// <param name="bcc">私密发送邮件</param>
+        /// <param name="cc">抄送</param>
+        /// <param name="attachmentFilePath">附件路径</param>
+        /// <param name="attachmentFileName">附件名称</param>
+        /// <param name="attachedDownloadId">附件ID</param>
+        /// <param name="headers"></param>
         void SendEmail(EmailAccount emailAccount, string subject, string body,
             string fromAddress, string fromName, string toAddress, string toName,
              string replyToAddress = null, string replyToName = null,

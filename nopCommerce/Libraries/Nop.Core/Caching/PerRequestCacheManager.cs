@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Web;
 using System.Linq;
+using System;
+using System.Collections.Generic;
 
 namespace Nop.Core.Caching
 {
@@ -124,6 +126,11 @@ namespace Nop.Core.Caching
         /// </summary>
         public virtual void Dispose()
         {
+        }
+
+        public List<KeyValuePair<string, object>> GetAll<T>()
+        {
+            throw new NotImplementedException();
         }
     }
 }

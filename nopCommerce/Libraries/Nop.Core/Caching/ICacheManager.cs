@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Nop.Core.Caching
 {
@@ -14,7 +15,7 @@ namespace Nop.Core.Caching
         /// <param name="key">key</param>
         /// <returns>与Key对应的value</returns>
         T Get<T>(string key);
-
+        List<KeyValuePair<string, object>> GetAll<T>();
         /// <summary>
         /// 添加缓存
         /// </summary>
