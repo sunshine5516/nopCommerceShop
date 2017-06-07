@@ -277,7 +277,7 @@ namespace Nop.Services.Configuration
         }
 
         /// <summary>
-        /// Set setting value
+        /// 保存
         /// </summary>
         /// <typeparam name="T">Type</typeparam>
         /// <param name="key">Key</param>
@@ -390,12 +390,12 @@ namespace Nop.Services.Configuration
         /// <param name="settings">Setting instance</param>
         public virtual void SaveSetting<T>(T settings, int storeId = 0) where T : ISettings, new()
         {
-            /* We do not clear cache after each setting update.
-             * This behavior can increase performance because cached settings will not be cleared 
-             * and loaded from database after each update */
+            /* 每次设置更新后，都不会清除缓存.
+             * 此行为可以提高性能，因为每次更新后，缓存设置将不会从数据库中清除和加载
+             * */
             foreach (var prop in typeof(T).GetProperties())
             {
-                // get properties we can read and write to
+                // 获取可以读写的属性
                 if (!prop.CanRead || !prop.CanWrite)
                     continue;
 
