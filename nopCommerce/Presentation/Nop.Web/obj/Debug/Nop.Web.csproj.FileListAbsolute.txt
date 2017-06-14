@@ -1262,3 +1262,7 @@ E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\obj\Debug\N
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\obj\Debug\Nop.Web.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\obj\Debug\Nop.Web.dll
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web\obj\Debug\Nop.Web.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\bin\Nop.Core.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\bin\Nop.Data.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\bin\Nop.Services.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web\bin\Nop.Web.Framework.dll.config

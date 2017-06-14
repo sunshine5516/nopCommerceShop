@@ -1,6 +1,7 @@
 ﻿@model OnePageCheckoutModel
 @using Nop.Web.Models.Checkout;
 @using Nop.Core.Infrastructure;
+@*订单结算*@
 @{
     Layout = "~/Views/Shared/_ColumnsOne.cshtml";
 
@@ -51,6 +52,7 @@
                     <h2 class="title">@T("Checkout.BillingAddress")</h2>
                 </div>
                 <div id="checkout-step-billing" class="step a-item" style="display: none;">
+                    @*加载地址选项*@
                     <form id="co-billing-form" action="">
                         <div id="checkout-billing-load">
                             @Html.Action("OpcBillingForm", "Checkout")

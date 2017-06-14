@@ -1070,3 +1070,6 @@ E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\o
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.dll
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\obj\Debug\Nop.Web.Framework.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\bin\Debug\Nop.Core.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\bin\Debug\Nop.Data.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Presentation\Nop.Web.Framework\bin\Debug\Nop.Services.dll.config

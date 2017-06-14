@@ -280,3 +280,4 @@ E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Libraries\Nop.Data\obj\Debug\Nop
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Libraries\Nop.Data\obj\Debug\Nop.Data.pdb
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Libraries\Nop.Data\obj\Debug\Nop.Data.Migrations.InitialMigration.resources
 F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Libraries\Nop.Data\obj\Debug\Nop.Data.csproj.GenerateResource.Cache
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Libraries\Nop.Data\bin\Debug\Nop.Core.dll.config

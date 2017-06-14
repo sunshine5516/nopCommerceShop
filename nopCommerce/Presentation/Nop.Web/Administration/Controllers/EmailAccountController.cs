@@ -53,16 +53,19 @@ namespace Nop.Admin.Controllers
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageEmailAccounts))
                 return AccessDeniedView();
 
-            var emailAccountModels = _emailAccountService.GetAllEmailAccounts()
-                                    .Select(x => x.ToModel())
-                                    .ToList();
+            //var emailAccountModels = _emailAccountService.GetAllEmailAccounts()
+            //                        .Select(x => x.ToModel())
+            //                        .ToList();
+            var tempModel = _emailAccountService.GetAllPagedList(command.Page - 1, command.PageSize);
+            var Total = tempModel.TotalCount;
+            var emailAccountModels = tempModel.Select(x => x.ToModel()).ToList();
             foreach (var eam in emailAccountModels)
                 eam.IsDefaultEmailAccount = eam.Id == _emailAccountSettings.DefaultEmailAccountId;
 
             var gridModel = new DataSourceResult
             {
                 Data = emailAccountModels,
-                Total = emailAccountModels.Count()
+                Total = Total
             };
 
 			return new JsonResult

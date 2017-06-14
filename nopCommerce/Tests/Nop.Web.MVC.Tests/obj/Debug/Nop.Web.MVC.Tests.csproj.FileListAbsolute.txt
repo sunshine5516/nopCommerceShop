@@ -1222,3 +1222,9 @@ E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\obj\Debu
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\obj\Debug\Nop.Web.MVC.Tests.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\obj\Debug\Nop.Web.MVC.Tests.dll
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\obj\Debug\Nop.Web.MVC.Tests.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Core.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Data.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Services.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Web.Framework.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Admin.dll.config
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Web.MVC.Tests\bin\Debug\Nop.Web.dll.config

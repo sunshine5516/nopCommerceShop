@@ -1,4 +1,4 @@
-Group: Payment methods
+﻿Group: Payment methods
 FriendlyName: Check / Money Order
 SystemName: Payments.CheckMoneyOrder
 Version: 1.15

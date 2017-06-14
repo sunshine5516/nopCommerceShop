@@ -286,3 +286,4 @@ E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Core.Tests\bin\Debug\N
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Core.Tests\obj\Debug\Nop.Core.Tests.csprojResolveAssemblyReference.cache
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Core.Tests\obj\Debug\Nop.Core.Tests.dll
 E:\Code\nopCommerce\nopCommerceShop\nopCommerce\Tests\Nop.Core.Tests\obj\Debug\Nop.Core.Tests.pdb
+F:\Demo\开源框架\nopCommerce框架\nopCommerce二次开发\nopCommerceShop\nopCommerce\Tests\Nop.Core.Tests\bin\Debug\Nop.Core.dll.config

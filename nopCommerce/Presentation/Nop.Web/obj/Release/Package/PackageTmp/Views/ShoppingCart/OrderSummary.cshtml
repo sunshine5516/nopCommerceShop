@@ -27,6 +27,7 @@
        {
            @Html.AntiForgeryToken()
        <div class="table-wrapper">
+           @*¹ºÎï³µ*@
            <table class="cart">
                <colgroup>
                    @if (Model.IsEditable)
@@ -165,7 +166,6 @@
                                    {
                                        <input name="itemquantity@(item.Id)" type="text" value="@(item.Quantity)" class="qty-input" />
                                    }
-
                                }
                                else
                                {

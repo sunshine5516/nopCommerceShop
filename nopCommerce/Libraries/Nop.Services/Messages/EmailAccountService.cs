@@ -172,6 +172,13 @@ namespace Nop.Services.Messages
             }
             //throw new NotImplementedException();
         }
+
+        public IPagedList<EmailAccount> GetAllPagedList(int pageIndex = 0, int pageSize = int.MaxValue)
+        {
+            var query = _emailAccountRepository.Table.OrderBy(ea => ea.Id);
+            var emailAccount = new PagedList<EmailAccount>(query, pageIndex, pageSize);
+            return emailAccount;
+        }
         //public virtual void UpdateProducts(IList<EmailAccount> emailAccounts)
         //{
         //    if (emailAccounts == null)

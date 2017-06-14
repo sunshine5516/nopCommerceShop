@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Nop.Core.Domain.Messages;
+using Nop.Core;
 
 namespace Nop.Services.Messages
 {
@@ -45,5 +46,7 @@ namespace Nop.Services.Messages
         /// </summary>
         /// <returns>Email accounts list</returns>
         IList<EmailAccount> GetAllEmailAccounts();
+
+        IPagedList<EmailAccount> GetAllPagedList(int pageIndex = 0, int pageSize = int.MaxValue);
     }
 }

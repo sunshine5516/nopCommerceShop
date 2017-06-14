@@ -1,6 +1,7 @@
 ﻿@model CheckoutShippingAddressModel
 @using System.Text;
 @using Nop.Web.Models.Checkout;
+@*订单结算，2送货地址*@
 <div class="checkout-data">
     @if (Model.AllowPickUpInStore && !Model.PickUpInStoreOnly && Model.PickupPoints.Any())
     {

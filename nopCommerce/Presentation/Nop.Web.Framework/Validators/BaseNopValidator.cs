@@ -12,8 +12,8 @@ namespace Nop.Web.Framework.Validators
         }
 
         /// <summary>
-        /// Developers can override this method in custom partial classes
-        /// in order to add some custom initialization code to constructors
+        /// 开发人员可以在自定义部分类中覆盖此方法
+        /// 以便为构造函数添加一些自定义的初始化代码
         /// </summary>
         protected virtual void PostInitialize()
         {
@@ -21,7 +21,7 @@ namespace Nop.Web.Framework.Validators
         }
 
         /// <summary>
-        /// Sets length validation rule(s) to string properties according to appropriate database model
+        /// 长度验证
         /// </summary>
         /// <typeparam name="TObject">Object type</typeparam>
         /// <param name="dbContext">Database context</param>
