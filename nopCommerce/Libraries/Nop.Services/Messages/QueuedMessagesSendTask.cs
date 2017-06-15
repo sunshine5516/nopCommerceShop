@@ -22,7 +22,7 @@ namespace Nop.Services.Messages
         }
 
         /// <summary>
-        /// Executes a task
+        /// Executes a task是的
         /// </summary>
         public virtual void Execute()
         {
