@@ -1,5 +1,0 @@
-F:\Demo\开源框架\nopCommerce\Plugins\HelloWorld\bin\Debug\HelloWorld.dll
-F:\Demo\开源框架\nopCommerce\Plugins\HelloWorld\bin\Debug\HelloWorld.pdb
-F:\Demo\开源框架\nopCommerce\Plugins\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
-F:\Demo\开源框架\nopCommerce\Plugins\HelloWorld\obj\Debug\HelloWorld.dll
-F:\Demo\开源框架\nopCommerce\Plugins\HelloWorld\obj\Debug\HelloWorld.pdb
