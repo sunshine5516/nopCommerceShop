@@ -14,7 +14,7 @@ namespace Nop.Admin.Controllers
 {
     public partial class ScheduleTaskController : BaseAdminController
 	{
-		#region Fields
+		#region 实例对象
 
         private readonly IScheduleTaskService _scheduleTaskService;
         private readonly IPermissionService _permissionService;
@@ -23,7 +23,7 @@ namespace Nop.Admin.Controllers
 
 		#endregion
 
-		#region Constructors
+		#region 构造函数
 
         public ScheduleTaskController(IScheduleTaskService scheduleTaskService, 
             IPermissionService permissionService,
@@ -58,7 +58,7 @@ namespace Nop.Admin.Controllers
 
         #endregion
 
-        #region Methods
+        #region 方法
 
         public ActionResult Index()
         {

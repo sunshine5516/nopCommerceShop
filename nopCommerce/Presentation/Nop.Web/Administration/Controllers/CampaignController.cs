@@ -56,7 +56,11 @@ namespace Nop.Admin.Controllers
             this._permissionService = permissionService;
             this._customerService = customerService;
 		}
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tokens"></param>
+        /// <returns></returns>
         [NonAction]
         protected virtual string FormatTokens(string[] tokens)
         {

@@ -12,6 +12,10 @@ namespace Nop.Admin.Models.Messages
         [UIHint("DateNullable")]
         public DateTime? SearchStartDate { get; set; }
 
+        [NopResourceDisplayName("Admin.System.QueuedEmails.List.SearchStartDateasdasd")]
+        [UIHint("DateNullable")]
+        public DateTime? SearchStartDateasdasd { get; set; }
+
         [NopResourceDisplayName("Admin.System.QueuedEmails.List.EndDate")]
         [UIHint("DateNullable")]
         public DateTime? SearchEndDate { get; set; }

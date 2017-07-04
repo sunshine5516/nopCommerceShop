@@ -383,7 +383,12 @@ namespace Nop.Web.Controllers
 
             return model;
         }
-
+        /// <summary>
+        /// 支付方式实体
+        /// </summary>
+        /// <param name="cart"></param>
+        /// <param name="filterByCountryId"></param>
+        /// <returns></returns>
         [NonAction]
         protected virtual CheckoutPaymentMethodModel PreparePaymentMethodModel(IList<ShoppingCartItem> cart, int filterByCountryId)
         {
@@ -1307,7 +1312,11 @@ namespace Nop.Web.Controllers
         #endregion
 
         #region Methods (one page checkout一页结账)
-
+        /// <summary>
+        /// 加载送货地址下一步(配送方式)
+        /// </summary>
+        /// <param name="cart"></param>
+        /// <returns></returns>
         [NonAction]
         protected JsonResult OpcLoadStepAfterShippingAddress(List<ShoppingCartItem> cart)
         {
@@ -1336,12 +1345,15 @@ namespace Nop.Web.Controllers
                 goto_section = "shipping_method"
             });
         }
-
+        /// <summary>
+        /// 配送方式下一步，加载支付方式
+        /// </summary>
+        /// <param name="cart"></param>
+        /// <returns></returns>
         [NonAction]
         protected JsonResult OpcLoadStepAfterShippingMethod(List<ShoppingCartItem> cart)
         {
-            //Check whether payment workflow is required
-            //we ignore reward points during cart total calculation
+            //支付方式工作流是否需要加载
             bool isPaymentWorkflowRequired = IsPaymentWorkflowRequired(cart, true);
             if (isPaymentWorkflowRequired)
             {
@@ -1404,7 +1416,12 @@ namespace Nop.Web.Controllers
                 goto_section = "confirm_order"
             });
         }
-
+        /// <summary>
+        /// 保存支付方式下一步，加载支付结果
+        /// </summary>
+        /// <param name="paymentMethod"></param>
+        /// <param name="cart"></param>
+        /// <returns></returns>
         [NonAction]
         protected JsonResult OpcLoadStepAfterPaymentMethod(IPaymentMethod paymentMethod, List<ShoppingCartItem> cart)
         {
@@ -1477,7 +1494,11 @@ namespace Nop.Web.Controllers
             var billingAddressModel = PrepareBillingAddressModel(cart, prePopulateNewAddressWithCustomerFields: true);
             return PartialView("OpcBillingAddress", billingAddressModel);
         }
-
+        /// <summary>
+        ///保存订单(step 1)
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcSaveBilling(FormCollection form)
         {
@@ -1612,7 +1633,7 @@ namespace Nop.Web.Controllers
 
                 _genericAttributeService.SaveAttribute<ShippingOption>(_workContext.CurrentCustomer, SystemCustomerAttributeNames.SelectedShippingOption, null, _storeContext.CurrentStore.Id);
 
-                //load next step
+                //加载下一步
                 return OpcLoadStepAfterShippingMethod(cart);
             }
             catch (Exception exc)
@@ -1621,7 +1642,11 @@ namespace Nop.Web.Controllers
                 return Json(new { error = 1, message = exc.Message });
             }
         }
-
+        /// <summary>
+        /// 保存送货地址(step 2)
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcSaveShipping(FormCollection form)
         {
@@ -1767,7 +1792,11 @@ namespace Nop.Web.Controllers
                 return Json(new { error = 1, message = exc.Message });
             }
         }
-
+        /// <summary>
+        /// 保存配送方式(step 3)
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcSaveShippingMethod(FormCollection form)
         {
@@ -1835,7 +1864,11 @@ namespace Nop.Web.Controllers
                 return Json(new { error = 1, message = exc.Message });
             }
         }
-
+        /// <summary>
+        /// 保存支付方式(step 4)
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcSavePaymentMethod(FormCollection form)
         {
@@ -1910,7 +1943,11 @@ namespace Nop.Web.Controllers
                 return Json(new { error = 1, message = exc.Message });
             }
         }
-
+        /// <summary>
+        /// 支付信息(step 5)
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcSavePaymentInfo(FormCollection form)
         {
@@ -1981,7 +2018,10 @@ namespace Nop.Web.Controllers
                 return Json(new { error = 1, message = exc.Message });
             }
         }
-
+        /// <summary>
+        /// 确认订单(step 6)
+        /// </summary>
+        /// <returns></returns>
         [ValidateInput(false)]
         public ActionResult OpcConfirmOrder()
         {
