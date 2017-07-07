@@ -18,7 +18,7 @@ using Nop.Services.Seo;
 namespace Nop.Services.Media
 {
     /// <summary>
-    /// Picture service
+    /// Í¼Æ¬·þÎñ
     /// </summary>
     public partial class PictureService : IPictureService
     {

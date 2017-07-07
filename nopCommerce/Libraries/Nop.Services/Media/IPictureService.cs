@@ -5,7 +5,7 @@ using Nop.Core.Domain.Media;
 namespace Nop.Services.Media
 {
     /// <summary>
-    /// Picture service interface
+    /// 图片服务接口
     /// </summary>
     public partial interface IPictureService
     {
@@ -50,13 +50,13 @@ namespace Nop.Services.Media
             PictureType defaultPictureType = PictureType.Entity);
 
         /// <summary>
-        /// Get a picture URL
+        /// 获取图片URL路径
         /// </summary>
-        /// <param name="picture">Picture instance</param>
-        /// <param name="targetSize">The target picture size (longest side)</param>
-        /// <param name="showDefaultPicture">A value indicating whether the default picture is shown</param>
+        /// <param name="picture">Picture实例</param>
+        /// <param name="targetSize">图片尺寸</param>
+        /// <param name="showDefaultPicture">是否显示默认的图片</param>
         /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
-        /// <param name="defaultPictureType">Default picture type</param>
+        /// <param name="defaultPictureType">默认图片类型</param>
         /// <returns>Picture URL</returns>
         string GetPictureUrl(Picture picture, 
             int targetSize = 0,

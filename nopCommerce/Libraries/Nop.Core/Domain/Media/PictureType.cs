@@ -1,7 +1,7 @@
 namespace Nop.Core.Domain.Media
 {
     /// <summary>
-    /// Represents a picture item type
+    /// Õº∆¨¿‡–Õ
     /// </summary>
     public enum PictureType
     {
