@@ -84,7 +84,7 @@ namespace Nop.Services.Media
         #region Utilities
 
         /// <summary>
-        /// Calculates picture dimensions whilst maintaining aspect
+        /// 计算图片尺寸
         /// </summary>
         /// <param name="originalSize">The original picture size</param>
         /// <param name="targetSize">The target picture size (longest side)</param>
@@ -137,7 +137,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Returns the file extension from mime type.
+        /// 从mime类型返回文件扩展名。
         /// </summary>
         /// <param name="mimeType">Mime type</param>
         /// <returns>File extension</returns>
@@ -182,7 +182,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Save picture on file system
+        /// 图片保存在文件系统上
         /// </summary>
         /// <param name="pictureId">Picture identifier</param>
         /// <param name="pictureBinary">Picture binary</param>
@@ -213,7 +213,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Delete picture thumbs
+        /// 删除本地图片
         /// </summary>
         /// <param name="picture">Picture</param>
         protected virtual void DeletePictureThumbs(Picture picture)
@@ -229,7 +229,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Get picture (thumb) local path
+        /// 获取图片本地路径
         /// </summary>
         /// <param name="thumbFileName">Filename</param>
         /// <returns>Local picture thumb path</returns>
@@ -255,10 +255,10 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Get picture (thumb) URL 
+        /// 获取图片（拇指）URL
         /// </summary>
-        /// <param name="thumbFileName">Filename</param>
-        /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
+        /// <param name="thumbFileName">文件名</param>
+        /// <param name="storeLocation"></param>
         /// <returns>Local picture thumb path</returns>
         protected virtual string GetThumbUrl(string thumbFileName, string storeLocation = null)
         {
@@ -283,7 +283,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Get picture local path. Used when images stored on file system (not in the database)
+        /// 获取图片本地路径。 当图像存储在文件系统（不在数据库中）时使用
         /// </summary>
         /// <param name="fileName">Filename</param>
         /// <returns>Local picture path</returns>
@@ -310,7 +310,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Get a value indicating whether some file (thumb) already exists
+        /// 检查某些文件（thumb）是否已经存在
         /// </summary>
         /// <param name="thumbFilePath">Thumb file path</param>
         /// <param name="thumbFileName">Thumb file name</param>
@@ -336,7 +336,7 @@ namespace Nop.Services.Media
         #region Getting picture local path/URL methods
 
         /// <summary>
-        /// Gets the loaded picture binary depending on picture storage settings
+        /// 根据图片存储设置获取加载的图片二进制
         /// </summary>
         /// <param name="picture">Picture</param>
         /// <returns>Picture binary</returns>
@@ -356,10 +356,10 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Gets the default picture URL
+        /// 获取默认图片URL
         /// </summary>
-        /// <param name="targetSize">The target picture size (longest side)</param>
-        /// <param name="defaultPictureType">Default picture type</param>
+        /// <param name="targetSize">目标图片大小（最长边）</param>
+        /// <param name="defaultPictureType">默认图片类型</param>
         /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
         /// <returns>Picture URL</returns>
         public virtual string GetDefaultPictureUrl(int targetSize = 0,
@@ -444,10 +444,10 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Get a picture URL
+        /// 获取图片路径
         /// </summary>
-        /// <param name="picture">Picture instance</param>
-        /// <param name="targetSize">The target picture size (longest side)</param>
+        /// <param name="picture">图片实例</param>
+        /// <param name="targetSize">图片大小</param>
         /// <param name="showDefaultPicture">A value indicating whether the default picture is shown</param>
         /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
         /// <param name="defaultPictureType">Default picture type</param>
@@ -791,7 +791,7 @@ namespace Nop.Services.Media
         }
 
         /// <summary>
-        /// Validates input picture dimensions
+        /// 验证输入图片尺寸
         /// </summary>
         /// <param name="pictureBinary">Picture binary</param>
         /// <param name="mimeType">MIME type</param>
@@ -850,7 +850,7 @@ namespace Nop.Services.Media
         #region Properties
 
         /// <summary>
-        /// Gets or sets a value indicating whether the images should be stored in data base.
+        /// 图像是否应存储在数据库中。
         /// </summary>
         public virtual bool StoreInDb
         {

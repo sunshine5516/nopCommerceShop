@@ -11,17 +11,17 @@ namespace Nop.Core.Domain.Security
         private ICollection<CustomerRole> _customerRoles;
 
         /// <summary>
-        /// Gets or sets the permission name
+        /// 权限名称
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the permission system name
+        /// 权限系统名称
         /// </summary>
         public string SystemName { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets the permission category
+        /// 权限类别
         /// </summary>
         public string Category { get; set; }
         

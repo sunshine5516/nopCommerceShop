@@ -4,7 +4,7 @@ using Nop.Core.Domain.Security;
 namespace Nop.Core.Domain.Customers
 {
     /// <summary>
-    /// Represents a customer role
+    /// 客户角色
     /// </summary>
     public partial class CustomerRole : BaseEntity
     {
@@ -45,9 +45,9 @@ namespace Nop.Core.Domain.Customers
         /// A customer is added to this customer role once a specified product is purchased.
         /// </summary>
         public int PurchasedWithProductId { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets the permission records
+        /// 获取或设置权限记录
         /// </summary>
         public virtual ICollection<PermissionRecord> PermissionRecords
         {

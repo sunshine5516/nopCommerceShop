@@ -762,7 +762,7 @@ namespace Nop.Services.Customers
         }
 
         /// <summary>
-        /// Gets a customer role
+        /// 获取用户角色
         /// </summary>
         /// <param name="systemName">Customer role system name</param>
         /// <returns>Customer role</returns>

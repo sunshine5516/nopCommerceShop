@@ -15,8 +15,7 @@ namespace Nop.Web.Framework.Themes
     /// </summary>
     public abstract class ThemeableVirtualPathProviderViewEngine : VirtualPathProviderViewEngine
     {
-        //the original implementation can be found at http://aspnetwebstack.codeplex.com/SourceControl/latest#src/System.Web.Mvc/VirtualPathProviderViewEngine.cs
-        //we make some methods protected virtual because they are overridden by some plugin vendors
+        //我们使一些方法受到虚拟保护，因为它们被一些插件供应商所覆盖
         #region 字段
 
         private const string CacheKeyFormat = ":ViewCacheEntry:{0}:{1}:{2}:{3}:{4}:{5}";
@@ -87,7 +86,9 @@ namespace Nop.Web.Framework.Themes
             string[] searched;
             var theme = GetCurrentTheme();
             string controllerName = controllerContext.RouteData.GetRequiredString("controller");
-            string partialPath = GetPath(controllerContext, PartialViewLocationFormats, AreaPartialViewLocationFormats, "PartialViewLocationFormats", partialViewName, controllerName, theme, CacheKeyPrefixPartial, useCache, out searched);
+            string partialPath = GetPath(controllerContext, PartialViewLocationFormats, 
+                AreaPartialViewLocationFormats, "PartialViewLocationFormats", partialViewName,
+                controllerName, theme, CacheKeyPrefixPartial, useCache, out searched);
 
             if (String.IsNullOrEmpty(partialPath))
             {
@@ -124,7 +125,9 @@ namespace Nop.Web.Framework.Themes
             return new ViewEngineResult(CreateView(controllerContext, viewPath, masterPath), this);
         }
 
-        protected virtual string GetPath(ControllerContext controllerContext, string[] locations, string[] areaLocations, string locationsPropertyName, string name, string controllerName, string theme, string cacheKeyPrefix, bool useCache, out string[] searchedLocations)
+        protected virtual string GetPath(ControllerContext controllerContext, string[] locations, 
+            string[] areaLocations, string locationsPropertyName, string name, string controllerName,
+            string theme, string cacheKeyPrefix, bool useCache, out string[] searchedLocations)
         {
             searchedLocations = _emptyLocations;
 

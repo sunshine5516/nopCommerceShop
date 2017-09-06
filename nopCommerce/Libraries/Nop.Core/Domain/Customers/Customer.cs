@@ -26,7 +26,7 @@ namespace Nop.Core.Domain.Customers
         }
 
         /// <summary>
-        /// Gets or sets the customer Guid
+        /// 用户ID
         /// </summary>
         public Guid CustomerGuid { get; set; }
 
@@ -61,17 +61,17 @@ namespace Nop.Core.Domain.Customers
         public string PasswordSalt { get; set; }
 
         /// <summary>
-        /// Gets or sets the admin comment
+        /// 管理员评论
         /// </summary>
         public string AdminComment { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the customer is tax exempt
+        /// 客户是否免税
         /// </summary>
         public bool IsTaxExempt { get; set; }
 
         /// <summary>
-        /// Gets or sets the affiliate identifier
+        /// 获取或设置会员标识符
         /// </summary>
         public int AffiliateId { get; set; }
 
@@ -101,22 +101,22 @@ namespace Nop.Core.Domain.Customers
         public bool Deleted { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the customer account is system
+        /// 客户帐户是否为系统
         /// </summary>
         public bool IsSystemAccount { get; set; }
 
         /// <summary>
-        /// Gets or sets the customer system name
+        /// 获取或设置客户系统名称
         /// </summary>
         public string SystemName { get; set; }
 
         /// <summary>
-        /// Gets or sets the last IP address
+        /// 最新IpAddress
         /// </summary>
         public string LastIpAddress { get; set; }
 
         /// <summary>
-        /// Gets or sets the date and time of entity creation
+        /// 添加时间
         /// </summary>
         public DateTime CreatedOnUtc { get; set; }
 
@@ -126,7 +126,7 @@ namespace Nop.Core.Domain.Customers
         public DateTime? LastLoginDateUtc { get; set; }
 
         /// <summary>
-        /// Gets or sets the date and time of last activity
+        /// 上次活动的日期和时间
         /// </summary>
         public DateTime LastActivityDateUtc { get; set; }
         
@@ -142,7 +142,7 @@ namespace Nop.Core.Domain.Customers
         }
 
         /// <summary>
-        /// Gets or sets the customer roles
+        /// 客户角色
         /// </summary>
         public virtual ICollection<CustomerRole> CustomerRoles
         {
@@ -160,7 +160,7 @@ namespace Nop.Core.Domain.Customers
         }
 
         /// <summary>
-        /// Gets or sets return request of this customer
+        /// 此客户的退货请求
         /// </summary>
         public virtual ICollection<ReturnRequest> ReturnRequests
         {

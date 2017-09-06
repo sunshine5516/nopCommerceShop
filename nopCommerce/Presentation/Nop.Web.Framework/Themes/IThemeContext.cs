@@ -6,7 +6,7 @@
     public interface IThemeContext
     {
         /// <summary>
-        /// Get or set current theme system name
+        /// 当前主题系统名称
         /// </summary>
         string WorkingThemeName { get; set; }
     }

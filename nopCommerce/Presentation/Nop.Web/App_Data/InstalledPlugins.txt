@@ -17,7 +17,7 @@ Tax.FixedRate
 Tax.CountryStateZip
 Widgets.GoogleAnalytics
 Widgets.HelloWorld2
-Widgets.NivoSlider
 Payments.Alipay
 Payments.CheckMoneyOrder
 Payments.PayPalDirect
+Widgets.NivoSlider

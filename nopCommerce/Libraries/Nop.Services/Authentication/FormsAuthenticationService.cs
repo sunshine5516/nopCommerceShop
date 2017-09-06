@@ -41,7 +41,7 @@ namespace Nop.Services.Authentication
 
         #endregion
 
-        #region Utilities
+        #region ¸¨Öú·½·¨
 
         /// <summary>
         /// Get authenticated customer

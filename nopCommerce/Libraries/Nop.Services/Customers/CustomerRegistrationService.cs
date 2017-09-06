@@ -67,8 +67,8 @@ namespace Nop.Services.Customers
         /// <summary>
         /// 验证用户
         /// </summary>
-        /// <param name="usernameOrEmail">Username or email</param>
-        /// <param name="password">Password</param>
+        /// <param name="usernameOrEmail">用户名/电子邮件账户</param>
+        /// <param name="password">密码</param>
         /// <returns>Result</returns>
         public virtual CustomerLoginResults ValidateCustomer(string usernameOrEmail, string password)
         {
@@ -166,7 +166,7 @@ namespace Nop.Services.Customers
                 }
             }
 
-            //validate unique user
+            //验证唯一用户
             if (_customerService.GetCustomerByEmail(request.Email) != null)
             {
                 result.AddError(_localizationService.GetResource("Account.Register.Errors.EmailAlreadyExists"));

@@ -630,7 +630,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Login / logout
+        #region 登录/注销
 
         [NopHttpsRequirement(SslRequirement.Yes)]
         //即使在商店关闭时也可用
@@ -766,7 +766,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Password recovery
+        #region 找回密码
 
         [NopHttpsRequirement(SslRequirement.Yes)]
         //available even when navigation is not allowed
@@ -892,7 +892,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region Register
+        #region 注册
 
         [NopHttpsRequirement(SslRequirement.Yes)]
         //available even when navigation is not allowed
@@ -1250,7 +1250,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region My account / Info
+        #region 我的账户 / 信息
 
         [ChildActionOnly]
         public ActionResult CustomerNavigation(int selectedTabId = 0)
@@ -1575,7 +1575,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region My account / Addresses
+        #region 我的账户 / 地址
 
         [NopHttpsRequirement(SslRequirement.Yes)]
         public ActionResult Addresses()
@@ -1831,7 +1831,7 @@ namespace Nop.Web.Controllers
 
         #endregion
 
-        #region My account / Change password
+        #region 我的账户 / 修改密码
 
         [NopHttpsRequirement(SslRequirement.Yes)]
         public ActionResult ChangePassword()

@@ -7,30 +7,30 @@ using Nop.Core.Domain.Orders;
 namespace Nop.Services.Customers
 {
     /// <summary>
-    /// Customer service interface
+    /// 用户管理接口
     /// </summary>
     public partial interface ICustomerService
     {
         #region Customers
 
         /// <summary>
-        /// Gets all customers
+        /// 获取所有用户
         /// </summary>
         /// <param name="createdFromUtc">Created date from (UTC); null to load all records</param>
         /// <param name="createdToUtc">Created date to (UTC); null to load all records</param>
         /// <param name="affiliateId">Affiliate identifier</param>
         /// <param name="vendorId">Vendor identifier</param>
-        /// <param name="customerRoleIds">A list of customer role identifiers to filter by (at least one match); pass null or empty list in order to load all customers; </param>
-        /// <param name="email">Email; null to load all customers</param>
-        /// <param name="username">Username; null to load all customers</param>
-        /// <param name="firstName">First name; null to load all customers</param>
-        /// <param name="lastName">Last name; null to load all customers</param>
-        /// <param name="dayOfBirth">Day of birth; 0 to load all customers</param>
-        /// <param name="monthOfBirth">Month of birth; 0 to load all customers</param>
+        /// <param name="customerRoleIds">要过滤的客户角色标识符列表（至少一个匹配）; 传递空或空列表以加载所有客户;</param>
+        /// <param name="email">电子邮件; null加载所有客户</param>
+        /// <param name="username">用户名; null加载所有客户</param>
+        /// <param name="firstName">名字; null加载所有客户</param>
+        /// <param name="lastName">名字; null加载所有客户</param>
+        /// <param name="dayOfBirth">出生日期; 0加载所有客户</param>
+        /// <param name="monthOfBirth">出生月份; 0加载所有客户</param>
         /// <param name="company">Company; null to load all customers</param>
-        /// <param name="phone">Phone; null to load all customers</param>
+        /// <param name="phone">电话; null加载所有客户</param>
         /// <param name="zipPostalCode">Phone; null to load all customers</param>
-        /// <param name="ipAddress">IP address; null to load all customers</param>
+        /// <param name="ipAddress">IP地址; null加载所有客户</param>
         /// <param name="loadOnlyWithShoppingCart">Value indicating whether to load customers only with shopping cart</param>
         /// <param name="sct">Value indicating what shopping cart type to filter; userd when 'loadOnlyWithShoppingCart' param is 'true'</param>
         /// <param name="pageIndex">Page index</param>
@@ -44,9 +44,9 @@ namespace Nop.Services.Customers
             string company = null, string phone = null, string zipPostalCode = null,
             string ipAddress = null, bool loadOnlyWithShoppingCart = false, ShoppingCartType? sct = null,
             int pageIndex = 0, int pageSize = int.MaxValue);
-        
+
         /// <summary>
-        /// Gets all customers by customer format (including deleted ones)
+        /// 根据密码格式获取用户
         /// </summary>
         /// <param name="passwordFormat">Password format</param>
         /// <returns>Customers</returns>

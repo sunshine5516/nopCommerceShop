@@ -10,24 +10,24 @@ namespace Nop.Services.Media
     public partial interface IPictureService
     {
         /// <summary>
-        /// Gets the loaded picture binary depending on picture storage settings
+        /// 根据图片存储设置获取加载的图片二进制
         /// </summary>
         /// <param name="picture">Picture</param>
         /// <returns>Picture binary</returns>
         byte[] LoadPictureBinary(Picture picture);
 
         /// <summary>
-        /// Get picture SEO friendly name
+        /// 获取图片SEO友好的名字
         /// </summary>
         /// <param name="name">Name</param>
         /// <returns>Result</returns>
         string GetPictureSeName(string name);
 
         /// <summary>
-        /// Gets the default picture URL
+        /// 获取默认图片URL
         /// </summary>
-        /// <param name="targetSize">The target picture size (longest side)</param>
-        /// <param name="defaultPictureType">Default picture type</param>
+        /// <param name="targetSize">默认大小</param>
+        /// <param name="defaultPictureType">图片类型</param>
         /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
         /// <returns>Picture URL</returns>
         string GetDefaultPictureUrl(int targetSize = 0, 
@@ -35,13 +35,13 @@ namespace Nop.Services.Media
             string storeLocation = null);
 
         /// <summary>
-        /// Get a picture URL
+        /// 获取图片路径
         /// </summary>
         /// <param name="pictureId">Picture identifier</param>
-        /// <param name="targetSize">The target picture size (longest side)</param>
+        /// <param name="targetSize">默认大小</param>
         /// <param name="showDefaultPicture">A value indicating whether the default picture is shown</param>
         /// <param name="storeLocation">Store location URL; null to use determine the current store location automatically</param>
-        /// <param name="defaultPictureType">Default picture type</param>
+        /// <param name="defaultPictureType">图片类型</param>
         /// <returns>Picture URL</returns>
         string GetPictureUrl(int pictureId, 
             int targetSize = 0,
@@ -65,7 +65,7 @@ namespace Nop.Services.Media
             PictureType defaultPictureType = PictureType.Entity);
 
         /// <summary>
-        /// Get a picture local path
+        /// 获取图片本地路径
         /// </summary>
         /// <param name="picture">Picture instance</param>
         /// <param name="targetSize">The target picture size (longest side)</param>
@@ -74,20 +74,20 @@ namespace Nop.Services.Media
         string GetThumbLocalPath(Picture picture, int targetSize = 0, bool showDefaultPicture = true);
 
         /// <summary>
-        /// Gets a picture
+        /// 获取图片
         /// </summary>
         /// <param name="pictureId">Picture identifier</param>
         /// <returns>Picture</returns>
         Picture GetPictureById(int pictureId);
 
         /// <summary>
-        /// Deletes a picture
+        /// 删除图片
         /// </summary>
         /// <param name="picture">Picture</param>
         void DeletePicture(Picture picture);
 
         /// <summary>
-        /// Gets a collection of pictures
+        /// 获取图片集合
         /// </summary>
         /// <param name="pageIndex">Current page</param>
         /// <param name="pageSize">Items on each page</param>
@@ -95,23 +95,23 @@ namespace Nop.Services.Media
         IPagedList<Picture> GetPictures(int pageIndex = 0, int pageSize = int.MaxValue);
 
         /// <summary>
-        /// Gets pictures by product identifier
+        /// 按ID符获取图片
         /// </summary>
         /// <param name="productId">Product identifier</param>
-        /// <param name="recordsToReturn">Number of records to return. 0 if you want to get all items</param>
+        /// <param name="recordsToReturn">要返回的记录数。 0返回所有</param>
         /// <returns>Pictures</returns>
         IList<Picture> GetPicturesByProductId(int productId, int recordsToReturn = 0);
 
         /// <summary>
-        /// Inserts a picture
+        /// 插入图片
         /// </summary>
-        /// <param name="pictureBinary">The picture binary</param>
-        /// <param name="mimeType">The picture MIME type</param>
-        /// <param name="seoFilename">The SEO filename</param>
-        /// <param name="altAttribute">"alt" attribute for "img" HTML element</param>
-        /// <param name="titleAttribute">"title" attribute for "img" HTML element</param>
-        /// <param name="isNew">A value indicating whether the picture is new</param>
-        /// <param name="validateBinary">A value indicating whether to validated provided picture binary</param>
+        /// <param name="pictureBinary">图片二进制</param>
+        /// <param name="mimeType">图片MIME类型</param>
+        /// <param name="seoFilename">SEO文件名</param>
+        /// <param name="altAttribute">“img”HTML元素的“alt”属性</param>
+        /// <param name="titleAttribute">“img”HTML元素的“title”属性</param>
+        /// <param name="isNew">图片是否是新的值</param>
+        /// <param name="validateBinary">指示是否验证提供的图片二进制的值</param>
         /// <returns>Picture</returns>
         Picture InsertPicture(byte[] pictureBinary, string mimeType, string seoFilename, 
             string altAttribute = null, string titleAttribute = null,
@@ -134,7 +134,7 @@ namespace Nop.Services.Media
             bool isNew = true, bool validateBinary = true);
 
         /// <summary>
-        /// Updates a SEO filename of a picture
+        /// 更新图片的SEO文件名
         /// </summary>
         /// <param name="pictureId">The picture identifier</param>
         /// <param name="seoFilename">The SEO filename</param>
@@ -142,7 +142,7 @@ namespace Nop.Services.Media
         Picture SetSeoFilename(int pictureId, string seoFilename);
 
         /// <summary>
-        /// Validates input picture dimensions
+        /// 验证输入图片尺寸
         /// </summary>
         /// <param name="pictureBinary">Picture binary</param>
         /// <param name="mimeType">MIME type</param>
@@ -150,12 +150,12 @@ namespace Nop.Services.Media
         byte[] ValidatePicture(byte[] pictureBinary, string mimeType);
 
         /// <summary>
-        /// Gets or sets a value indicating whether the images should be stored in data base.
+        /// 获取或设置一个值，指示图像是否应存储在数据库中。
         /// </summary>
         bool StoreInDb { get; set; }
 
         /// <summary>
-        /// Get pictures hashes
+        /// 获取图片散列
         /// </summary>
         /// <param name="picturesIds">Pictures Ids</param>
         /// <returns></returns>
