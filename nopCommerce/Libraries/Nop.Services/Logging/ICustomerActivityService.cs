@@ -7,43 +7,43 @@ using Nop.Core.Domain.Logging;
 namespace Nop.Services.Logging
 {
     /// <summary>
-    /// Customer activity service interface
+    /// 用户活动日志接口
     /// </summary>
     public partial interface ICustomerActivityService
     {
         /// <summary>
-        /// Inserts an activity log type item
+        /// 添加日志类型
         /// </summary>
         /// <param name="activityLogType">Activity log type item</param>
         void InsertActivityType(ActivityLogType activityLogType);
 
         /// <summary>
-        /// Updates an activity log type item
+        /// 更新日志类型
         /// </summary>
         /// <param name="activityLogType">Activity log type item</param>
         void UpdateActivityType(ActivityLogType activityLogType);
                 
         /// <summary>
-        /// Deletes an activity log type item
+        /// 删除日志类型
         /// </summary>
         /// <param name="activityLogType">Activity log type</param>
         void DeleteActivityType(ActivityLogType activityLogType);
         
         /// <summary>
-        /// Gets all activity log type items
+        /// 获取所有日志类型
         /// </summary>
         /// <returns>Activity log type items</returns>
         IList<ActivityLogType> GetAllActivityTypes();
         
         /// <summary>
-        /// Gets an activity log type item
+        /// 根据ID获取日志类型
         /// </summary>
         /// <param name="activityLogTypeId">Activity log type identifier</param>
         /// <returns>Activity log type item</returns>
         ActivityLogType GetActivityTypeById(int activityLogTypeId);
         
         /// <summary>
-        /// Inserts an activity log item
+        /// 添加一条日志记录
         /// </summary>
         /// <param name="systemKeyword">The system keyword</param>
         /// <param name="comment">The activity comment</param>
@@ -52,7 +52,7 @@ namespace Nop.Services.Logging
         ActivityLog InsertActivity(string systemKeyword, string comment, params object[] commentParams);
 
         /// <summary>
-        /// Inserts an activity log item
+        /// 添加一条日志记录
         /// </summary>
         /// <param name="customer">The customer</param>
         /// <param name="systemKeyword">The system keyword</param>
@@ -62,13 +62,13 @@ namespace Nop.Services.Logging
         ActivityLog InsertActivity(Customer customer, string systemKeyword, string comment,  params object[] commentParams);
 
         /// <summary>
-        /// Deletes an activity log item
+        /// 删除日志
         /// </summary>
         /// <param name="activityLog">Activity log</param>
         void DeleteActivity(ActivityLog activityLog);
 
         /// <summary>
-        /// Gets all activity log items
+        /// 获取所有日志记录
         /// </summary>
         /// <param name="createdOnFrom">Log item creation from; null to load all customers</param>
         /// <param name="createdOnTo">Log item creation to; null to load all customers</param>
@@ -83,14 +83,14 @@ namespace Nop.Services.Logging
             int pageIndex = 0, int pageSize = int.MaxValue, string ipAddress = null);
         
         /// <summary>
-        /// Gets an activity log item
+        /// 根据ID获取日志
         /// </summary>
         /// <param name="activityLogId">Activity log identifier</param>
         /// <returns>Activity log item</returns>
         ActivityLog GetActivityById(int activityLogId);
 
         /// <summary>
-        /// Clears activity log
+        /// 清空日志
         /// </summary>
         void ClearAllActivities();
     }

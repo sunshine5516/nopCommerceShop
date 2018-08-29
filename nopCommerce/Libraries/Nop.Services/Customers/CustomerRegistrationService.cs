@@ -211,12 +211,12 @@ namespace Nop.Services.Customers
 
             request.Customer.Active = request.IsApproved;
             
-            //add to 'Registered' role
+            //添加注册角色
             var registeredRole = _customerService.GetCustomerRoleBySystemName(SystemCustomerRoleNames.Registered);
             if (registeredRole == null)
                 throw new NopException("'Registered' role could not be loaded");
             request.Customer.CustomerRoles.Add(registeredRole);
-            //remove from 'Guests' role
+            //移除客户角色
             var guestRole = request.Customer.CustomerRoles.FirstOrDefault(cr => cr.SystemName == SystemCustomerRoleNames.Guests);
             if (guestRole != null)
                 request.Customer.CustomerRoles.Remove(guestRole);

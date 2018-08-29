@@ -454,6 +454,7 @@ namespace Nop.Web.Controllers
             {
                 ImpersonatedCustomerEmailUsername = customer.IsRegistered() ? (_customerSettings.UsernamesEnabled ? customer.Username : customer.Email) : "",
                 IsCustomerImpersonated = _workContext.OriginalCustomerIfImpersonated != null,
+                //DisplayAdminLink=true
                 DisplayAdminLink = _permissionService.Authorize(StandardPermissionProvider.AccessAdminPanel),
                 EditPageUrl = _pageHeadBuilder.GetEditPageUrl()
             };

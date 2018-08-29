@@ -50,8 +50,9 @@
 {
     @Html.Partial("_ProductBreadcrumb", Model.Breadcrumb)
 }
-@Html.Widget("productdetails_after_breadcrumb", Model.Id)
+@*@Html.Widget("productdetails_after_breadcrumb", Model.Id)*@
 <div class="page product-details-page">
+    <input type="button" value="clickMe"/>
     <div class="page-body">
         @Html.Widget("productdetails_top", Model.Id)
         @using (Html.BeginRouteForm("Product", new { SeName = Model.SeName }, FormMethod.Post, new { id = "product-details-form" }))

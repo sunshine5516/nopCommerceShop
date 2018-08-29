@@ -1,7 +1,6 @@
 using System;
 using System.Net;
 using StackExchange.Redis;
-
 namespace Nop.Core.Caching
 {
     /// <summary>

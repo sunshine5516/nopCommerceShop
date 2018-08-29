@@ -13,7 +13,7 @@ namespace Nop.Services.Seo
 {
     public static class SeoExtensions
     {
-        #region Fields
+        #region 字段
 
         private static Dictionary<string, string> _seoCharacterTable;
         private static readonly object s_lock = new object();
@@ -116,12 +116,12 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        ///  Get search engine friendly name (slug)
+        ///  获取友好名称
         /// </summary>
-        /// <typeparam name="T">Entity type</typeparam>
-        /// <param name="entity">Entity</param>
-        /// <param name="languageId">Language identifier</param>
-        /// <param name="returnDefaultValue">A value indicating whether to return default value (if language specified one is not found)</param>
+        /// <typeparam name="T">实体属性</typeparam>
+        /// <param name="entity">待扩展的实体</param>
+        /// <param name="languageId">语言ID</param>
+        /// <param name="returnDefaultValue">是否返回默认值</param>
         /// <param name="ensureTwoPublishedLanguages">A value indicating whether to ensure that we have at least two published languages; otherwise, load only default value</param>
         /// <returns>Search engine  name (slug)</returns>
         public static string GetSeName<T>(this T entity, int languageId, bool returnDefaultValue = true,
@@ -136,12 +136,12 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Get search engine friendly name (slug)
+        /// 获取友好名称 (slug)
         /// </summary>
-        /// <param name="entityId">Entity identifier</param>
-        /// <param name="entityName">Entity name</param>
-        /// <param name="languageId">Language identifier</param>
-        /// <param name="returnDefaultValue">A value indicating whether to return default value (if language specified one is not found)</param>
+        /// <param name="entityId">ID</param>
+        /// <param name="entityName">名称</param>
+        /// <param name="languageId">语言ID</param>
+        /// <param name="returnDefaultValue">如果为空是否返回默认值</param>
         /// <param name="ensureTwoPublishedLanguages">A value indicating whether to ensure that we have at least two published languages; otherwise, load only default value</param>
         /// <returns>Search engine  name (slug)</returns>
         public static string GetSeName(int entityId, string entityName, int languageId, bool returnDefaultValue = true,
@@ -189,7 +189,7 @@ namespace Nop.Services.Seo
             if (entity == null)
                 throw new ArgumentNullException("entity");
 
-            //use name if sename is not specified
+            //如果未指定sename，则使用名称
             if (String.IsNullOrWhiteSpace(seName) && !String.IsNullOrWhiteSpace(name))
                 seName = name;
             
@@ -242,9 +242,9 @@ namespace Nop.Services.Seo
 
 
         /// <summary>
-        /// Get SE name
+        /// 获取SE名称
         /// </summary>
-        /// <param name="name">Name</param>
+        /// <param name="name">名称</param>
         /// <returns>Result</returns>
         public static string GetSeName(string name)
         {
@@ -1352,18 +1352,18 @@ namespace Nop.Services.Seo
         }
 
         /// <summary>
-        /// Takes a hexadecimal string and converts it to an Unicode character
+        ///采用十六进制字符串并将其转换为Unicode字符
         /// </summary>
-        /// <param name="hexString">A four-digit number in hex notation (eg, 00E7).</param>
-        /// <returns>A unicode character, as string.</returns>
+        /// <param name="hexString">以十六进制表示形式的四位数字（例如，00E7）。</param>
+        /// <returns>作为字符串的Unicode字符.</returns>
         private static string ToUnichar(string hexString)
         {
             var b = new byte[2];
 
-            // Take hexadecimal as text and make a Unicode char number
+            // 以十六进制作为文本并制作Unicode字符编号
             b[0] = Convert.ToByte(hexString.Substring(2, 2), 16);
             b[1] = Convert.ToByte(hexString.Substring(0, 2), 16);
-            // Get the character the number represents
+            // 获取数字表示的字符
             var returnChar = Encoding.Unicode.GetString(b);
             return returnChar;
         }

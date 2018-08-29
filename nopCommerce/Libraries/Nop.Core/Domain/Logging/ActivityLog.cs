@@ -4,42 +4,42 @@ using Nop.Core.Domain.Customers;
 namespace Nop.Core.Domain.Logging
 {
     /// <summary>
-    /// Represents an activity log record
+    /// 活动日志记录
     /// </summary>
     public partial class ActivityLog : BaseEntity
     {
         /// <summary>
-        /// Gets or sets the activity log type identifier
+        /// 活动日志类型ID
         /// </summary>
         public int ActivityLogTypeId { get; set; }
 
         /// <summary>
-        /// Gets or sets the customer identifier
+        /// 用户ID
         /// </summary>
         public int CustomerId { get; set; }
 
         /// <summary>
-        /// Gets or sets the activity comment
+        /// 活动注释
         /// </summary>
         public string Comment { get; set; }
 
         /// <summary>
-        /// Gets or sets the date and time of instance creation
+        /// 创建日期
         /// </summary>
         public DateTime CreatedOnUtc { get; set; }
 
         /// <summary>
-        /// Gets the activity log type
+        /// 日志类型
         /// </summary>
         public virtual ActivityLogType ActivityLogType { get; set; }
 
         /// <summary>
-        /// Gets the customer
+        /// 用户
         /// </summary>
         public virtual Customer Customer { get; set; }
 
         /// <summary>
-        /// Gets or sets the ip address
+        /// Ip地址
         /// </summary>
         public virtual string IpAddress { get; set; }
     }

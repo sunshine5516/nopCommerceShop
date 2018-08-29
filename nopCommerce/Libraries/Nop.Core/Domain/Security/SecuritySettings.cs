@@ -11,30 +11,30 @@ namespace Nop.Core.Domain.Security
         public bool ForceSslForAllPages { get; set; }
 
         /// <summary>
-        /// Gets or sets an encryption key
+        /// 加密密钥
         /// </summary>
         public string EncryptionKey { get; set; }
 
         /// <summary>
-        /// Gets or sets a list of admin area allowed IP addresses
+        /// 管理区域允许的IP地址列表
         /// </summary>
         public List<string> AdminAreaAllowedIpAddresses { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether XSRF protection for admin area should be enabled
+        /// 是否应启用管理区域的XSRF保护
         /// </summary>
         public bool EnableXsrfProtectionForAdminArea { get; set; }
         /// <summary>
-        /// Gets or sets a value indicating whether XSRF protection for public store should be enabled
+        ///是否应启用公共存储的XSRF保护
         /// </summary>
         public bool EnableXsrfProtectionForPublicStore { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether honeypot is enabled on the registration page
+        /// 是否在注册页面上启用蜜罐技术
         /// </summary>
         public bool HoneypotEnabled { get; set; }
         /// <summary>
-        /// Gets or sets a honeypot input name
+        /// 蜜罐输入名称
         /// </summary>
         public string HoneypotInputName { get; set; }
     }

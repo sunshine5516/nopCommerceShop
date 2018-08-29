@@ -3,7 +3,7 @@ using Nop.Core.Domain.Customers;
 namespace Nop.Services.Authentication
 {
     /// <summary>
-    /// Authentication service interface
+    /// 认证服务接口
     /// </summary>
     public partial interface IAuthenticationService 
     {
@@ -20,7 +20,7 @@ namespace Nop.Services.Authentication
         void SignOut();
 
         /// <summary>
-        /// Get authenticated customer
+        /// 获取认证客户
         /// </summary>
         /// <returns>Customer</returns>
         Customer GetAuthenticatedCustomer();

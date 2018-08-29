@@ -3,16 +3,16 @@
 namespace Nop.Services.Customers
 {
     /// <summary>
-    /// Change password requst
+    /// 修改密码请求实体
     /// </summary>
     public class ChangePasswordRequest
     {
         /// <summary>
-        /// Email
+        /// 电子邮件
         /// </summary>
         public string Email { get; set; }
         /// <summary>
-        /// A value indicating whether we should validate request
+        /// 是否允许请求
         /// </summary>
         public bool ValidateRequest { get; set; }
         /// <summary>

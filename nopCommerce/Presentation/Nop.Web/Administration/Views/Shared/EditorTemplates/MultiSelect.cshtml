@@ -1,12 +1,11 @@
 ﻿@model List<int>
-
 @Html.ListBoxFor(model => model, (IEnumerable<SelectListItem>)ViewData["SelectList"])
 <script>
     $(document).ready(function() {
         $("#@ViewData.TemplateInfo.GetFullHtmlFieldId(string.Empty)").kendoMultiSelect({
             select: function (e) {
                 var current = this.value();
-
+                
                 if (this.dataSource.view()[e.item.index()].value === "0") {
                     this.value("");
                 }

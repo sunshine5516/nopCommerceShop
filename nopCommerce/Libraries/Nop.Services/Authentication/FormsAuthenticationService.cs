@@ -7,7 +7,7 @@ using Nop.Services.Customers;
 namespace Nop.Services.Authentication
 {
     /// <summary>
-    /// Authentication service
+    /// 认证服务
     /// </summary>
     public partial class FormsAuthenticationService : IAuthenticationService
     {
@@ -44,7 +44,7 @@ namespace Nop.Services.Authentication
         #region 辅助方法
 
         /// <summary>
-        /// Get authenticated customer
+        /// 获取认证客户
         /// </summary>
         /// <param name="ticket">Ticket</param>
         /// <returns>Customer</returns>
@@ -114,7 +114,7 @@ namespace Nop.Services.Authentication
         }
 
         /// <summary>
-        /// Get authenticated customer
+        /// 获取认证客户
         /// </summary>
         /// <returns>Customer</returns>
         public virtual Customer GetAuthenticatedCustomer()

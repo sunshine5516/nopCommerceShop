@@ -1,0 +1,11 @@
+﻿@using Nop.Web.Framework.UI
+@{
+    Layout = "";
+
+    Html.AddCssFileParts("~/Plugins/DaBoLang.ExternalAuth.WeiXin/Content/weixinstyles.css");    
+}
+<div class="weixin-login-block">
+    <div class="buttons">
+        <a href="@Url.RouteUrl("DaBoLang.Plugin.ExternalAuth.WeiXin.Login", new { ReturnUrl = HttpContext.Current.Request.QueryString["ReturnUrl"] })" class="weixin-btn"></a>
+    </div>
+</div>

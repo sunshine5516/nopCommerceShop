@@ -352,7 +352,7 @@ namespace Nop.Services.Customers
         }
 
         /// <summary>
-        /// Gets a customer
+        /// 根据ID获取用户
         /// </summary>
         /// <param name="customerId">Customer identifier</param>
         /// <returns>A customer</returns>
@@ -388,9 +388,9 @@ namespace Nop.Services.Customers
             }
             return sortedCustomers;
         }
-        
+
         /// <summary>
-        /// Gets a customer by GUID
+        /// 通过GUID获取客户
         /// </summary>
         /// <param name="customerGuid">Customer GUID</param>
         /// <returns>A customer</returns>
@@ -784,7 +784,7 @@ namespace Nop.Services.Customers
         }
 
         /// <summary>
-        /// Gets all customer roles
+        /// 获取所有用户角色
         /// </summary>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>
         /// <returns>Customer roles</returns>

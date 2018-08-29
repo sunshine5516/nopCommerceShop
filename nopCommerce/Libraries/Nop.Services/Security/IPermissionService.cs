@@ -10,39 +10,39 @@ namespace Nop.Services.Security
     public partial interface IPermissionService
     {
         /// <summary>
-        /// Delete a permission
+        /// 删除权限
         /// </summary>
         /// <param name="permission">Permission</param>
         void DeletePermissionRecord(PermissionRecord permission);
 
         /// <summary>
-        /// Gets a permission
+        /// 根据Id获取权限
         /// </summary>
         /// <param name="permissionId">Permission identifier</param>
         /// <returns>Permission</returns>
         PermissionRecord GetPermissionRecordById(int permissionId);
 
         /// <summary>
-        /// Gets a permission
+        /// 根据系统名称获取权限
         /// </summary>
         /// <param name="systemName">Permission system name</param>
         /// <returns>Permission</returns>
         PermissionRecord GetPermissionRecordBySystemName(string systemName);
 
         /// <summary>
-        /// Gets all permissions
+        /// 获取所有权限
         /// </summary>
         /// <returns>Permissions</returns>
         IList<PermissionRecord> GetAllPermissionRecords();
 
         /// <summary>
-        /// Inserts a permission
+        /// 插入一条权限
         /// </summary>
         /// <param name="permission">Permission</param>
         void InsertPermissionRecord(PermissionRecord permission);
 
         /// <summary>
-        /// Updates the permission
+        /// 更新权限
         /// </summary>
         /// <param name="permission">Permission</param>
         void UpdatePermissionRecord(PermissionRecord permission);
@@ -60,14 +60,14 @@ namespace Nop.Services.Security
         void UninstallPermissions(IPermissionProvider permissionProvider);
 
         /// <summary>
-        /// Authorize permission
+        /// 授权许可
         /// </summary>
         /// <param name="permission">Permission record</param>
         /// <returns>true - authorized; otherwise, false</returns>
         bool Authorize(PermissionRecord permission);
 
         /// <summary>
-        /// Authorize permission
+        /// 授权许可
         /// </summary>
         /// <param name="permission">Permission record</param>
         /// <param name="customer">Customer</param>
@@ -75,7 +75,7 @@ namespace Nop.Services.Security
         bool Authorize(PermissionRecord permission, Customer customer);
 
         /// <summary>
-        /// Authorize permission
+        /// 授权许可Authorize permission
         /// </summary>
         /// <param name="permissionRecordSystemName">Permission record system name</param>
         /// <returns>true - authorized; otherwise, false</returns>

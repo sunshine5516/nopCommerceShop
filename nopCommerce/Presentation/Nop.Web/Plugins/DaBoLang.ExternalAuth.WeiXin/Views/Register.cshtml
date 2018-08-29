@@ -1,0 +1,57 @@
+﻿@model DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Models.RegisterModel
+@using Nop.Web.Framework
+@using Nop.Web.Framework.UI
+@using Nop.Web.Models.Customer;
+@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+
+    //title
+    Html.AddTitleParts(T("PageTitle.Register").Text);
+    //page class
+    Html.AppendPageCssClassParts("html-registration-page");
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="page registration-page">
+        <div class="page-title">
+            <h1>@T("Account.Register")</h1>
+        </div>
+        <div class="page-body">
+           @{
+                var validationSummary = Html.ValidationSummary(true);
+            }
+            @if (!MvcHtmlString.IsNullOrEmpty(validationSummary))
+            {
+                <div class="message-error">@validationSummary</div>
+            }
+       @*     @Html.Partial("_ExternalAuthentication.AssociateMessage")*@
+            <div class="fieldset">
+                <div class="title">
+                    <strong>@T("Account.YourPersonalDetails")</strong>
+                </div>
+                <div class="form-fields">
+                    <div class="inputs">
+                        @Html.LabelFor(model => model.Email, new { }, ":")
+                        @Html.EditorFor(model => model.Email)
+                        @Html.RequiredHint()
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                    @if (Model.EnteringEmailTwice)
+                    {
+                        <div class="inputs">
+                            @Html.LabelFor(model => model.ConfirmEmail, new { }, ":")
+                            @Html.EditorFor(model => model.ConfirmEmail)
+                            @Html.RequiredHint()
+                            @Html.ValidationMessageFor(model => model.ConfirmEmail)
+                        </div>
+                    }
+                </div>
+            </div>
+          
+            <div class="buttons">
+                <input type="submit" id="register-button" class="button-1 register-next-step-button" value="@T("Account.Register.Button")" name="register-button" />
+            </div>
+        </div>
+    </div>
+}

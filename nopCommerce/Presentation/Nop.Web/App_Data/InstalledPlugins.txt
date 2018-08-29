@@ -21,3 +21,5 @@ Payments.Alipay
 Payments.CheckMoneyOrder
 Payments.PayPalDirect
 Widgets.NivoSlider
+DaBoLang.ExternalAuth.WeiXin
+ExternalAuth.WeiXin

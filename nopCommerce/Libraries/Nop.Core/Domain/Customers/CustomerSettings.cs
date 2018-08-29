@@ -26,7 +26,7 @@ namespace Nop.Core.Domain.Customers
         public PasswordFormat DefaultPasswordFormat { get; set; }
 
         /// <summary>
-        /// Gets or sets a customer password format (SHA1, MD5) when passwords are hashed
+        /// 密码散列时的客户密码格式（SHA1，MD5）
         /// </summary>
         public string HashedPasswordFormat { get; set; }
 
@@ -41,7 +41,7 @@ namespace Nop.Core.Domain.Customers
         public int PasswordRecoveryLinkDaysValid { get; set; }
 
         /// <summary>
-        /// User registration type
+        /// 用户注册类型
         /// </summary>
         public UserRegistrationType UserRegistrationType { get; set; }
 
@@ -121,7 +121,7 @@ namespace Nop.Core.Domain.Customers
         public bool NewsletterBlockAllowToUnsubscribe { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating the number of minutes for 'online customers' module
+        /// “在线客户”模块的分钟数
         /// </summary>
         public int OnlineCustomerMinutes { get; set; }
 

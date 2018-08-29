@@ -7,6 +7,7 @@
 <div class="page home-page">
     <div class="page-body">
         @*@Html.*@
+       
         @Html.Widget("home_page_top")
         @Html.Action("TopicBlock", "Topic", new { systemName = "HomePageText" })
         @Html.Widget("home_page_before_categories")
@@ -21,7 +22,7 @@
         @Html.Action("HomePagePolls", "Poll")
         @Html.Widget("home_page_bottom")
 
-
+        <a href="@Url.Content("~/Admin")" class="administration">后台首页</a>
         @*@Html.Widget("home_page_helloworld")*@
     </div>
 </div>

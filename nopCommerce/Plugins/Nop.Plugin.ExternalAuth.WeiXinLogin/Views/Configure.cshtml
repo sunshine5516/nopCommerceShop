@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "";
+}
+@model DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Models.ConfigurationModel
+@using Nop.Web.Framework;
+
+@Html.Action("StoreScopeConfiguration", "Setting", new { area = "Admin" })
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.OverrideStoreCheckboxFor(model => model.AppID_OverrideForStore, model => model.AppID, Model.ActiveStoreScopeConfiguration)
+                        @Html.NopLabelFor(model => model.AppID)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.AppID)
+                        @Html.ValidationMessageFor(model => model.AppID)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.OverrideStoreCheckboxFor(model => model.AppSecret_OverrideForStore, model => model.AppSecret, Model.ActiveStoreScopeConfiguration)
+                        @Html.NopLabelFor(model => model.AppSecret)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.AppSecret)
+                        @Html.ValidationMessageFor(model => model.AppSecret)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

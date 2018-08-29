@@ -15,18 +15,18 @@ namespace Nop.Services.Security
         }
 
         /// <summary>
-        /// Create salt key
+        /// 创建盐键
         /// </summary>
         /// <param name="size">Key size</param>
         /// <returns>Salt key</returns>
         public virtual string CreateSaltKey(int size) 
         {
-            // Generate a cryptographic random number
+            // 生成加密随机数
             var rng = new RNGCryptoServiceProvider();
             var buff = new byte[size];
             rng.GetBytes(buff);
 
-            // Return a Base64 string representation of the random number
+            // 返回一个Base64字符串表示的随机数
             return Convert.ToBase64String(buff);
         }
 
@@ -63,7 +63,7 @@ namespace Nop.Services.Security
         }
 
         /// <summary>
-        /// Encrypt text
+        /// 加密文字
         /// </summary>
         /// <param name="plainText">Text to encrypt</param>
         /// <param name="encryptionPrivateKey">Encryption private key</param>
@@ -85,7 +85,7 @@ namespace Nop.Services.Security
         }
 
         /// <summary>
-        /// Decrypt text
+        /// 解密文本
         /// </summary>
         /// <param name="cipherText">Text to decrypt</param>
         /// <param name="encryptionPrivateKey">Encryption private key</param>

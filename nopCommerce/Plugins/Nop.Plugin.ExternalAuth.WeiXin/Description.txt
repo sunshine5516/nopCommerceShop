@@ -1,0 +1,8 @@
+﻿Group: ExternalAuth methods
+FriendlyName: WeiXin authentication
+SystemName: ExternalAuth.WeiXin
+Version: 1.00
+SupportedVersions: 3.80
+Author: Huang ZhongQiu
+DisplayOrder: 5
+FileName: Nop.Plugin.ExternalAuth.WeiXin.dll

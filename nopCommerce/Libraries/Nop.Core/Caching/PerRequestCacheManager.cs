@@ -65,7 +65,8 @@ namespace Nop.Core.Caching
                 if (items.Contains(key))
                     items[key] = data;
                 else
-                    items.Add(key, data);
+                    _context.Items.Add(key, data);
+                //items.Add(key, data);
             }
         }
 

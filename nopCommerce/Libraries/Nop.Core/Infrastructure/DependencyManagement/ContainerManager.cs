@@ -51,6 +51,7 @@ namespace Nop.Core.Infrastructure.DependencyManagement
             }
             if (string.IsNullOrEmpty(key))
             {
+                var demo = scope.Resolve<T>();
                 return scope.Resolve<T>();
             }
             return scope.ResolveKeyed<T>(key);

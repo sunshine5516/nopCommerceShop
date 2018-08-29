@@ -8,7 +8,7 @@ namespace Nop.Services.Customers
     public partial interface ICustomerRegistrationService
     {
         /// <summary>
-        /// Validate customer
+        /// 验证用户登录
         /// </summary>
         /// <param name="usernameOrEmail">Username or email</param>
         /// <param name="password">Password</param>

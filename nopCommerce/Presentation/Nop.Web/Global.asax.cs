@@ -73,11 +73,11 @@ namespace Nop.Web
 
             //启动数据库中定时任务
             //初始化所有数据库中创建的定时任务
-            if (databaseInstalled)
-            {
-                TaskManager.Instance.Initialize();
-                TaskManager.Instance.Start();
-            }
+            //if (databaseInstalled)
+            //{
+            //    TaskManager.Instance.Initialize();
+            //    TaskManager.Instance.Start();
+            //}
 
             //根据配置，是否启动MiniProfiler(ASP.NET MVC的性能分析工具，监控网站性能)
             if (databaseInstalled)

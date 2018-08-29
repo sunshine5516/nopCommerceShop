@@ -263,7 +263,7 @@ namespace Nop.Web.Framework
         }
 
         /// <summary>
-        /// Gets or sets the original customer (in case the current one is impersonated)
+        /// 获取或设置原始客户（如果当前的客户被假冒）
         /// </summary>
         public virtual Customer OriginalCustomerIfImpersonated
         {

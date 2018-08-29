@@ -188,6 +188,11 @@ namespace Nop.Services.Security
                     CustomerRoleSystemName = SystemCustomerRoleNames.ForumModerators,
                     PermissionRecords = new[] 
                     {
+                        AccessAdminPanel,
+                        AllowCustomerImpersonation,
+                        ManageProducts,
+                        ManageCategories,
+                        ManageManufacturers,
                         DisplayPrices,
                         EnableShoppingCart,
                         EnableWishlist,

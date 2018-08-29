@@ -3,7 +3,7 @@
 namespace Nop.Core.Domain.Security
 {
     /// <summary>
-    /// Represents a default permission record
+    /// 默认的权限记录
     /// </summary>
     public class DefaultPermissionRecord
     {

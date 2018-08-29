@@ -114,7 +114,7 @@ namespace Nop.Web.Framework.Controllers
             AddNotification(NotifyType.Success, message, persistForTheNextRequest);
         }
         /// <summary>
-        /// 成功信息
+        /// 错误信息
         /// </summary>
         /// <param name="message">提示信息</param>
         /// <param name="persistForTheNextRequest">A value indicating whether a message should be persisted for the next request</param>

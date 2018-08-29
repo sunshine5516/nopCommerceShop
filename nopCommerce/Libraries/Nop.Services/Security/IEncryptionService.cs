@@ -4,14 +4,14 @@ namespace Nop.Services.Security
     public interface IEncryptionService 
     {
         /// <summary>
-        /// Create salt key
+        /// 创建盐键
         /// </summary>
         /// <param name="size">Key size</param>
         /// <returns>Salt key</returns>
         string CreateSaltKey(int size);
 
         /// <summary>
-        /// Create a password hash
+        /// 创建哈希密码
         /// </summary>
         /// <param name="password">{assword</param>
         /// <param name="saltkey">Salk key</param>
@@ -20,26 +20,26 @@ namespace Nop.Services.Security
         string CreatePasswordHash(string password, string saltkey, string passwordFormat = "SHA1");
 
         /// <summary>
-        /// Create a data hash
+        /// 创建哈希数据
         /// </summary>
-        /// <param name="data">The data for calculating the hash</param>
-        /// <param name="hashAlgorithm">Hash algorithm</param>
+        /// <param name="data">用于计算哈希的数据</param>
+        /// <param name="hashAlgorithm">散列算法</param>
         /// <returns>Data hash</returns>
         string CreateHash(byte [] data, string hashAlgorithm = "SHA1");
 
         /// <summary>
-        /// Encrypt text
+        /// 加密文字
         /// </summary>
-        /// <param name="plainText">Text to encrypt</param>
-        /// <param name="encryptionPrivateKey">Encryption private key</param>
-        /// <returns>Encrypted text</returns>
+        /// <param name="plainText">要加密的文本</param>
+        /// <param name="encryptionPrivateKey">加密私钥</param>
+        /// <returns>加密的文本</returns>
         string EncryptText(string plainText, string encryptionPrivateKey = "");
 
         /// <summary>
-        /// Decrypt text
+        /// 解密文本
         /// </summary>
-        /// <param name="cipherText">Text to decrypt</param>
-        /// <param name="encryptionPrivateKey">Encryption private key</param>
+        /// <param name="cipherText">要解密的文本</param>
+        /// <param name="encryptionPrivateKey">加密私钥</param>
         /// <returns>Decrypted text</returns>
         string DecryptText(string cipherText, string encryptionPrivateKey = "");
     }

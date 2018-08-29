@@ -1,0 +1,7 @@
+﻿.weixin-btn {
+    display: inline-block;
+    width: 226px;
+    height: 53px;
+    background-image: url('images/weixin-signing.png');
+    background-repeat: no-repeat;
+}

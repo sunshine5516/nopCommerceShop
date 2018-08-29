@@ -6,11 +6,11 @@ namespace Nop.Core.Domain.Customers
     public enum CustomerLoginResults
     {
         /// <summary>
-        /// Login successful
+        /// 登录成功
         /// </summary>
         Successful = 1,
         /// <summary>
-        /// Customer dies not exist (email or username)
+        /// 客户不存在（电子邮件或用户名）
         /// </summary>
         CustomerNotExist = 2,
         /// <summary>
@@ -18,7 +18,7 @@ namespace Nop.Core.Domain.Customers
         /// </summary>
         WrongPassword = 3,
         /// <summary>
-        /// Account have not been activated
+        /// 帐户尚未激活
         /// </summary>
         NotActive = 4,
         /// <summary>

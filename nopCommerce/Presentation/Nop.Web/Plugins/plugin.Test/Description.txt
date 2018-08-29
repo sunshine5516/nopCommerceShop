@@ -1,0 +1,9 @@
+Group: Widgets
+FriendlyName: Test
+SystemName: Test
+Version: 1.00
+SupportedVersions: 3.80
+Author: Jayson
+DisplayOrder: 1
+FileName: Nop.plugin.Test.dll
+Description: A test program

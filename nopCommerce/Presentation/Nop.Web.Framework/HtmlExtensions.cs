@@ -244,14 +244,14 @@ namespace Nop.Web.Framework
             }
             return MvcHtmlString.Create(result.ToString());
         }
-        
+
         /// <summary>
-        /// Render CSS styles of selected index 
+        /// Render CSS styles of selected index 渲染所选索引内容的CSS样式
         /// </summary>
         /// <param name="helper">HTML helper</param>
-        /// <param name="currentTabName">Current tab name (where appropriate CSS style should be rendred)</param>
-        /// <param name="content">Tab content</param>
-        /// <param name="isDefaultTab">Indicates that the tab is default</param>
+        /// <param name="currentTabName">当前选项卡名称</param>
+        /// <param name="content">内容</param>
+        /// <param name="isDefaultTab">是否是默认选项卡</param>
         /// <param name="tabNameToSelect">Tab name to select</param>
         /// <returns>MvcHtmlString</returns>
         public static MvcHtmlString RenderBootstrapTabContent(this HtmlHelper helper, string currentTabName,
@@ -336,7 +336,7 @@ namespace Nop.Web.Framework
         }
 
         /// <summary>
-        /// Gets a selected tab name (used in admin area to store selected tab name)
+        /// 获取所选的选项卡名称
         /// </summary>
         /// <returns>Name</returns>
         public static string GetSelectedTabName(this HtmlHelper helper)

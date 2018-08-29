@@ -1,0 +1,14 @@
+﻿@using Nop.Web.Framework.UI
+@{
+    Layout = "";
+
+    //Html.AddCssFileParts("~/Plugins/ExternalAuth.WeiXin/Content/weixinstyles.css");
+}
+<div>
+    <div class="title">
+        @T("Plugins.ExternalAuth.WeiXin.Login")
+    </div>
+    <div class="buttons">
+        <a href="@Url.RouteUrl("Plugin.ExternalAuth.WeiXin.Login", new { ReturnUrl = HttpContext.Current.Request.QueryString["ReturnUrl"] })">微信授权登录</a>
+    </div>
+</div>

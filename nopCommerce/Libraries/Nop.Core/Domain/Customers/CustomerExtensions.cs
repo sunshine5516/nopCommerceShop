@@ -64,7 +64,7 @@ namespace Nop.Core.Domain.Customers
         }
 
         /// <summary>
-        /// Gets a value indicating whether customer is administrator
+        /// 是否是管理员
         /// </summary>
         /// <param name="customer">Customer</param>
         /// <param name="onlyActiveCustomerRoles">活跃状态的用户</param>

@@ -28,6 +28,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>f94c814a</NuGetPackageImportStamp>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -473,6 +474,9 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Data\Install\SqlServer.Indexes.sql" />
+    <Content Include="App_Data\Settings.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\BBEditor\ed.js" />
     <Content Include="Content\BBEditor\images\bold.gif" />
     <Content Include="Content\BBEditor\images\code.gif" />
@@ -596,7 +600,6 @@
     <Content Include="Content\samples\product_IfYouWait_1.zip" />
     <Content Include="Content\samples\product_NightVision_1.zip" />
     <Content Include="Content\samples\product_ScienceAndFaith_1.zip" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\nop.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fineuploader\iframe.xss.response-4.2.2.js" />
