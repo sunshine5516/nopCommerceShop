@@ -6,28 +6,28 @@ using Nop.Core.Domain.Customers;
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Open authentication service
+    /// 开放服务授权接口
     /// </summary>
     public partial interface IOpenAuthenticationService
     {
         /// <summary>
-        /// Load active external authentication methods
+        /// 加载所有开启的授权方法
         /// </summary>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
-        /// <returns>Payment methods</returns>
+        /// <param name="storeId"></param>
+        /// <returns>授权方法</returns>
         IList<IExternalAuthenticationMethod> LoadActiveExternalAuthenticationMethods(int storeId = 0);
 
         /// <summary>
-        /// Load external authentication method by system name
+        /// 根据名名称加载所有的授权方法
         /// </summary>
-        /// <param name="systemName">System name</param>
+        /// <param name="systemName">系统名</param>
         /// <returns>Found external authentication method</returns>
         IExternalAuthenticationMethod LoadExternalAuthenticationMethodBySystemName(string systemName);
 
         /// <summary>
-        /// Load all external authentication methods
+        /// 加载所有的授权方法
         /// </summary>
-        /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
+        /// <param name="storeId"></param>
         /// <returns>External authentication methods</returns>
         IList<IExternalAuthenticationMethod> LoadAllExternalAuthenticationMethods(int storeId = 0);
 

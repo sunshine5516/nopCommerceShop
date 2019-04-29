@@ -174,7 +174,7 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Controllers
 
             //check whether registration is allowed
             if (_customerSettings.UserRegistrationType == UserRegistrationType.Disabled)
-                return RedirectToRoute("RegisterResult", new {resultId = (int) UserRegistrationType.Disabled});
+                return RedirectToRoute("RegisterResult", new { resultId = (int)UserRegistrationType.Disabled });
 
             var model = new RegisterModel();
             model.EnteringEmailTwice = _customerSettings.EnteringEmailTwice;
@@ -211,15 +211,15 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Controllers
 
         public ActionResult LoginCallback(string returnUrl)
         {
-            //if (!_workContext.CurrentCustomer.IsRegistered())
-            //{
-            //    var code = Request.QueryString["code"];
-            //    var userInfo = _weiXinExternalAuthService.GetUserInfo(code, true);
-            //    if (_weiXinExternalAuthService.GetUser(userInfo) == null)
-            //    {
-            //        return RedirectToAction("Register"); //未注册过则调到注册页面
-            //    }
-            //}
+            if (!_workContext.CurrentCustomer.IsRegistered())
+            {
+                var code = Request.QueryString["code"];
+                var userInfo = _weiXinExternalAuthService.GetUserInfo(code, true);
+                if (_weiXinExternalAuthService.GetUser(userInfo) == null)
+                {
+                    return RedirectToAction("Register"); //未注册过则调到注册页面
+                }
+            }
             return LoginInternal(returnUrl, true);
         }
 
@@ -236,10 +236,10 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Controllers
             //    throw new NopException("微信登录插件没有加载");
 
             if (processor == null ||
-    !processor.IsMethodActive(_externalAuthenticationSettings) ||
-    !processor.PluginDescriptor.Installed ||
-    !_pluginFinder.AuthenticateStore(processor.PluginDescriptor, _storeContext.CurrentStore.Id))
-                throw new NopException("微信登录插件没有加载");
+            !processor.IsMethodActive(_externalAuthenticationSettings) ||
+            !processor.PluginDescriptor.Installed ||
+            !_pluginFinder.AuthenticateStore(processor.PluginDescriptor, _storeContext.CurrentStore.Id))
+                        throw new NopException("微信登录插件没有加载");
 
 
 
@@ -247,31 +247,31 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Controllers
             switch (result.AuthenticationStatus)
             {
                 case OpenAuthenticationStatus.Error:
-                {
-                    if (!result.Success)
-                        foreach (var error in result.Errors)
-                            ExternalAuthorizerHelper.AddErrorsToDisplay(error);
+                    {
+                        if (!result.Success)
+                            foreach (var error in result.Errors)
+                                ExternalAuthorizerHelper.AddErrorsToDisplay(error);
 
-                    return new RedirectResult(Url.LogOn(returnUrl));
-                }
+                        return new RedirectResult(Url.LogOn(returnUrl));
+                    }
                 case OpenAuthenticationStatus.AssociateOnLogon:
-                {
-                    return new RedirectResult(Url.LogOn(returnUrl));
-                }
+                    {
+                        return new RedirectResult(Url.LogOn(returnUrl));
+                    }
                 case OpenAuthenticationStatus.AutoRegisteredEmailValidation:
-                {
-                    //result
-                    return RedirectToRoute("RegisterResult",
-                        new {resultId = (int) UserRegistrationType.EmailValidation});
-                }
+                    {
+                        //result
+                        return RedirectToRoute("RegisterResult",
+                            new { resultId = (int)UserRegistrationType.EmailValidation });
+                    }
                 case OpenAuthenticationStatus.AutoRegisteredAdminApproval:
-                {
-                    return RedirectToRoute("RegisterResult", new {resultId = (int) UserRegistrationType.AdminApproval});
-                }
+                    {
+                        return RedirectToRoute("RegisterResult", new { resultId = (int)UserRegistrationType.AdminApproval });
+                    }
                 case OpenAuthenticationStatus.AutoRegisteredStandard:
-                {
-                    return RedirectToRoute("RegisterResult", new {resultId = (int) UserRegistrationType.Standard});
-                }
+                    {
+                        return RedirectToRoute("RegisterResult", new { resultId = (int)UserRegistrationType.Standard });
+                    }
                 default:
                     break;
             }
@@ -284,3 +284,10 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Controllers
         #endregion
     }
 }
+ 
+
+
+
+
+
+

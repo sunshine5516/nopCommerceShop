@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Authorize state
+    /// ÊÚÈ¨×´Ì¬
     /// </summary>
     public partial class AuthorizeState
     {

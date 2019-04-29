@@ -6,12 +6,12 @@ using Nop.Core.Plugins;
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Provides an interface for creating external authentication methods
+    /// 创建外部身份验证方法的接口
     /// </summary>
     public partial interface IExternalAuthenticationMethod : IPlugin
     {
         /// <summary>
-        /// Gets a route for plugin configuration
+        /// 获取插件配置的路由
         /// </summary>
         /// <param name="actionName">Action name</param>
         /// <param name="controllerName">Controller name</param>

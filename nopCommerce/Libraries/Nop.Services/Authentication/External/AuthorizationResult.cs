@@ -6,12 +6,12 @@ using System.Linq;
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Authorization result
+    /// 授权结果
     /// </summary>
     public partial class AuthorizationResult
     {
         /// <summary>
-        /// Ctor
+        /// 构造函数
         /// </summary>
         /// <param name="status"></param>
         public AuthorizationResult(OpenAuthenticationStatus status)
@@ -30,7 +30,7 @@ namespace Nop.Services.Authentication.External
         }
 
         /// <summary>
-        /// Gets a value indicating whether request has been completed successfully
+        /// 是否成功
         /// </summary>
         public bool Success
         {

@@ -56,7 +56,7 @@ namespace Nop.Core.Domain.Localization
         public int DisplayOrder { get; set; }
         
         /// <summary>
-        /// Gets or sets locale string resources
+        /// 本地化字符串资源
         /// </summary>
         public virtual ICollection<LocaleStringResource> LocaleStringResources
         {

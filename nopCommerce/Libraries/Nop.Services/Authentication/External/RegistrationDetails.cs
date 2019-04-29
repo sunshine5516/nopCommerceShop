@@ -4,7 +4,7 @@
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Registration details
+    /// ×¢²áÄÚÈİ
     /// </summary>
     public struct RegistrationDetails
     {

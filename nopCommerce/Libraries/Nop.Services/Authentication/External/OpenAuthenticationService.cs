@@ -44,9 +44,9 @@ namespace Nop.Services.Authentication.External
         }
 
         /// <summary>
-        /// Load external authentication method by system name
+        /// 根据名称加载所有的授权方法
         /// </summary>
-        /// <param name="systemName">System name</param>
+        /// <param name="systemName">系统名称</param>
         /// <returns>Found external authentication method</returns>
         public virtual IExternalAuthenticationMethod LoadExternalAuthenticationMethodBySystemName(string systemName)
         {

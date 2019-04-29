@@ -9,7 +9,7 @@ namespace Nop.Core.Domain.Customers
     public class ExternalAuthenticationSettings : ISettings
     {
         /// <summary>
-        /// Constructor
+        /// 构造函数
         /// </summary>
         public ExternalAuthenticationSettings()
         {

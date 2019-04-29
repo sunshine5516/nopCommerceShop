@@ -104,9 +104,10 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Services
         /// <returns></returns>
         private Uri GenerateLocalCallbackUri()
         {
-            //string redirect_uri = string.Format("{0}Plugins/ExternalAuthWeiXin/LoginCallback",
-            //    _webHelper.GetStoreLocation(false));
-            string redirect_uri="http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/LoginCallback";
+            string redirect_uri = string.Format("{0}Plugins/ExternalAuthWeiXin/LoginCallback",
+                _webHelper.GetStoreLocation(false));
+            //string redirect_uri="http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/LoginCallback";
+            //string redirect_uri = "http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/Login";
             var url = this.GetAuthorizeUrl(redirect_uri: redirect_uri, scope: "snsapi_userinfo");
             return new Uri(url);
         }
@@ -117,9 +118,10 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Services
         /// <returns></returns>
         private Uri GenerateServiceLoginUrl()
         {
-            //string redirect_uri = string.Format("{0}Plugins/ExternalAuthWeiXin/LoginCallback",
-            //    _webHelper.GetStoreLocation(false));
-            string redirect_uri= "http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/LoginCallback";
+            string redirect_uri = string.Format("{0}Plugins/ExternalAuthWeiXin/LoginCallback",
+                _webHelper.GetStoreLocation(false));
+            //string redirect_uri= "http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/LoginCallback";
+            //string redirect_uri = "http://118.25.189.62/nop/Plugins/ExternalAuthWeiXin/Login";
             var url = this.GetAuthorizeUrl(redirect_uri: redirect_uri, scope: "snsapi_userinfo");
             return new Uri(url);
         }
@@ -266,11 +268,12 @@ namespace DaBoLang.Nop.Plugin.ExternalAuth.WeiXin.Services
             //        "connect/qrconnect?appid={appid}&redirect_uri={redirect_uri}&response_type=code&scope={scope}&state=STATE#wechat_redirect",
             //        Method.GET);
             request.AddUrlSegment("appid", weiXinAuthSettings.AppID);
-            request.AddUrlSegment("redirect_uri", redirect_uri);            
-            //request.AddUrlSegment("redirect_uri", EnCoder.encode(redirect_uri));
+            request.AddUrlSegment("redirect_uri", redirect_uri);
             request.AddUrlSegment("scope", "snsapi_userinfo");
+            //request.AddUrlSegment("scope", "snsapi_login");
             var uri = client.BuildUri(request);
             return uri.OriginalString;
+          
         }
 
         public WeiXinResponse GetUserInfo(string access_token, string openid, string lang = "zh_CN")

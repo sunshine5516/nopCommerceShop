@@ -4,7 +4,7 @@
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// External provider authorizer
+    /// 外部授权接口
     /// </summary>
     public partial interface IExternalProviderAuthorizer
     {

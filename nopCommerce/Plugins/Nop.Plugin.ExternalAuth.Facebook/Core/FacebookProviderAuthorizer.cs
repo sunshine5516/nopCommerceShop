@@ -221,7 +221,7 @@ namespace Nop.Plugin.ExternalAuth.Facebook.Core
         #region Methods
 
         /// <summary>
-        /// Authorize response
+        /// ÊÚÈ¨»Ø¸´
         /// </summary>
         /// <param name="returnUrl">Return URL</param>
         /// <param name="verifyResponse">true - Verify response;false - request authentication;null - determine automatically</param>

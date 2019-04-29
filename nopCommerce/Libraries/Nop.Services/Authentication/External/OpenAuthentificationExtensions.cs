@@ -4,7 +4,7 @@ using Nop.Core.Domain.Customers;
 namespace Nop.Services.Authentication.External
 {
     /// <summary>
-    /// Open authentication extensions
+    /// 开放授权扩展方法
     /// </summary>
     public static class OpenAuthenticationExtensions
     {

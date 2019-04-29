@@ -15,7 +15,7 @@ namespace Nop.Services.Localization
         void DeleteLanguage(Language language);
 
         /// <summary>
-        /// Gets all languages
+        /// 获取所有语言
         /// </summary>
         /// <param name="storeId">Load records allowed only in a specified store; pass 0 to load all records</param>
         /// <param name="showHidden">A value indicating whether to show hidden records</param>
